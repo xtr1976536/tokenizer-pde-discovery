@@ -5,7 +5,7 @@
     212,
     636
   ],
-  "tests": ".............................                                            [100%]\n29 passed in 1.46s",
+  "tests": ".............................                                            [100%]\n29 passed in 1.49s",
   "release_files": {
     "LICENSE": "e72843d743934a3cbee5ff9f600f201286ea7ad38edfbe11e8fb3f31496d0cd7",
     "requirements-runtime.lock.txt": "9e9f4450c0dedc3011bf3a2876e5939e182065a468ad4dfc7e5dd9e968411588",
@@ -303,6 +303,7 @@
     "reports/plan.json": "53cced99da0302662cb3d7b38a28792d9be620c0283a8c164086e2425363e567",
     "reports/smoke.log": "ccaffdf8a70a47faaf637a5b63685407501ccba34c03710702f7e079798f0fe8",
     "reports/check_round2.log": "7a84b954cc7b043d9416abd17b3a9da58dfa4b41f10c3bad8955d7a209e424e3",
+    "reports/remote_clone_verification.json": "bc9c5d13edf95f0e684f1af3fc43da50ba41867d8124592f749443c7fd1928f4",
     "reports/check_round3.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "reports/check_round1.log": "cd64d1c9da7399590f67bf9051f2d229dab34651f3c925542b1c396140232916",
     "reports/prepare.log": "0bd1fa14adf35f5a7ba0d48d9076e2ed82259b27e4cd450ffcc8c4ea0e6a1fe7",
