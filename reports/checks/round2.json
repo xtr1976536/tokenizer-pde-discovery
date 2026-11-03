@@ -1,0 +1,101 @@
+{
+  "round": 2,
+  "status": "PASS",
+  "scales": [
+    212,
+    636
+  ],
+  "smoke": {
+    "212": {
+      "status": "PASS",
+      "scale": 212,
+      "smoke": true,
+      "results": {
+        "eqgpt_reference": {
+          "parameters": 37902393,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        },
+        "ast_bpe_280": {
+          "parameters": 38245144,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        },
+        "ast_bpe_315": {
+          "parameters": 38298939,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        },
+        "ast_bpe_350": {
+          "parameters": 38352734,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        }
+      },
+      "selected_source_ids": [
+        "eqgpt221:09cb28c308aa97e0d43bc047",
+        "eqgpt221:5cc9273612c2a14c52611755",
+        "eqgpt221:9196b575f094998ec911726c",
+        "eqgpt221:5f002adf50329bd4974c26a4",
+        "eqgpt221:37a601937227dd3ba298f7c9",
+        "eqgpt221:19da5937d83e3dc1e517bdd6",
+        "eqgpt221:1ea536bbf6b993263f7e367c",
+        "eqgpt221:0bc6cda79521d5b3ebd43dee"
+      ]
+    },
+    "636": {
+      "status": "PASS",
+      "scale": 636,
+      "smoke": true,
+      "results": {
+        "eqgpt_reference": {
+          "parameters": 37902393,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        },
+        "ast_bpe_280": {
+          "parameters": 38245144,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        },
+        "ast_bpe_315": {
+          "parameters": 38298939,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        },
+        "ast_bpe_350": {
+          "parameters": 38352734,
+          "layers": 6,
+          "trained_samples": 8,
+          "pretrain_updated": true,
+          "search_attempts": 8
+        }
+      },
+      "selected_source_ids": [
+        "eqgpt221:09cb28c308aa97e0d43bc047",
+        "eqgpt221:7291b289e46bbcc821b0f540",
+        "eqgpt221:1ea536bbf6b993263f7e367c",
+        "eqworld:bfff6ea6113a537b318dad78",
+        "eqworld:a59b81ceb020d3427b838041",
+        "arxiv:8e4d7f459495acd0b289e8d4",
+        "balanced636:db45a51349e236bd67f71f5d",
+        "replacement-beam:f5b2f377826c1059b1086a40"
+      ]
+    }
+  },
+  "note": "Real six-layer training/search; eight sampled sources each. Entire corpora exercised in round1."
+}

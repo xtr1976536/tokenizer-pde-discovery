@@ -1,0 +1,114 @@
+{
+  "status": "636_DIVERSITY_REVISION_REVIEW_READY",
+  "human_review": "PENDING",
+  "base212_unchanged": true,
+  "records": 636,
+  "replacements": 23,
+  "rounds": [
+    {
+      "round": 1,
+      "records": 636,
+      "sources_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+      "base212_unchanged": true,
+      "pdf_touched": false,
+      "training_performed": false,
+      "status": "PASS_WITH_INHERITED_BASE_FINDINGS",
+      "all_unique_supports": 608,
+      "new_unique": 424,
+      "new_semantic_atom_failures": 0
+    },
+    {
+      "round": 2,
+      "records": 636,
+      "sources_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+      "base212_unchanged": true,
+      "pdf_touched": false,
+      "training_performed": false,
+      "status": "PASS",
+      "augmented": 20352,
+      "lengths": {
+        "eqgpt_reference": {
+          "min": 3,
+          "max": 47
+        },
+        "ast_bpe_280": {
+          "min": 4,
+          "max": 47
+        },
+        "ast_bpe_315": {
+          "min": 4,
+          "max": 43
+        },
+        "ast_bpe_350": {
+          "min": 4,
+          "max": 39
+        }
+      },
+      "no_truncation": true
+    },
+    {
+      "round": 3,
+      "records": 636,
+      "sources_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+      "base212_unchanged": true,
+      "pdf_touched": false,
+      "training_performed": false,
+      "status": "PASS",
+      "replacements": 23,
+      "before": {
+        "records": 424,
+        "first_order_eqworld": 146,
+        "max_spatial_order": {
+          "2": 206,
+          "3": 42,
+          "4": 19,
+          "5": 8,
+          "1": 149
+        },
+        "space_dimensions": {
+          "1": 201,
+          "2": 217,
+          "3": 6
+        },
+        "different_expanded_terms": 236,
+        "atomic_tokens": 34,
+        "direct_source": 90
+      },
+      "after": {
+        "records": 424,
+        "first_order_eqworld": 123,
+        "max_spatial_order": {
+          "2": 212,
+          "3": 46,
+          "4": 32,
+          "5": 8,
+          "1": 126
+        },
+        "space_dimensions": {
+          "1": 216,
+          "2": 200,
+          "3": 8
+        },
+        "different_expanded_terms": 242,
+        "atomic_tokens": 36,
+        "direct_source": 108
+      }
+    }
+  ],
+  "pdf_regenerated": false,
+  "model_training_performed": false,
+  "limitations": [
+    "Inherited original212 duplicates and three numerical-semantic token findings remain unchanged.",
+    "Five additions are explicitly declared members of a damped-beam source class; not five independent physical mechanisms.",
+    "Objective support breadth improves, but different PDE metrics are not all monotonic; removed records remain in reserve."
+  ],
+  "files": {
+    "data/formulas/diverse636_revision/sources636.jsonl": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+    "data/formulas/diverse636_revision/baseline636.jsonl": "b9cbb5055d5419e1af582e5107038652a1f72f4f99e4a53bbbbb2573ce7dbaa4",
+    "data/formulas/diverse636_revision/paired636.jsonl.gz": "fbbcf4e7ddcb0a648a625c458a9db7abf096faa445bd7d969cb17204e7c59651",
+    "data/formulas/diverse636_revision/added.jsonl": "f4529b958eab391bd8ae3f2c51873915ac42f41e19c4c09a3bb3cfad18ce7ee9",
+    "data/formulas/diverse636_revision/removed_to_reserve.jsonl": "e6180b21bd8bc54307131bff75aac32ca71a5a97e74fd03734bbaed7670b621c",
+    "data/formulas/diverse636_revision/review636.tsv": "2cfedf29a0edcd274d211a4ca2f183edfd02b87c4929875d5ce510df4693988c",
+    "reports/diverse636_revision/replacement_pairs.tsv": "36cef1b4f0d3fe0030c692c624efb126fa6cd2276f26738698fb66ce99f571de"
+  }
+}

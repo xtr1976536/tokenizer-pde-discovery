@@ -1,0 +1,385 @@
+{
+  "candidates": [
+    {
+      "attempt": 0,
+      "reference": true,
+      "ids": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 8,
+      "sampling_seed": 529,
+      "raw_gre": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "gre": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "text": "({u_{t}}^{3})/(u_{x})+(x)\\cdot (x)=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": -1.4247916264632392e-05,
+      "cycle": 2,
+      "candidate_id": "2:0",
+      "raw_structure_id": "fa5aee4f8c6c51b6b0d11d9bb98ecafe91a280ac88bbba79fb1891a67f2b5d40",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "effective_structure_id": "fa5aee4f8c6c51b6b0d11d9bb98ecafe91a280ac88bbba79fb1891a67f2b5d40",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": -1.424791662429925e-05,
+      "raw_score_rank_competition": 3,
+      "equal_score_candidates": [],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    },
+    {
+      "attempt": 1,
+      "reference": true,
+      "ids": [
+        5,
+        54,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 2,
+      "sampling_seed": 530,
+      "raw_gre": [
+        5,
+        54,
+        1
+      ],
+      "gre": [
+        5,
+        54,
+        1
+      ],
+      "text": "(\\partial_{xx}{(u\\cdot u_{x})})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 2,
+      "candidate_id": "2:1",
+      "raw_structure_id": "a545f85f75d75b5098e93ed216bd3ebc5b68eeba92599a5d5213144c5ae0bacd",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        54,
+        1
+      ],
+      "effective_structure_id": "a545f85f75d75b5098e93ed216bd3ebc5b68eeba92599a5d5213144c5ae0bacd",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "2:2"
+      ],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": false,
+      "selection_reason": "equal_reward_cumulative_dedup"
+    },
+    {
+      "attempt": 2,
+      "reference": true,
+      "ids": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 4,
+      "sampling_seed": 531,
+      "raw_gre": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "gre": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "text": "(u_{xx})+({(u_{xx}+\\frac{u_{x}}{x})}^{2})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 2,
+      "candidate_id": "2:2",
+      "raw_structure_id": "3bb83bb22653a82ce162f54e9dff343511fb6929e9e2b289b02ad4818b336e32",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "effective_structure_id": "3bb83bb22653a82ce162f54e9dff343511fb6929e9e2b289b02ad4818b336e32",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "2:1"
+      ],
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "equal_reward_dedup"
+    },
+    {
+      "attempt": 3,
+      "reference": true,
+      "ids": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 12,
+      "sampling_seed": 532,
+      "raw_gre": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "gre": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "text": "({(u_{xx}+\\frac{u_{x}}{x})}^{2})+(u_{x})/({(u_{xx}+\\frac{u_{x}}{x})}^{2})\\cdot ({u_{x}}^{2})+(u_{tt})\\cdot (u)=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": -0.0575576468342837,
+      "cycle": 2,
+      "candidate_id": "2:3",
+      "raw_structure_id": "a3416774e2e054d38012e759bc67a7895c177e56c78386ccfede87d989b14f0e",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "effective_structure_id": "a3416774e2e054d38012e759bc67a7895c177e56c78386ccfede87d989b14f0e",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": -0.05755764618515968,
+      "raw_score_rank_competition": 4,
+      "equal_score_candidates": [],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    }
+  ],
+  "history": {
+    "cycle": 2,
+    "before_sha256": "337c7ccb1991603092d813dd1d69323434def5621b5c8964f1ff6cddffe1dd17",
+    "after_sha256": "cfe68e1ed5aab1eb3c3e735a869173b80fc0873d19438770042896d31740ce6d",
+    "gre": [
+      [
+        5,
+        15,
+        1
+      ],
+      [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      [
+        5,
+        48,
+        2,
+        13,
+        1
+      ]
+    ],
+    "equations": [
+      "(u_{xxxx})=0",
+      "({u_{t}}^{3})/(u_{x})+(x)\\cdot (x)=0",
+      "({(u_{xx}+\\frac{u_{x}}{x})}^{2})+(u_{x})/({(u_{xx}+\\frac{u_{x}}{x})}^{2})\\cdot ({u_{x}}^{2})+(u_{tt})\\cdot (u)=0",
+      "({x}^{4})+(u_{tt})=0"
+    ],
+    "rewards": [
+      0.0,
+      -1.424791662429925e-05,
+      -0.05755764618515968,
+      -0.5532045364379883
+    ],
+    "candidate_ids": [
+      "1:0",
+      "2:0",
+      "2:3",
+      "1:1"
+    ],
+    "continuation_sequences": [
+      [
+        5,
+        15,
+        1
+      ],
+      [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      [
+        5,
+        48,
+        2,
+        13,
+        1
+      ]
+    ],
+    "continuation_losses": [
+      2.4634382724761963
+    ],
+    "displacement_events": [],
+    "generated_raw_correct": 0,
+    "scored_effective_correct": 0
+  }
+}

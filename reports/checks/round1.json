@@ -1,0 +1,30 @@
+{
+  "round": 1,
+  "status": "PASS",
+  "scales": [
+    212,
+    636
+  ],
+  "data": {
+    "212": {
+      "sources": 212,
+      "augmented": 6784,
+      "max_lengths": {
+        "eqgpt_reference": 19,
+        "ast_bpe_280": 32,
+        "ast_bpe_315": 29,
+        "ast_bpe_350": 24
+      }
+    },
+    "636": {
+      "sources": 636,
+      "augmented": 20352,
+      "max_lengths": {
+        "eqgpt_reference": 47,
+        "ast_bpe_280": 47,
+        "ast_bpe_315": 43,
+        "ast_bpe_350": 39
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scale": 212,
+  "smoke": true,
+  "results": {
+    "eqgpt_reference": {
+      "parameters": 37902393,
+      "layers": 6,
+      "trained_samples": 8,
+      "pretrain_updated": true,
+      "search_attempts": 8
+    },
+    "ast_bpe_280": {
+      "parameters": 38245144,
+      "layers": 6,
+      "trained_samples": 8,
+      "pretrain_updated": true,
+      "search_attempts": 8
+    },
+    "ast_bpe_315": {
+      "parameters": 38298939,
+      "layers": 6,
+      "trained_samples": 8,
+      "pretrain_updated": true,
+      "search_attempts": 8
+    },
+    "ast_bpe_350": {
+      "parameters": 38352734,
+      "layers": 6,
+      "trained_samples": 8,
+      "pretrain_updated": true,
+      "search_attempts": 8
+    }
+  },
+  "selected_source_ids": [
+    "eqgpt221:09cb28c308aa97e0d43bc047",
+    "eqgpt221:5cc9273612c2a14c52611755",
+    "eqgpt221:9196b575f094998ec911726c",
+    "eqgpt221:5f002adf50329bd4974c26a4",
+    "eqgpt221:37a601937227dd3ba298f7c9",
+    "eqgpt221:19da5937d83e3dc1e517bdd6",
+    "eqgpt221:1ea536bbf6b993263f7e367c",
+    "eqgpt221:0bc6cda79521d5b3ebd43dee"
+  ]
+}

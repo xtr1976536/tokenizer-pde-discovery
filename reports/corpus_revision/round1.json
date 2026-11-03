@@ -1,0 +1,12 @@
+{
+  "round": 1,
+  "records": 636,
+  "sources_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+  "base212_unchanged": true,
+  "pdf_touched": false,
+  "training_performed": false,
+  "status": "PASS_WITH_INHERITED_BASE_FINDINGS",
+  "all_unique_supports": 608,
+  "new_unique": 424,
+  "new_semantic_atom_failures": 0
+}

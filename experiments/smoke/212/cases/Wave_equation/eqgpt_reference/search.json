@@ -1,0 +1,701 @@
+{
+  "settings": {
+    "seed": 525,
+    "layers": 6,
+    "epochs": 1,
+    "batch_size": 128,
+    "positions": 50,
+    "search_limit": 48,
+    "learning_rate": 0.0001,
+    "cycles": 2,
+    "attempts": 4,
+    "continuation_epochs": 1,
+    "continuation_lr": 1e-05,
+    "epi": 0.2
+  },
+  "protocol": {
+    "version": "paired_pipeline_v3",
+    "sampling": "80% categorical +20% uniform over permitted IDs",
+    "sat": "EqGPT only; Hard has no grammar/physical/control-ID generation mask",
+    "candidate_order": "serial generation then immediate shared evaluation",
+    "randomness": "seed + cycle*attempts + attempt; independent candidate streams",
+    "length": "maximum NEW predictions after BOS, including EOS",
+    "terminal": "EOS or token_limit; exact representation must be parseable",
+    "cleanup": "shared author delete_duplicate, including its documented operator-blind behavior",
+    "failures": "shared status filtering; non-evaluated candidates cannot enter Top10",
+    "selection": "shared float32 reward dedup, same merge and available-candidate policy",
+    "continuation": "same optimizer/model binding and cleaned structure inputs"
+  },
+  "reference": true,
+  "history": [
+    {
+      "cycle": 1,
+      "before_sha256": "71c722e99c783684bc0f2ac21dbf7e81bccac2611c73f934a59fb3b90f001434",
+      "after_sha256": "337c7ccb1991603092d813dd1d69323434def5621b5c8964f1ff6cddffe1dd17",
+      "gre": [
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          5,
+          48,
+          2,
+          13,
+          1
+        ]
+      ],
+      "equations": [
+        "(u_{xxxx})=0",
+        "({x}^{4})+(u_{tt})=0"
+      ],
+      "rewards": [
+        0.0,
+        -0.5532045364379883
+      ],
+      "candidate_ids": [
+        "1:0",
+        "1:1"
+      ],
+      "continuation_sequences": [
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          5,
+          48,
+          2,
+          13,
+          1
+        ]
+      ],
+      "continuation_losses": [
+        2.966454267501831
+      ],
+      "displacement_events": [],
+      "generated_raw_correct": 0,
+      "scored_effective_correct": 0
+    },
+    {
+      "cycle": 2,
+      "before_sha256": "337c7ccb1991603092d813dd1d69323434def5621b5c8964f1ff6cddffe1dd17",
+      "after_sha256": "cfe68e1ed5aab1eb3c3e735a869173b80fc0873d19438770042896d31740ce6d",
+      "gre": [
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          5,
+          27,
+          4,
+          8,
+          2,
+          22,
+          3,
+          22,
+          1
+        ],
+        [
+          5,
+          47,
+          2,
+          8,
+          4,
+          47,
+          3,
+          14,
+          2,
+          13,
+          3,
+          7,
+          1
+        ],
+        [
+          5,
+          48,
+          2,
+          13,
+          1
+        ]
+      ],
+      "equations": [
+        "(u_{xxxx})=0",
+        "({u_{t}}^{3})/(u_{x})+(x)\\cdot (x)=0",
+        "({(u_{xx}+\\frac{u_{x}}{x})}^{2})+(u_{x})/({(u_{xx}+\\frac{u_{x}}{x})}^{2})\\cdot ({u_{x}}^{2})+(u_{tt})\\cdot (u)=0",
+        "({x}^{4})+(u_{tt})=0"
+      ],
+      "rewards": [
+        0.0,
+        -1.424791662429925e-05,
+        -0.05755764618515968,
+        -0.5532045364379883
+      ],
+      "candidate_ids": [
+        "1:0",
+        "2:0",
+        "2:3",
+        "1:1"
+      ],
+      "continuation_sequences": [
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          5,
+          27,
+          4,
+          8,
+          2,
+          22,
+          3,
+          22,
+          1
+        ],
+        [
+          5,
+          47,
+          2,
+          8,
+          4,
+          47,
+          3,
+          14,
+          2,
+          13,
+          3,
+          7,
+          1
+        ],
+        [
+          5,
+          48,
+          2,
+          13,
+          1
+        ]
+      ],
+      "continuation_losses": [
+        2.4634382724761963
+      ],
+      "displacement_events": [],
+      "generated_raw_correct": 0,
+      "scored_effective_correct": 0
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 0,
+      "reference": true,
+      "ids": [
+        5,
+        15,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 2,
+      "sampling_seed": 525,
+      "raw_gre": [
+        5,
+        15,
+        1
+      ],
+      "gre": [
+        5,
+        15,
+        1
+      ],
+      "text": "(u_{xxxx})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 1,
+      "candidate_id": "1:0",
+      "raw_structure_id": "fbe38b46f1f2fc5c7f73870c2911c6ccf4ca1c908fac5d50039e31dd6e6617f7",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        15,
+        1
+      ],
+      "effective_structure_id": "fbe38b46f1f2fc5c7f73870c2911c6ccf4ca1c908fac5d50039e31dd6e6617f7",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "1:2",
+        "1:3"
+      ],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    },
+    {
+      "attempt": 1,
+      "reference": true,
+      "ids": [
+        5,
+        48,
+        2,
+        13,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 4,
+      "sampling_seed": 526,
+      "raw_gre": [
+        5,
+        48,
+        2,
+        13,
+        1
+      ],
+      "gre": [
+        5,
+        48,
+        2,
+        13,
+        1
+      ],
+      "text": "({x}^{4})+(u_{tt})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": -0.5532045256280996,
+      "cycle": 1,
+      "candidate_id": "1:1",
+      "raw_structure_id": "5075f9ad1577f6bf278d0f5da643fc3f1d2dedb714d6dd32cbb52a0bd4694b38",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        48,
+        2,
+        13,
+        1
+      ],
+      "effective_structure_id": "5075f9ad1577f6bf278d0f5da643fc3f1d2dedb714d6dd32cbb52a0bd4694b38",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": -0.5532045364379883,
+      "raw_score_rank_competition": 4,
+      "equal_score_candidates": [],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    },
+    {
+      "attempt": 2,
+      "reference": true,
+      "ids": [
+        5,
+        47,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 2,
+      "sampling_seed": 527,
+      "raw_gre": [
+        5,
+        47,
+        1
+      ],
+      "gre": [
+        5,
+        47,
+        1
+      ],
+      "text": "({(u_{xx}+\\frac{u_{x}}{x})}^{2})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 1,
+      "candidate_id": "1:2",
+      "raw_structure_id": "ede128355696dd7e8c9b4c99aa8af42a7364ae1f067d32013ddce090a423f852",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        47,
+        1
+      ],
+      "effective_structure_id": "ede128355696dd7e8c9b4c99aa8af42a7364ae1f067d32013ddce090a423f852",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "1:0",
+        "1:3"
+      ],
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "equal_reward_dedup"
+    },
+    {
+      "attempt": 3,
+      "reference": true,
+      "ids": [
+        5,
+        9,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 2,
+      "sampling_seed": 528,
+      "raw_gre": [
+        5,
+        9,
+        1
+      ],
+      "gre": [
+        5,
+        9,
+        1
+      ],
+      "text": "(u_{xx})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 1,
+      "candidate_id": "1:3",
+      "raw_structure_id": "e97576e2772a42ad09b2fd1ed5ae1913dc32a914fcf2c683e047ae36441d315f",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        9,
+        1
+      ],
+      "effective_structure_id": "e97576e2772a42ad09b2fd1ed5ae1913dc32a914fcf2c683e047ae36441d315f",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "1:0",
+        "1:2"
+      ],
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "equal_reward_dedup"
+    },
+    {
+      "attempt": 0,
+      "reference": true,
+      "ids": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 8,
+      "sampling_seed": 529,
+      "raw_gre": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "gre": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "text": "({u_{t}}^{3})/(u_{x})+(x)\\cdot (x)=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": -1.4247916264632392e-05,
+      "cycle": 2,
+      "candidate_id": "2:0",
+      "raw_structure_id": "fa5aee4f8c6c51b6b0d11d9bb98ecafe91a280ac88bbba79fb1891a67f2b5d40",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        27,
+        4,
+        8,
+        2,
+        22,
+        3,
+        22,
+        1
+      ],
+      "effective_structure_id": "fa5aee4f8c6c51b6b0d11d9bb98ecafe91a280ac88bbba79fb1891a67f2b5d40",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": -1.424791662429925e-05,
+      "raw_score_rank_competition": 3,
+      "equal_score_candidates": [],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    },
+    {
+      "attempt": 1,
+      "reference": true,
+      "ids": [
+        5,
+        54,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 2,
+      "sampling_seed": 530,
+      "raw_gre": [
+        5,
+        54,
+        1
+      ],
+      "gre": [
+        5,
+        54,
+        1
+      ],
+      "text": "(\\partial_{xx}{(u\\cdot u_{x})})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 2,
+      "candidate_id": "2:1",
+      "raw_structure_id": "a545f85f75d75b5098e93ed216bd3ebc5b68eeba92599a5d5213144c5ae0bacd",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        54,
+        1
+      ],
+      "effective_structure_id": "a545f85f75d75b5098e93ed216bd3ebc5b68eeba92599a5d5213144c5ae0bacd",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "2:2"
+      ],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": false,
+      "selection_reason": "equal_reward_cumulative_dedup"
+    },
+    {
+      "attempt": 2,
+      "reference": true,
+      "ids": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 4,
+      "sampling_seed": 531,
+      "raw_gre": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "gre": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "text": "(u_{xx})+({(u_{xx}+\\frac{u_{x}}{x})}^{2})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": 0.0,
+      "cycle": 2,
+      "candidate_id": "2:2",
+      "raw_structure_id": "3bb83bb22653a82ce162f54e9dff343511fb6929e9e2b289b02ad4818b336e32",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        9,
+        2,
+        47,
+        1
+      ],
+      "effective_structure_id": "3bb83bb22653a82ce162f54e9dff343511fb6929e9e2b289b02ad4818b336e32",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.0,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [
+        "2:1"
+      ],
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "equal_reward_dedup"
+    },
+    {
+      "attempt": 3,
+      "reference": true,
+      "ids": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 12,
+      "sampling_seed": 532,
+      "raw_gre": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "gre": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "text": "({(u_{xx}+\\frac{u_{x}}{x})}^{2})+(u_{x})/({(u_{xx}+\\frac{u_{x}}{x})}^{2})\\cdot ({u_{x}}^{2})+(u_{tt})\\cdot (u)=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "reward": -0.0575576468342837,
+      "cycle": 2,
+      "candidate_id": "2:3",
+      "raw_structure_id": "a3416774e2e054d38012e759bc67a7895c177e56c78386ccfede87d989b14f0e",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        47,
+        2,
+        8,
+        4,
+        47,
+        3,
+        14,
+        2,
+        13,
+        3,
+        7,
+        1
+      ],
+      "effective_structure_id": "a3416774e2e054d38012e759bc67a7895c177e56c78386ccfede87d989b14f0e",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": -0.05755764618515968,
+      "raw_score_rank_competition": 4,
+      "equal_score_candidates": [],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    }
+  ],
+  "checkpoints": [
+    {
+      "stage": "pretrained_before_search",
+      "file": "cycle_0.pt",
+      "sha256": "71c722e99c783684bc0f2ac21dbf7e81bccac2611c73f934a59fb3b90f001434"
+    },
+    {
+      "stage": "after_continuation_1",
+      "file": "cycle_1.pt",
+      "sha256": "337c7ccb1991603092d813dd1d69323434def5621b5c8964f1ff6cddffe1dd17"
+    },
+    {
+      "stage": "after_continuation_2",
+      "file": "cycle_2.pt",
+      "sha256": "cfe68e1ed5aab1eb3c3e735a869173b80fc0873d19438770042896d31740ce6d"
+    }
+  ],
+  "search_seconds": 2.828180415999668,
+  "score_cache_hits": 0,
+  "author_reward_calls": 8,
+  "diagnostics_status": "complete",
+  "diagnostics_seconds": 0.7277144580002641
+}

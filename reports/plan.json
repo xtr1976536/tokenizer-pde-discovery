@@ -1,0 +1,33 @@
+{
+  "scales": [
+    212,
+    636
+  ],
+  "settings": {
+    "seed": 525,
+    "layers": 6,
+    "epochs": 100,
+    "batch_size": 128,
+    "positions": 50,
+    "search_limit": 48,
+    "learning_rate": 0.0001,
+    "cycles": 5,
+    "attempts": 400,
+    "continuation_epochs": 5,
+    "continuation_lr": 1e-05,
+    "epi": 0.2
+  },
+  "pipeline": {
+    "version": "paired_pipeline_v3",
+    "sampling": "80% categorical +20% uniform over permitted IDs",
+    "sat": "EqGPT only; Hard has no grammar/physical/control-ID generation mask",
+    "candidate_order": "serial generation then immediate shared evaluation",
+    "randomness": "seed + cycle*attempts + attempt; independent candidate streams",
+    "length": "maximum NEW predictions after BOS, including EOS",
+    "terminal": "EOS or token_limit; exact representation must be parseable",
+    "cleanup": "shared author delete_duplicate, including its documented operator-blind behavior",
+    "failures": "shared status filtering; non-evaluated candidates cannot enter Top10",
+    "selection": "shared float32 reward dedup, same merge and available-candidate policy",
+    "continuation": "same optimizer/model binding and cleaned structure inputs"
+  }
+}

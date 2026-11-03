@@ -1,0 +1,29 @@
+{
+  "round": 2,
+  "records": 636,
+  "sources_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+  "base212_unchanged": true,
+  "pdf_touched": false,
+  "training_performed": false,
+  "status": "PASS",
+  "augmented": 20352,
+  "lengths": {
+    "eqgpt_reference": {
+      "min": 3,
+      "max": 47
+    },
+    "ast_bpe_280": {
+      "min": 4,
+      "max": 47
+    },
+    "ast_bpe_315": {
+      "min": 4,
+      "max": 43
+    },
+    "ast_bpe_350": {
+      "min": 4,
+      "max": 39
+    }
+  },
+  "no_truncation": true
+}

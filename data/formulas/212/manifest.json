@@ -1,0 +1,20 @@
+{
+  "scale": 212,
+  "samples": 6784,
+  "max_lengths": {
+    "eqgpt_reference": 19,
+    "ast_bpe_280": 32,
+    "ast_bpe_315": 29,
+    "ast_bpe_350": 24
+  },
+  "files": {
+    "paired.jsonl.gz": "64d98cde1032633cba530f90529dae033ca3a23520e34725f4f44499d4570fba",
+    "sources.jsonl": "c61ec8a429b732ee8a785ba90151402d50dcd58b7fd4668a18b124d913147b09",
+    "tokenizers/ast_bpe_315.model.backend.json": "fb052f90e8cee8cbd8063cd79e86286aa3bec6e05a3d2e80497f7e13422ad54f",
+    "tokenizers/ast_bpe_350.model.json": "3e7b82a5919d5ce33be9f675119cdc379bbb52f8ea7dc21d3bc03a07bd8d1e54",
+    "tokenizers/ast_bpe_350.model.backend.json": "b0493e696e18d5f19a882fdc3aa8abc7bddc66d779dc4c20997a278f331628c3",
+    "tokenizers/ast_bpe_280.model.backend.json": "5eee4adf6e2063608903f58d4af194938fa27527337ea8f1f1fe9d68f636d906",
+    "tokenizers/ast_bpe_315.model.json": "2ef7b697a3bddba88f5a0139e8aad9fcf0a228f5519977c64bdd61d7761ef67f",
+    "tokenizers/ast_bpe_280.model.json": "d8503a8b6607fe7c2e1c00bc8990dc0702210505f5a1b39d522fce715b4fe7c3"
+  }
+}

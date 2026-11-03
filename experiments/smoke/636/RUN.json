@@ -1,0 +1,35 @@
+{
+  "settings": {
+    "seed": 525,
+    "layers": 6,
+    "epochs": 1,
+    "batch_size": 128,
+    "positions": 50,
+    "search_limit": 48,
+    "learning_rate": 0.0001,
+    "cycles": 2,
+    "attempts": 4,
+    "continuation_epochs": 1,
+    "continuation_lr": 1e-05,
+    "epi": 0.2
+  },
+  "formal_settings": {
+    "seed": 525,
+    "layers": 6,
+    "epochs": 100,
+    "batch_size": 128,
+    "positions": 50,
+    "search_limit": 48,
+    "learning_rate": 0.0001,
+    "cycles": 5,
+    "attempts": 400,
+    "continuation_epochs": 5,
+    "continuation_lr": 1e-05,
+    "epi": 0.2
+  },
+  "smoke": true,
+  "device": "mps",
+  "source_sha256": "6b061c15a9e545dd692d67305da9805a327975d5bbae1b6c4bbeee597638acb6",
+  "code": "0168343ad1b79a09f6d45d41a462a0e4c6fe5c1134aa33fa1e29f02d40b3f037",
+  "runner": "b0537e1360a3840b960817249988aaf0e9951d03ee0123196bd97ea469481f02"
+}

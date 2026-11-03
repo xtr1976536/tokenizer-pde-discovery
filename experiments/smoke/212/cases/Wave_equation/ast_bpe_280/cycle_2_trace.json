@@ -1,0 +1,153 @@
+{
+  "candidates": [
+    {
+      "attempt": 0,
+      "reference": false,
+      "ids": [
+        103,
+        17,
+        46,
+        17,
+        96,
+        103,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 7,
+      "sampling_seed": 529,
+      "text": "=0+H+z=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "unsupported_expression",
+      "error": "Unsupported LaTeX token: =",
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:0",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "unsupported_expression"
+    },
+    {
+      "attempt": 1,
+      "reference": false,
+      "ids": [
+        221,
+        162,
+        123,
+        35,
+        103,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 6,
+      "sampling_seed": 530,
+      "text": "{3}{u}^{2})u_{xx}==0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "syntax_error",
+      "error": "Trailing input",
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:1",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "syntax_error"
+    },
+    {
+      "attempt": 2,
+      "reference": false,
+      "ids": [
+        273,
+        103,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 3,
+      "sampling_seed": 531,
+      "text": "{u_{y}}^{2}=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "raw_gre": [
+        5,
+        37,
+        1
+      ],
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "variable_or_numeric_unavailable",
+      "gre": [
+        5,
+        37,
+        1
+      ],
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:2",
+      "raw_structure_id": "209fc4340fd04354f3f92a59735cdf55a0f7f2e1d4b437fa7d135f013232ae09",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        37,
+        1
+      ],
+      "effective_structure_id": "209fc4340fd04354f3f92a59735cdf55a0f7f2e1d4b437fa7d135f013232ae09",
+      "effective_classification": "incorrect",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "variable_or_numeric_unavailable"
+    },
+    {
+      "attempt": 3,
+      "reference": false,
+      "ids": [
+        15,
+        263,
+        197,
+        216,
+        82,
+        103,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 7,
+      "sampling_seed": 532,
+      "text": ")(u_{xx})+(u_{x})/(x){y}^{2}{xy}l=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "unsupported_expression",
+      "error": "Unsupported LaTeX token: )",
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:3",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "unsupported_expression"
+    }
+  ],
+  "history": {
+    "cycle": 2,
+    "before_sha256": "ed48ca56fc40b2c2c32d0820d6c6db152e93c38e4610ea96067568bc9c8c24fe",
+    "after_sha256": "ed48ca56fc40b2c2c32d0820d6c6db152e93c38e4610ea96067568bc9c8c24fe",
+    "gre": [],
+    "equations": [],
+    "rewards": [],
+    "candidate_ids": [],
+    "continuation_sequences": [],
+    "continuation_losses": [],
+    "displacement_events": [],
+    "generated_raw_correct": 0,
+    "scored_effective_correct": 0
+  }
+}

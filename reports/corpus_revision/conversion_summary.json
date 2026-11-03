@@ -1,0 +1,27 @@
+{
+  "raw": 24013,
+  "new": 28,
+  "reasons": {
+    "unknown_function": 936,
+    "unsupported_token": 6402,
+    "unsupported_field_arguments": 727,
+    "multiple_fields": 10832,
+    "unsupported_derivative": 2776,
+    "unsupported_power": 752,
+    "syntax": 209,
+    "operator_or_dimension_unresolved": 802,
+    "field_unresolved": 3427,
+    "unsupported_index": 1164,
+    "ordinary_derivative_requires_context": 112,
+    "ambiguous_derivative": 131,
+    "unresolved_differentiated_field": 3,
+    "constant_forcing": 40,
+    "outside_57_vocabulary": 27,
+    "not_differential_equation": 54,
+    "coefficient_inside_derivative_unresolved": 45,
+    "inconsistent_field_arguments": 2,
+    "trailing_content": 99,
+    "identity": 9,
+    "system_or_multiline": 662
+  }
+}

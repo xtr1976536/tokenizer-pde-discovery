@@ -1,0 +1,25 @@
+{
+  "epochs": 1,
+  "batch_size": 2,
+  "optimizer": "Adam",
+  "lr": 0.0001,
+  "clip": 1,
+  "lr_schedule": "constant",
+  "initial_sha256": "c7b4f39c6ea4f41c35b88f620e097c95f86c5859075b8fba2445528f3fa28436",
+  "final_sha256": "ed48ca56fc40b2c2c32d0820d6c6db152e93c38e4610ea96067568bc9c8c24fe",
+  "sequence_sha256": "2169e89e31a17229bfbe4e750dba279c74aacf024358b2578aca87bbae3f7159",
+  "samples": 8,
+  "raw_content_token_count": 71,
+  "training_targets_per_epoch": 79,
+  "steps_per_epoch": 4,
+  "optimizer_steps": 4,
+  "max_tokens": 20,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 5.4100425243377686,
+      "seconds": 0.4328091250026773
+    }
+  ],
+  "all_parameters_trainable": true
+}

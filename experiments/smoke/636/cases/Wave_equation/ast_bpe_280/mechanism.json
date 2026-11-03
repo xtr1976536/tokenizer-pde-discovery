@@ -1,0 +1,84 @@
+{
+  "case": "Wave_equation",
+  "top1_correct": false,
+  "top10_correct": false,
+  "attempted": 8,
+  "evaluated": 1,
+  "raw_correct_occurrences": 0,
+  "raw_correct_complete": 0,
+  "ever_raw_complete_correct": false,
+  "ever_effective_correct_scored": false,
+  "generated_scored_correct_but_final_miss": false,
+  "first_cycle_raw_complete_correct": 0,
+  "invalid_status_counts": {
+    "unsupported_expression": 3,
+    "syntax_error": 4
+  },
+  "final_top1_classification": "incorrect",
+  "search_seconds": 1.5721702909977466,
+  "effective_correct_scored_occurrences": 0,
+  "first_cycle_raw_correct": 0,
+  "first_cycle_effective_correct_scored": 0,
+  "first_raw_correct": null,
+  "ever_selected_correct": false,
+  "ever_retained_correct": false,
+  "conditional_retention_occurrences": null,
+  "interpretation": "First cycle isolates pretrained generation; later cycles also depend on selection/continuation. Never-generated means not observed within budget, not impossible.",
+  "structural_equivalence": "commutative term/factor permutations plus existing Laplacian expansion; not arbitrary symbolic equivalence",
+  "structure_timelines": {
+    "948c65bea7314980f808e0b2802c3abb9a2c988df5ea8a92f837c987984e9d13": [
+      {
+        "candidate_id": "1:3",
+        "cycle": 1,
+        "attempt": 3,
+        "raw_classification": "incorrect",
+        "effective_classification": "incorrect",
+        "status": "evaluated",
+        "stop_reason": "eos",
+        "gre": [
+          5,
+          9,
+          3,
+          6,
+          2,
+          9,
+          2,
+          7,
+          1
+        ],
+        "reward": 0.00020872709686505943,
+        "selection_reward_float32": 0.00020872709865216166,
+        "raw_score_rank_competition": 1,
+        "selected_this_cycle": true,
+        "in_cumulative_top10": true,
+        "selection_reason": "retained_for_continuation"
+      }
+    ]
+  },
+  "top10_by_cycle": [
+    {
+      "cycle": 1,
+      "candidates": [
+        {
+          "candidate_id": "1:3",
+          "rank": 1,
+          "reward": 0.00020872709865216166,
+          "structure_id": "948c65bea7314980f808e0b2802c3abb9a2c988df5ea8a92f837c987984e9d13",
+          "classification": "incorrect"
+        }
+      ]
+    },
+    {
+      "cycle": 2,
+      "candidates": [
+        {
+          "candidate_id": "1:3",
+          "rank": 1,
+          "reward": 0.00020872709865216166,
+          "structure_id": "948c65bea7314980f808e0b2802c3abb9a2c988df5ea8a92f837c987984e9d13",
+          "classification": "incorrect"
+        }
+      ]
+    }
+  ]
+}

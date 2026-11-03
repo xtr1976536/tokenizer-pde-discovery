@@ -1,0 +1,141 @@
+{
+  "candidates": [
+    {
+      "attempt": 0,
+      "reference": false,
+      "ids": [
+        301,
+        109,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 3,
+      "sampling_seed": 529,
+      "text": "(u_{xy})=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "raw_gre": [
+        5,
+        38,
+        1
+      ],
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "variable_or_numeric_unavailable",
+      "gre": [
+        5,
+        38,
+        1
+      ],
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:0",
+      "raw_structure_id": "0a47ea81a4867fc7eab3fd93b5d818bb0cf83070b3b0e2a4a5e6c03770785ced",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        38,
+        1
+      ],
+      "effective_structure_id": "0a47ea81a4867fc7eab3fd93b5d818bb0cf83070b3b0e2a4a5e6c03770785ced",
+      "effective_classification": "incorrect",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "variable_or_numeric_unavailable"
+    },
+    {
+      "attempt": 1,
+      "reference": false,
+      "ids": [
+        186,
+        162,
+        17,
+        249,
+        157,
+        245,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 7,
+      "sampling_seed": 530,
+      "text": "{u}^{3}(u_{x})+++(u_{xxx}){yy+(u_{xxxx})",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "unsupported_expression",
+      "error": "Unsupported LaTeX token: +",
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:1",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "unsupported_expression"
+    },
+    {
+      "attempt": 2,
+      "reference": false,
+      "ids": [
+        273,
+        284,
+        0
+      ],
+      "stopped": false,
+      "stop_reason": "unexpected_control",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 3,
+      "sampling_seed": 531,
+      "text": null,
+      "decode_error": true,
+      "status": "incomplete",
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:2",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "incomplete"
+    },
+    {
+      "attempt": 3,
+      "reference": false,
+      "ids": [
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 1,
+      "sampling_seed": 532,
+      "text": "",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "syntax_error",
+      "error": "Unexpected end",
+      "reward": null,
+      "cycle": 2,
+      "candidate_id": "2:3",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "syntax_error"
+    }
+  ],
+  "history": {
+    "cycle": 2,
+    "before_sha256": "a330b80156e7a276a2493d3d79f73c0ad2dccd152584eff4145a51e686f55625",
+    "after_sha256": "a330b80156e7a276a2493d3d79f73c0ad2dccd152584eff4145a51e686f55625",
+    "gre": [],
+    "equations": [],
+    "rewards": [],
+    "candidate_ids": [],
+    "continuation_sequences": [],
+    "continuation_losses": [],
+    "displacement_events": [],
+    "generated_raw_correct": 0,
+    "scored_effective_correct": 0
+  }
+}

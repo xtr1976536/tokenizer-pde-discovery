@@ -1,0 +1,85 @@
+{
+  "case": "Wave_equation",
+  "top1_correct": false,
+  "top10_correct": false,
+  "attempted": 8,
+  "evaluated": 0,
+  "raw_correct_occurrences": 0,
+  "raw_correct_complete": 0,
+  "ever_raw_complete_correct": false,
+  "ever_effective_correct_scored": false,
+  "generated_scored_correct_but_final_miss": false,
+  "first_cycle_raw_complete_correct": 0,
+  "invalid_status_counts": {
+    "unsupported_expression": 5,
+    "variable_or_numeric_unavailable": 2,
+    "syntax_error": 1
+  },
+  "final_top1_classification": "no_evaluable_candidate",
+  "search_seconds": 1.1486560000012105,
+  "effective_correct_scored_occurrences": 0,
+  "first_cycle_raw_correct": 0,
+  "first_cycle_effective_correct_scored": 0,
+  "first_raw_correct": null,
+  "ever_selected_correct": false,
+  "ever_retained_correct": false,
+  "conditional_retention_occurrences": null,
+  "interpretation": "First cycle isolates pretrained generation; later cycles also depend on selection/continuation. Never-generated means not observed within budget, not impossible.",
+  "structural_equivalence": "commutative term/factor permutations plus existing Laplacian expansion; not arbitrary symbolic equivalence",
+  "structure_timelines": {
+    "9ccefb58e810ce4c1c100c63ed2567029f4ba9bb2ab7573b7034a5b06b7a0779": [
+      {
+        "candidate_id": "1:2",
+        "cycle": 1,
+        "attempt": 2,
+        "raw_classification": "incorrect",
+        "effective_classification": "incorrect",
+        "status": "variable_or_numeric_unavailable",
+        "stop_reason": "eos",
+        "gre": [
+          5,
+          34,
+          1
+        ],
+        "reward": null,
+        "selection_reward_float32": null,
+        "raw_score_rank_competition": null,
+        "selected_this_cycle": false,
+        "in_cumulative_top10": false,
+        "selection_reason": "variable_or_numeric_unavailable"
+      }
+    ],
+    "209fc4340fd04354f3f92a59735cdf55a0f7f2e1d4b437fa7d135f013232ae09": [
+      {
+        "candidate_id": "2:2",
+        "cycle": 2,
+        "attempt": 2,
+        "raw_classification": "incorrect",
+        "effective_classification": "incorrect",
+        "status": "variable_or_numeric_unavailable",
+        "stop_reason": "eos",
+        "gre": [
+          5,
+          37,
+          1
+        ],
+        "reward": null,
+        "selection_reward_float32": null,
+        "raw_score_rank_competition": null,
+        "selected_this_cycle": false,
+        "in_cumulative_top10": false,
+        "selection_reason": "variable_or_numeric_unavailable"
+      }
+    ]
+  },
+  "top10_by_cycle": [
+    {
+      "cycle": 1,
+      "candidates": []
+    },
+    {
+      "cycle": 2,
+      "candidates": []
+    }
+  ]
+}

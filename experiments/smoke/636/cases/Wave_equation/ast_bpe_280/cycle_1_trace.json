@@ -1,0 +1,200 @@
+{
+  "candidates": [
+    {
+      "attempt": 0,
+      "reference": false,
+      "ids": [
+        61,
+        184,
+        223,
+        22,
+        105,
+        273,
+        109,
+        51,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 9,
+      "sampling_seed": 525,
+      "text": "W{3}\\cdot (u_{y})0\\cdotu_{xt}=0M",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "unsupported_expression",
+      "error": "Unsupported LaTeX token: W",
+      "reward": null,
+      "cycle": 1,
+      "candidate_id": "1:0",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "unsupported_expression"
+    },
+    {
+      "attempt": 1,
+      "reference": false,
+      "ids": [
+        69,
+        151,
+        109,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 4,
+      "sampling_seed": 526,
+      "text": "_{u_{x}}=0",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "unsupported_expression",
+      "error": "Unsupported LaTeX token: _",
+      "reward": null,
+      "cycle": 1,
+      "candidate_id": "1:1",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "unsupported_expression"
+    },
+    {
+      "attempt": 2,
+      "reference": false,
+      "ids": [
+        162,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 2,
+      "sampling_seed": 527,
+      "text": "(u_{x})+",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "status": "syntax_error",
+      "error": "Unexpected end",
+      "reward": null,
+      "cycle": 1,
+      "candidate_id": "1:2",
+      "selected_this_cycle": false,
+      "in_cumulative_top10": false,
+      "selection_reason": "syntax_error"
+    },
+    {
+      "attempt": 3,
+      "reference": false,
+      "ids": [
+        124,
+        231,
+        195,
+        1
+      ],
+      "stopped": true,
+      "stop_reason": "eos",
+      "sampling_policy": "paired_pipeline_v3",
+      "generated_tokens": 4,
+      "sampling_seed": 528,
+      "text": "(u_{xx})(u_{t})+(u_{xx})+(u)",
+      "terminal_policy": "eqgpt-round1-main-v2",
+      "eos_generated": true,
+      "length_capped_evaluation": false,
+      "raw_gre": [
+        5,
+        9,
+        3,
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ],
+      "normalized": false,
+      "termination_added_after_parse": false,
+      "status": "evaluated",
+      "gre": [
+        5,
+        9,
+        3,
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ],
+      "reward": 0.00020872709686505943,
+      "cycle": 1,
+      "candidate_id": "1:3",
+      "raw_structure_id": "948c65bea7314980f808e0b2802c3abb9a2c988df5ea8a92f837c987984e9d13",
+      "raw_classification": "incorrect",
+      "diagnostic_raw_gre": [
+        5,
+        9,
+        3,
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ],
+      "effective_structure_id": "948c65bea7314980f808e0b2802c3abb9a2c988df5ea8a92f837c987984e9d13",
+      "effective_classification": "incorrect",
+      "selection_reward_float32": 0.00020872709865216166,
+      "raw_score_rank_competition": 1,
+      "equal_score_candidates": [],
+      "selected_this_cycle": true,
+      "in_cumulative_top10": true,
+      "selection_reason": "retained_for_continuation"
+    }
+  ],
+  "history": {
+    "cycle": 1,
+    "before_sha256": "f19d49d04ad6a1ebf71e689018cde23c9c9cab313b088a75a5e28c5d265f73a3",
+    "after_sha256": "21f2debd47b50cbac0e7fd5408afa185f20adc8d879f8222c68fda639d2cb8a9",
+    "gre": [
+      [
+        5,
+        9,
+        3,
+        6,
+        2,
+        9,
+        2,
+        7,
+        1
+      ]
+    ],
+    "equations": [
+      "(u_{xx})\\cdot (u_{t})+(u_{xx})+(u)=0"
+    ],
+    "rewards": [
+      0.00020872709865216166
+    ],
+    "candidate_ids": [
+      "1:3"
+    ],
+    "continuation_sequences": [
+      [
+        2,
+        193,
+        137,
+        232,
+        195,
+        109,
+        1
+      ]
+    ],
+    "continuation_losses": [
+      4.541697025299072
+    ],
+    "displacement_events": [],
+    "generated_raw_correct": 0,
+    "scored_effective_correct": 0
+  }
+}
