@@ -1,0 +1,7 @@
+{
+  "counts": {
+    "candidates": 64
+  },
+  "examples": [],
+  "note": "Only existing64-candidate smoke; not formal full-run impact estimate"
+}
