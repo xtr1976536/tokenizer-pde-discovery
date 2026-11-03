@@ -105,7 +105,8 @@ def numerical_namespace(device="cpu", equation="KdV_equation"):
                  "get_mask_invalid", "find_min_no_repeat", "train_step", "MyDataSet"})
     definitions("PINN_optimization.py", env,
                 {"PINNLossFunc", "get_coefficients", "get_PDE_terms", "get_no_boundary"})
-    return env
+    from .scoring_fixes import install
+    return install(env)
 
 
 def definition_hashes():

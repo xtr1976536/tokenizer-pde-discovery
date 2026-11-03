@@ -45,6 +45,7 @@ class RewardEvaluator:
         if not r['stopped'] and not capped:
             r.update(status='incomplete',reward=None);return r
         r['terminal_policy'] = VERSION
+        r['scoring_version'] = self.env['scoring_version']
         r['eos_generated'] = r.get('stop_reason') == 'eos'
         r['length_capped_evaluation'] = capped
         if r.get('text') is None:r.update(status='decode_error',reward=None);return r

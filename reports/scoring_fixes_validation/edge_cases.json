@@ -1,0 +1,117 @@
+{
+  "operator_blind_cleanup": {
+    "before": [
+      "u",
+      "*",
+      "ux",
+      "+",
+      "u",
+      "/",
+      "ux",
+      "E"
+    ],
+    "after": [
+      "u",
+      "*",
+      "ux",
+      "+",
+      "u",
+      "/",
+      "ux",
+      "E"
+    ]
+  },
+  "anchor_order_rewards": [
+    {
+      "words": [
+        "ut",
+        "+",
+        "ux",
+        "+",
+        "uxx"
+      ],
+      "author": 0.7063629527890395,
+      "independent": 0.7063629527890395,
+      "matches": true
+    },
+    {
+      "words": [
+        "ux",
+        "+",
+        "ut",
+        "+",
+        "uxx"
+      ],
+      "author": 0.5959184538420639,
+      "independent": 0.5959184538420639,
+      "matches": true
+    },
+    {
+      "words": [
+        "uxx",
+        "+",
+        "ux",
+        "+",
+        "ut"
+      ],
+      "author": 0.8303865855845443,
+      "independent": 0.8303865855845443,
+      "matches": true
+    }
+  ],
+  "constant_columns": {
+    "status": "numerical_failure",
+    "reward": null,
+    "error": "FloatingPointError: Nonfinite reward"
+  },
+  "zero_columns": {
+    "status": "numerical_failure",
+    "reward": null,
+    "error": "FloatingPointError: Nonfinite reward"
+  },
+  "combination_zero_representation_effect": [
+    {
+      "tokens": [
+        "S",
+        "ut",
+        "+",
+        "ux",
+        "+",
+        "u",
+        "+",
+        "u^2",
+        "+",
+        "u^3",
+        "E"
+      ],
+      "author_score": 0.8602059991327962,
+      "independent_fit_reward": 0.8602059991327962
+    },
+    {
+      "tokens": [
+        "S",
+        "ut",
+        "+",
+        "ux",
+        "+",
+        "u",
+        "+",
+        "u",
+        "*",
+        "u",
+        "+",
+        "u^3",
+        "E"
+      ],
+      "author_score": 0.8602059991327962,
+      "independent_fit_reward": 0.8602059991327962
+    }
+  ],
+  "division_nonfinite_row": {
+    "input_rows": 41,
+    "retained_rows": 40,
+    "author_returns_finite": true,
+    "reward": 0.5853136037142389,
+    "note": "Official scorer removes rows with infinite matrix entries; no minimum retained row count is enforced."
+  }
+}

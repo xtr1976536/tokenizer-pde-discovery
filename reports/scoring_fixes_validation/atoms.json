@@ -1,0 +1,3084 @@
+{
+  "records": [
+    {
+      "word": "ut",
+      "id": 6,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "u",
+      "id": 7,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "ux",
+      "id": 8,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uxx",
+      "id": 9,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "uxxt",
+      "id": 10,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "ut^2",
+      "id": 11,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "uxt",
+      "id": 12,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "utt",
+      "id": 13,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "ux^2",
+      "id": 14,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxxx",
+      "id": 15,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.907985046680551e-14
+    },
+    {
+      "word": "(uux)x",
+      "id": 16,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxxtt",
+      "id": 17,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(u^4)xx",
+      "id": 18,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.0913936421275139e-11
+    },
+    {
+      "word": "u^2",
+      "id": 19,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxx",
+      "id": 20,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "u^3",
+      "id": 21,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "x",
+      "id": 22,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(1/u)xx",
+      "id": 24,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "word": "(u^-2*ux)x",
+      "id": 25,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.551115123125783e-16
+    },
+    {
+      "word": "uxxxxx",
+      "id": 26,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.3233858453531866e-13
+    },
+    {
+      "word": "ut^3",
+      "id": 27,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "word": "sqrt(u)",
+      "id": 28,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sin(u)",
+      "id": 29,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinh(u)",
+      "id": 30,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "BiLaplace(u)",
+      "id": 31,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "INAPPLICABLE_BY_SPATIAL_DOMAIN"
+    },
+    {
+      "word": "Laplace(u)",
+      "id": 33,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "INAPPLICABLE_BY_SPATIAL_DOMAIN"
+    },
+    {
+      "word": "x^2",
+      "id": 35,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "Laplace(utt)",
+      "id": 41,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "INAPPLICABLE_BY_SPATIAL_DOMAIN"
+    },
+    {
+      "word": "exp(x)",
+      "id": 43,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sint",
+      "id": 45,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinx",
+      "id": 46,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uxx+ux/x)^2",
+      "id": 47,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "word": "x^4",
+      "id": 48,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sqrt(x)",
+      "id": 49,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "t",
+      "id": 51,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uux)t",
+      "id": 53,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(uux)xx",
+      "id": 54,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "(u^3)xx",
+      "id": 55,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "(u(u^2)xx)xx",
+      "id": 56,
+      "axes": [
+        "x",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.637978807091713e-12
+    },
+    {
+      "word": "ut",
+      "id": 6,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "u",
+      "id": 7,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "ux",
+      "id": 8,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "uxx",
+      "id": 9,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxt",
+      "id": 10,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "ut^2",
+      "id": 11,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxt",
+      "id": 12,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "utt",
+      "id": 13,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "ux^2",
+      "id": 14,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "uxxxx",
+      "id": 15,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.3092638912203256e-14
+    },
+    {
+      "word": "(uux)x",
+      "id": 16,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxxtt",
+      "id": 17,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(u^4)xx",
+      "id": 18,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.637978807091713e-12
+    },
+    {
+      "word": "u^2",
+      "id": 19,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxx",
+      "id": 20,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "u^3",
+      "id": 21,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "x",
+      "id": 22,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(1/u)xx",
+      "id": 24,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "word": "(u^-2*ux)x",
+      "id": 25,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "word": "uxxxxx",
+      "id": 26,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.149391775674303e-13
+    },
+    {
+      "word": "ut^3",
+      "id": 27,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7053025658242404e-13
+    },
+    {
+      "word": "sqrt(u)",
+      "id": 28,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sin(u)",
+      "id": 29,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinh(u)",
+      "id": 30,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "BiLaplace(u)",
+      "id": 31,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "INAPPLICABLE_BY_SPATIAL_DOMAIN"
+    },
+    {
+      "word": "Laplace(u)",
+      "id": 33,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "INAPPLICABLE_BY_SPATIAL_DOMAIN"
+    },
+    {
+      "word": "x^2",
+      "id": 35,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "Laplace(utt)",
+      "id": 41,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "INAPPLICABLE_BY_SPATIAL_DOMAIN"
+    },
+    {
+      "word": "exp(x)",
+      "id": 43,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sint",
+      "id": 45,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinx",
+      "id": 46,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uxx+ux/x)^2",
+      "id": 47,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "word": "x^4",
+      "id": 48,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sqrt(x)",
+      "id": 49,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "t",
+      "id": 51,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uux)t",
+      "id": 53,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(uux)xx",
+      "id": 54,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "(u^3)xx",
+      "id": 55,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "(u(u^2)xx)xx",
+      "id": 56,
+      "axes": [
+        "t",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.275957614183426e-12
+    },
+    {
+      "word": "ut",
+      "id": 6,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "u",
+      "id": 7,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "ux",
+      "id": 8,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "uxx",
+      "id": 9,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxt",
+      "id": 10,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "ut^2",
+      "id": 11,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.263256414560601e-14
+    },
+    {
+      "word": "uxt",
+      "id": 12,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "utt",
+      "id": 13,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "ux^2",
+      "id": 14,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "uxxxx",
+      "id": 15,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.2434497875801753e-14
+    },
+    {
+      "word": "(uux)x",
+      "id": 16,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxxtt",
+      "id": 17,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(u^4)xx",
+      "id": 18,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4551915228366852e-11
+    },
+    {
+      "word": "u^2",
+      "id": 19,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxx",
+      "id": 20,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "u^3",
+      "id": 21,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.979039320256561e-13
+    },
+    {
+      "word": "x",
+      "id": 22,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyy",
+      "id": 23,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.6645352591003757e-15
+    },
+    {
+      "word": "(1/u)xx",
+      "id": 24,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "word": "(u^-2*ux)x",
+      "id": 25,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.216449660063518e-16
+    },
+    {
+      "word": "uxxxxx",
+      "id": 26,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-14
+    },
+    {
+      "word": "ut^3",
+      "id": 27,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4779288903810084e-12
+    },
+    {
+      "word": "sqrt(u)",
+      "id": 28,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sin(u)",
+      "id": 29,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinh(u)",
+      "id": 30,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "BiLaplace(u)",
+      "id": 31,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uy",
+      "id": 32,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "Laplace(u)",
+      "id": 33,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "y",
+      "id": 34,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "x^2",
+      "id": 35,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "y^2",
+      "id": 36,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uy^2",
+      "id": 37,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxy",
+      "id": 38,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "Laplace(utt)",
+      "id": 41,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(x+y)",
+      "id": 42,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(x)",
+      "id": 43,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyt",
+      "id": 44,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "sint",
+      "id": 45,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinx",
+      "id": 46,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uxx+ux/x)^2",
+      "id": 47,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "word": "x^4",
+      "id": 48,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sqrt(x)",
+      "id": 49,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(-y)",
+      "id": 50,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "t",
+      "id": 51,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyy",
+      "id": 52,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "(uux)t",
+      "id": 53,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "(uux)xx",
+      "id": 54,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "(u^3)xx",
+      "id": 55,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.547473508864641e-13
+    },
+    {
+      "word": "(u(u^2)xx)xx",
+      "id": 56,
+      "axes": [
+        "x",
+        "y",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.0913936421275139e-11
+    },
+    {
+      "word": "ut",
+      "id": 6,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "u",
+      "id": 7,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "ux",
+      "id": 8,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "uxx",
+      "id": 9,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "uxxt",
+      "id": 10,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "ut^2",
+      "id": 11,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "uxt",
+      "id": 12,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "utt",
+      "id": 13,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "ux^2",
+      "id": 14,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.263256414560601e-14
+    },
+    {
+      "word": "uxxxx",
+      "id": 15,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-14
+    },
+    {
+      "word": "(uux)x",
+      "id": 16,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "uxxtt",
+      "id": 17,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "(u^4)xx",
+      "id": 18,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.275957614183426e-12
+    },
+    {
+      "word": "u^2",
+      "id": 19,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxx",
+      "id": 20,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.2434497875801753e-14
+    },
+    {
+      "word": "u^3",
+      "id": 21,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.979039320256561e-13
+    },
+    {
+      "word": "x",
+      "id": 22,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyy",
+      "id": 23,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.6645352591003757e-15
+    },
+    {
+      "word": "(1/u)xx",
+      "id": 24,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "word": "(u^-2*ux)x",
+      "id": 25,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 6.106226635438361e-16
+    },
+    {
+      "word": "uxxxxx",
+      "id": 26,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "ut^3",
+      "id": 27,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.958078640513122e-13
+    },
+    {
+      "word": "sqrt(u)",
+      "id": 28,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sin(u)",
+      "id": 29,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinh(u)",
+      "id": 30,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "BiLaplace(u)",
+      "id": 31,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "uy",
+      "id": 32,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "Laplace(u)",
+      "id": 33,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "y",
+      "id": 34,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "x^2",
+      "id": 35,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "y^2",
+      "id": 36,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uy^2",
+      "id": 37,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxy",
+      "id": 38,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "Laplace(utt)",
+      "id": 41,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "(x+y)",
+      "id": 42,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(x)",
+      "id": 43,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyt",
+      "id": 44,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.0658141036401503e-14
+    },
+    {
+      "word": "sint",
+      "id": 45,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinx",
+      "id": 46,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uxx+ux/x)^2",
+      "id": 47,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.547473508864641e-13
+    },
+    {
+      "word": "x^4",
+      "id": 48,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sqrt(x)",
+      "id": 49,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(-y)",
+      "id": 50,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "t",
+      "id": 51,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyy",
+      "id": 52,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "(uux)t",
+      "id": 53,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "(uux)xx",
+      "id": 54,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "(u^3)xx",
+      "id": 55,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.3642420526593924e-12
+    },
+    {
+      "word": "(u(u^2)xx)xx",
+      "id": 56,
+      "axes": [
+        "t",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.275957614183426e-12
+    },
+    {
+      "word": "ut",
+      "id": 6,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "u",
+      "id": 7,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "ux",
+      "id": 8,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "uxx",
+      "id": 9,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "uxxt",
+      "id": 10,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "ut^2",
+      "id": 11,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxt",
+      "id": 12,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "utt",
+      "id": 13,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "ux^2",
+      "id": 14,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "uxxxx",
+      "id": 15,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.440892098500626e-15
+    },
+    {
+      "word": "(uux)x",
+      "id": 16,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "uxxtt",
+      "id": 17,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "(u^4)xx",
+      "id": 18,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1641532182693481e-10
+    },
+    {
+      "word": "u^2",
+      "id": 19,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "uxxx",
+      "id": 20,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "u^3",
+      "id": 21,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-12
+    },
+    {
+      "word": "x",
+      "id": 22,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyy",
+      "id": 23,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "(1/u)xx",
+      "id": 24,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "word": "(u^-2*ux)x",
+      "id": 25,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "word": "uxxxxx",
+      "id": 26,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-14
+    },
+    {
+      "word": "ut^3",
+      "id": 27,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.2737367544323206e-12
+    },
+    {
+      "word": "sqrt(u)",
+      "id": 28,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sin(u)",
+      "id": 29,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinh(u)",
+      "id": 30,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "BiLaplace(u)",
+      "id": 31,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "uy",
+      "id": 32,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "word": "Laplace(u)",
+      "id": 33,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "y",
+      "id": 34,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "x^2",
+      "id": 35,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "y^2",
+      "id": 36,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uy^2",
+      "id": 37,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "uxy",
+      "id": 38,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uz",
+      "id": 39,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "uzz",
+      "id": 40,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "Laplace(utt)",
+      "id": 41,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "word": "(x+y)",
+      "id": 42,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(x)",
+      "id": 43,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyt",
+      "id": 44,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.0658141036401503e-14
+    },
+    {
+      "word": "sint",
+      "id": 45,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinx",
+      "id": 46,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uxx+ux/x)^2",
+      "id": 47,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 6.821210263296962e-13
+    },
+    {
+      "word": "x^4",
+      "id": 48,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sqrt(x)",
+      "id": 49,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(-y)",
+      "id": 50,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "t",
+      "id": 51,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyy",
+      "id": 52,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.0658141036401503e-14
+    },
+    {
+      "word": "(uux)t",
+      "id": 53,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "word": "(uux)xx",
+      "id": 54,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "(u^3)xx",
+      "id": 55,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.637978807091713e-12
+    },
+    {
+      "word": "(u(u^2)xx)xx",
+      "id": 56,
+      "axes": [
+        "x",
+        "y",
+        "z",
+        "t"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.820766091346741e-11
+    },
+    {
+      "word": "ut",
+      "id": 6,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "u",
+      "id": 7,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "ux",
+      "id": 8,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "uxx",
+      "id": 9,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uxxt",
+      "id": 10,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "ut^2",
+      "id": 11,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "uxt",
+      "id": 12,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "utt",
+      "id": 13,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "ux^2",
+      "id": 14,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-13
+    },
+    {
+      "word": "uxxxx",
+      "id": 15,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.0658141036401503e-14
+    },
+    {
+      "word": "(uux)x",
+      "id": 16,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "word": "uxxtt",
+      "id": 17,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "(u^4)xx",
+      "id": 18,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.7834979593753815e-10
+    },
+    {
+      "word": "u^2",
+      "id": 19,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.526512829121202e-14
+    },
+    {
+      "word": "uxxx",
+      "id": 20,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-15
+    },
+    {
+      "word": "u^3",
+      "id": 21,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-12
+    },
+    {
+      "word": "x",
+      "id": 22,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyy",
+      "id": 23,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "(1/u)xx",
+      "id": 24,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "word": "(u^-2*ux)x",
+      "id": 25,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.273559366969494e-16
+    },
+    {
+      "word": "uxxxxx",
+      "id": 26,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 4.263256414560601e-14
+    },
+    {
+      "word": "ut^3",
+      "id": 27,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.8189894035458565e-12
+    },
+    {
+      "word": "sqrt(u)",
+      "id": 28,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "word": "sin(u)",
+      "id": 29,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.3314683517128287e-15
+    },
+    {
+      "word": "sinh(u)",
+      "id": 30,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.093170329928398e-11
+    },
+    {
+      "word": "BiLaplace(u)",
+      "id": 31,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "uy",
+      "id": 32,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "Laplace(u)",
+      "id": 33,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "y",
+      "id": 34,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "x^2",
+      "id": 35,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "y^2",
+      "id": 36,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uy^2",
+      "id": 37,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "word": "uxy",
+      "id": 38,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "word": "uz",
+      "id": 39,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "word": "uzz",
+      "id": 40,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "Laplace(utt)",
+      "id": 41,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "word": "(x+y)",
+      "id": 42,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(x)",
+      "id": 43,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyt",
+      "id": 44,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "sint",
+      "id": 45,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sinx",
+      "id": 46,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "(uxx+ux/x)^2",
+      "id": 47,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 6.821210263296962e-13
+    },
+    {
+      "word": "x^4",
+      "id": 48,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "sqrt(x)",
+      "id": 49,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "exp(-y)",
+      "id": 50,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "t",
+      "id": 51,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    {
+      "word": "uyyy",
+      "id": 52,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "word": "(uux)t",
+      "id": 53,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 2.8421709430404007e-13
+    },
+    {
+      "word": "(uux)xx",
+      "id": 54,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 6.821210263296962e-13
+    },
+    {
+      "word": "(u^3)xx",
+      "id": 55,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 1.4551915228366852e-11
+    },
+    {
+      "word": "(u(u^2)xx)xx",
+      "id": 56,
+      "axes": [
+        "t",
+        "z",
+        "y",
+        "x"
+      ],
+      "status": "PASS",
+      "max_abs_error": 7.275957614183426e-11
+    }
+  ],
+  "counts": {
+    "PASS": 272,
+    "INAPPLICABLE_BY_SPATIAL_DOMAIN": 6
+  }
+}

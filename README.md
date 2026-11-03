@@ -45,6 +45,6 @@ python -m scripts.pde_experiment run --scale 636 --device mps
 
 ## 已知限制
 
-636记录对应608种当前展开支撑，原212的28条重复富余按要求保留；新增424全部互异且不与基底重合。原212中3条涉及作者数值token语义不一致，报告保留此发现，未篡改原数据或声称已解决。作者去重函数忽略乘除关系的已知缺陷由两边共同继承并记录。人工审阅状态不伪造为通过。
+636记录对应608种当前展开支撑，原212的28条重复富余按要求保留；新增424全部互异且不与基底重合。原212条及其token ID保持不变。公共评分层`shared_scoring_fixes_v1`已修正`sint`、`uyyt`、复合导数和三维双拉普拉斯的求值，去重保留分子/分母角色，并移除按token组合置零的表示偏差；作者原始文件未改，历史错误与修正验证分别保留在`reports/scorer_audit`和`reports/scoring_fixes_validation`。人工审阅状态不伪造为通过。
 
 GitHub repository: https://github.com/xtr1976536/tokenizer-pde-discovery (public).

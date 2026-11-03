@@ -1,0 +1,58 @@
+[
+  {
+    "case": "Wave_equation",
+    "status": "evaluated",
+    "reward": 0.9315067155140354,
+    "independent_reward": 0.9315067007896284,
+    "formula_matches": true
+  },
+  {
+    "case": "Convection_diffusion_equation",
+    "status": "evaluated",
+    "reward": 0.8948442762134959,
+    "independent_reward": 0.8948442848520465,
+    "formula_matches": true
+  },
+  {
+    "case": "KG_equation",
+    "status": "evaluated",
+    "reward": 0.9032492162810386,
+    "independent_reward": 0.9032492311669239,
+    "formula_matches": true
+  },
+  {
+    "case": "Burgers_equation",
+    "status": "evaluated",
+    "reward": 0.8775504888851999,
+    "independent_reward": 0.8775504878994421,
+    "formula_matches": true
+  },
+  {
+    "case": "Eq_6_2_12",
+    "status": "evaluated",
+    "reward": 0.9005609027979445,
+    "independent_reward": 0.9005608798085291,
+    "formula_matches": true
+  },
+  {
+    "case": "PDE_divide",
+    "status": "evaluated",
+    "reward": 0.9026964933873547,
+    "independent_reward": 0.9026964749420936,
+    "formula_matches": true
+  },
+  {
+    "case": "KdV_equation",
+    "status": "evaluated",
+    "reward": 0.8915695042244658,
+    "independent_reward": 0.8915694791961994,
+    "formula_matches": true
+  },
+  {
+    "case": "Chaffee_Infante_equation",
+    "status": "evaluated",
+    "reward": 0.8763047816046359,
+    "independent_reward": 0.8763047800711342,
+    "formula_matches": true
+  }
+]

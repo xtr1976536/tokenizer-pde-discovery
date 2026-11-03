@@ -13,7 +13,7 @@ POLICY = dict(version=VERSION, sampling='80% categorical +20% uniform over permi
               randomness='seed + cycle*attempts + attempt; independent candidate streams',
               length='maximum NEW predictions after BOS, including EOS',
               terminal='EOS or token_limit; exact representation must be parseable',
-              cleanup='shared author delete_duplicate, including its documented operator-blind behavior',
+              cleanup='shared_scoring_fixes_v1: preserve numerator/denominator in duplicate keys',
               failures='shared status filtering; non-evaluated candidates cannot enter Top10',
               selection='shared float32 reward dedup, same merge and available-candidate policy',
               continuation='same optimizer/model binding and cleaned structure inputs')

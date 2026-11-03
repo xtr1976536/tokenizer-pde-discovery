@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scoring_version": "shared_scoring_fixes_v1",
+  "tests": 44,
+  "atom_checks_passed": 272,
+  "not_applicable": 6,
+  "real_target_checks": 8,
+  "replayed_candidates": 64,
+  "changed_replay_candidates": 1,
+  "unchanged_paths": [
+    "data",
+    "eqgpt_original",
+    "native",
+    "scripts/pde_experiment.py",
+    "src/math_tokenizer/eqgpt/models.py",
+    "src/math_tokenizer/eqgpt/study3_search.py",
+    "src/math_tokenizer/eqgpt/round1_runtime.py"
+  ],
+  "author_source_integrity": true,
+  "training_performed": false,
+  "same_device_replay_candidates": 64,
+  "same_device_replay_changed": 0
+}
