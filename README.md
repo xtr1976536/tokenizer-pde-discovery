@@ -1,4 +1,4 @@
-# 分词器-pde发现
+# Tokenizer PDE Discovery
 
 比较EqGPT GRE和Hard AST-BPE280/315/350在PDE结构发现上的表现。当前仅212条和636条两个嵌套语料规模；636采用最新23条多样性替换版，原212逐条保留。
 
@@ -47,4 +47,4 @@ python -m scripts.pde_experiment run --scale 636 --device mps
 
 636记录对应608种当前展开支撑，原212的28条重复富余按要求保留；新增424全部互异且不与基底重合。原212中3条涉及作者数值token语义不一致，报告保留此发现，未篡改原数据或声称已解决。作者去重函数忽略乘除关系的已知缺陷由两边共同继承并记录。人工审阅状态不伪造为通过。
 
-GitHub地址采用ASCII名称`fen-ci-qi-pde-fa-xian`，中文项目名称为“分词器-pde发现”。
+GitHub repository: https://github.com/xtr1976536/tokenizer-pde-discovery (public).
