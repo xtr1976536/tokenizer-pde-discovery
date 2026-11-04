@@ -48,3 +48,5 @@ python -m scripts.pde_experiment run --scale 636 --device mps
 636记录对应608种当前展开支撑，原212的28条重复富余按要求保留；新增424全部互异且不与基底重合。原212条及其token ID保持不变。公共评分层`shared_scoring_fixes_v1`已修正`sint`、`uyyt`、复合导数和三维双拉普拉斯的求值，去重保留分子/分母角色，并移除按token组合置零的表示偏差；作者原始文件未改，历史错误与修正验证分别保留在`reports/scorer_audit`和`reports/scoring_fixes_validation`。人工审阅状态不伪造为通过。
 
 GitHub repository: https://github.com/xtr1976536/tokenizer-pde-discovery (public).
+
+上游分词器三指标迁移方案及当前212/636 benchmark的限制审查见 [reports/upstream_plan/README.md](reports/upstream_plan/README.md)。212完整实验权重将通过独立GitHub Release归档，避免将模型二进制写入Git历史。

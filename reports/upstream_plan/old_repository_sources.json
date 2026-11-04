@@ -1,0 +1,56 @@
+{
+  "repository": "xtr1976536/math-tokenizer-lab",
+  "commit": "abff7a367b7a94f8814bf819ac54800e7cc62fdc",
+  "files": [
+    {
+      "path": "reports/upstream/README.md",
+      "sha256": "96f8109b92ac6c86d6cadb878e708ee41ed73af63c513edf6ecafe31251d6f80",
+      "matches_local_release": true
+    },
+    {
+      "path": "experiments/upstream_811/README.md",
+      "sha256": "41261c6b0288feb9fabf8249f0bba266cde32c7b11bcbfbf67a22270361f8666",
+      "matches_local_release": true
+    },
+    {
+      "path": "scripts/evaluate_screened_pde.py",
+      "sha256": "24dec0540d0aa74064d6ffe8d5c36ff2968b1cbc9488c463c3ac80c2e47176cf",
+      "matches_local_release": true
+    },
+    {
+      "path": "scripts/run_upstream_811.py",
+      "sha256": "1e48171d53c61f9d2e886640353a66b198870ba3e8ce81927edfa162a6032e6c",
+      "matches_local_release": true
+    },
+    {
+      "path": "scripts/analyze_pde_vocab_usage.py",
+      "sha256": "f41eccf1fd24d95bb36bf532e2220b72536358e152dd5152a0f792c244ddd07c",
+      "matches_local_release": true
+    },
+    {
+      "path": "src/math_tokenizer/pde_protocol.py",
+      "sha256": "ba41a8adceb3269c4ddbc9bcc4c851a53010d2ad0dfbb0012a68bb36042d230f",
+      "matches_local_release": true
+    },
+    {
+      "path": "scripts/\u5f53\u524d\u56db\u5206\u8bcd\u5668.py",
+      "sha256": "61bf0dacce91ed110554e15aad61295e63f8227e4df1d57bb5ae19c3a1bb4f07",
+      "matches_local_release": true
+    },
+    {
+      "path": "reports/preparation_811/\u5b9e\u9a8c\u7ed3\u679c\u4e0e\u9650\u5236.md",
+      "sha256": "422c6a04df70efd74815ac03dba1e997165c0341d91c0428f89d3c61c572f0e0",
+      "matches_local_release": true
+    },
+    {
+      "path": "experiments/upstream_main/protocol.json",
+      "sha256": "0a4ea530f4eac460229445cc857f4bb41ff7bc344d39d8bceab18fa63e6baab1",
+      "matches_local_release": true
+    },
+    {
+      "path": "experiments/upstream_vocab_size/protocol.json",
+      "sha256": "21f2f449438b72e1e28106108366b9dda0eaebdcfab310ddaabe08e189935b41",
+      "matches_local_release": true
+    }
+  ]
+}

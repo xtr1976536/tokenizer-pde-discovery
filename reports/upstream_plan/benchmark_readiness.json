@@ -1,0 +1,89 @@
+{
+  "status": "DATA_INSPECTION_ONLY",
+  "tokenizer_training_started": false,
+  "performance_evaluation_started": false,
+  "scales": [
+    {
+      "scale": 212,
+      "source_sha256": "c61ec8a429b732ee8a785ba90151402d50dcd58b7fd4668a18b124d913147b09",
+      "representation": "structure_to_latex(gre_ids), unaugmented, identical to current downstream vocabulary training input",
+      "n_formulas": 212,
+      "distinct_rendered_texts": 203,
+      "source_groups": 1,
+      "largest_source_groups": [
+        [
+          "eqgpt_original_221",
+          212
+        ]
+      ],
+      "command_lexemes": {
+        "\\cdot": 208,
+        "\\partial": 19,
+        "\\frac": 2,
+        "\\sqrt": 2,
+        "\\sin": 5,
+        "\\sinh": 2,
+        "\\Delta": 13,
+        "\\exp": 3
+      },
+      "number_lexemes": {
+        "0": 212,
+        "2": 109,
+        "4": 2,
+        "1": 1,
+        "3": 11
+      },
+      "multi_character_number_lexemes": 0,
+      "original_latex_equal_render_count": 212
+    },
+    {
+      "scale": 636,
+      "source_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
+      "representation": "structure_to_latex(gre_ids), unaugmented, identical to current downstream vocabulary training input",
+      "n_formulas": 636,
+      "distinct_rendered_texts": 627,
+      "source_groups": 179,
+      "largest_source_groups": [
+        [
+          "eqgpt_original_221",
+          212
+        ],
+        [
+          "eqworld:npde3107",
+          10
+        ],
+        [
+          "eqworld:npde5104",
+          10
+        ],
+        [
+          "eqworld:npde1210",
+          10
+        ],
+        [
+          "eqworld:npde3303",
+          9
+        ]
+      ],
+      "command_lexemes": {
+        "\\cdot": 1014,
+        "\\partial": 19,
+        "\\frac": 2,
+        "\\sqrt": 19,
+        "\\sin": 61,
+        "\\sinh": 22,
+        "\\Delta": 13,
+        "\\exp": 71
+      },
+      "number_lexemes": {
+        "0": 636,
+        "2": 471,
+        "4": 15,
+        "1": 1,
+        "3": 79
+      },
+      "multi_character_number_lexemes": 0,
+      "original_latex_equal_render_count": 212
+    }
+  ]
+}
