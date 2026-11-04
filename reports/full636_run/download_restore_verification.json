@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "public_download_without_credentials": true,
+  "unique_weights": 2,
+  "restored_paths": 4,
+  "bytes": 306042536,
+  "files": [
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_280__cycle_0.pt",
+      "sha256": "04cdb85b791d91889a29a49fcba4481a615a7e66e87545461f53c856cfd9d138",
+      "bytes": 153021427,
+      "restored_paths": [
+        "experiments/full/636/cases/Wave_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/shared_pretrain/ast_bpe_280/pretrained.pt"
+      ],
+      "aliases_are_hardlinks": true
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_280__cycle_5.pt",
+      "sha256": "0be3fbbad070280ea9b349c62eb4616925f5f786c02f20153bc993b432779a18",
+      "bytes": 153021109,
+      "restored_paths": [
+        "experiments/full/636/cases/Wave_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_280/searched.pt"
+      ],
+      "aliases_are_hardlinks": true
+    }
+  ]
+}

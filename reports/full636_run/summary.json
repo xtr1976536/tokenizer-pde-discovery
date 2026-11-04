@@ -1,0 +1,1402 @@
+{
+  "status": "PASS",
+  "scale": 636,
+  "sources": 636,
+  "augmented_samples": 20352,
+  "pretraining_epochs_per_model": 100,
+  "optimizer_updates_per_model": 15900,
+  "candidates_per_case_model": 2000,
+  "total_candidates": 64000,
+  "total_case_models": 32,
+  "small_corpus_experiment_run": false,
+  "run_identity": {
+    "settings": {
+      "seed": 525,
+      "layers": 6,
+      "epochs": 100,
+      "batch_size": 128,
+      "positions": 50,
+      "search_limit": 48,
+      "learning_rate": 0.0001,
+      "cycles": 5,
+      "attempts": 400,
+      "continuation_epochs": 5,
+      "continuation_lr": 1e-05,
+      "epi": 0.2
+    },
+    "formal_settings": {
+      "seed": 525,
+      "layers": 6,
+      "epochs": 100,
+      "batch_size": 128,
+      "positions": 50,
+      "search_limit": 48,
+      "learning_rate": 0.0001,
+      "cycles": 5,
+      "attempts": 400,
+      "continuation_epochs": 5,
+      "continuation_lr": 1e-05,
+      "epi": 0.2
+    },
+    "smoke": false,
+    "scale": 636,
+    "device": "cuda",
+    "source_sha256": "6b061c15a9e545dd692d67305da9805a327975d5bbae1b6c4bbeee597638acb6",
+    "code": "e69f7045189d5b244ed84f562bf1246b4fd1312379aaa5a9a50f513029bd9c41",
+    "runner": "b8015ede38e76347ec4e14ff7f3b0c3ea08a74c1fff4ae07243ccef2440e5abc",
+    "checkpoint_policy": "epoch_and_25_candidates_v1",
+    "python": "3.11.18",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.6",
+      "tokenizers": "0.23.3"
+    }
+  },
+  "models": {
+    "eqgpt_reference": {
+      "cases": {
+        "Wave_equation": {
+          "top1_correct": true,
+          "top10_correct": true,
+          "evaluated": 1999,
+          "ever_raw_complete_correct": true,
+          "ever_effective_correct_scored": true,
+          "invalid_status_counts": {
+            "numerical_failure": 1
+          },
+          "final_equations": [
+            "(u_{xx})+(u_{tt})=0",
+            "(u_{xx})+({u_{x}}^{2})\\cdot (u_{xx})+(u_{tt})=0",
+            "(u_{xx})+(u_{tt})+(u_{x})/(x)=0",
+            "(u_{tt})+(u_{x})/(x)+(u_{xx})=0",
+            "(u_{xx})+(\\partial_{t}{(u\\cdot u_{x})})\\cdot (u_{xxtt})+(u_{tt})=0",
+            "(u_{xx})+(u_{xxtt})+(u_{tt})=0",
+            "(u_{xx})+(u_{tt})+(\\partial_{xx}{{u}^{3}})=0",
+            "(u_{tt})+(u_{xx})+(u_{xxtt})=0",
+            "(u_{tt})+(u_{xx})+(\\sinh{u})=0",
+            "(u_{tt})+(u_{xx})+(\\sin{u})=0"
+          ],
+          "final_rewards": [
+            0.9315066337585449,
+            0.8967370986938477,
+            0.8966304063796997,
+            0.8966245651245117,
+            0.8966125845909119,
+            0.8966088891029358,
+            0.8966063261032104,
+            0.8966056108474731,
+            0.8966038823127747,
+            0.8966037631034851
+          ],
+          "hardware_failure_count": 0
+        },
+        "Convection_diffusion_equation": {
+          "top1_correct": true,
+          "top10_correct": true,
+          "evaluated": 2000,
+          "ever_raw_complete_correct": true,
+          "ever_effective_correct_scored": true,
+          "invalid_status_counts": {},
+          "final_equations": [
+            "(u_{t})+(u_{xx})+(u_{x})=0",
+            "(u_{xx})+(u_{t})+(u_{x})=0",
+            "(\\partial_{x}{({u}^{-2}\\cdot u_{x})})+(\\partial_{xx}{\\frac{1}{u}})+(u_{t})+(u_{xxxxx})=0",
+            "(t)+(\\sin{t})+(u_{tt})+(u_{xxtt})=0",
+            "(u_{t})+(u_{x})+(u_{t})/(x)+(u_{xx})=0",
+            "(u_{t})+(u_{xx})+(u_{x})+(u_{xxt})=0",
+            "(u_{t})+(u_{xx})+(u_{x})+(\\partial_{x}{(u\\cdot u_{x})})=0",
+            "(u_{t})+(u_{xx})+(u_{x})+(\\partial_{t}{(u\\cdot u_{x})})=0",
+            "(u_{t})+(u_{tt})+(u_{xx})+(u_{x})=0",
+            "(u_{t})+(u_{xx})+(u)+(u_{x})=0"
+          ],
+          "final_rewards": [
+            0.8948442935943604,
+            0.8822596669197083,
+            0.8795880079269409,
+            0.8722218871116638,
+            0.8706334829330444,
+            0.8703165054321289,
+            0.8701769709587097,
+            0.8701332807540894,
+            0.8701272010803223,
+            0.870125412940979
+          ],
+          "hardware_failure_count": 0
+        },
+        "KG_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 1998,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "numerical_failure": 2
+          },
+          "final_equations": [
+            "(u_{tt})+(u_{xx})+(\\sinh{u})=0",
+            "(u_{tt})+(\\sin{u})+(u_{xx})=0",
+            "(u_{xx})+(u_{tt})+(\\sinh{u})=0",
+            "(u_{xx})+(\\sin{u})+(u_{tt})=0",
+            "(u_{xx})+(u_{tt})=0",
+            "(u_{tt})+({u}^{3})+(u_{xx})=0",
+            "(\\sinh{u})+(u_{xx})+(u_{tt})=0",
+            "(\\sin{u})+(u_{xx})+(u_{tt})=0",
+            "(u_{xx})+({u}^{3})+(u_{tt})=0",
+            "(u_{x})\\cdot (u)+(\\sinh{u})\\cdot (u_{x})+(u_{xxx})+(u_{t})=0"
+          ],
+          "final_rewards": [
+            0.9032430052757263,
+            0.903230607509613,
+            0.9026418328285217,
+            0.9026337265968323,
+            0.8950082063674927,
+            0.889649510383606,
+            0.8855250477790833,
+            0.8851740956306458,
+            0.8845663666725159,
+            0.8794329762458801
+          ],
+          "hardware_failure_count": 0
+        },
+        "Burgers_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 1997,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "numerical_failure": 3
+          },
+          "final_equations": [
+            "(u_{xxx})/(u)/(u)/(\\partial_{x}{(u\\cdot u_{x})})+(\\partial_{x}{({u}^{-2}\\cdot u_{x})})\\cdot (u_{x})+(u_{t})=0",
+            "(u_{xx})+(u_{t})+(\\sinh{u})\\cdot (u_{x})=0",
+            "(u_{x})\\cdot (u)+(\\sinh{u})\\cdot (u_{x})+(u_{xxx})+(u_{t})=0",
+            "(u)+(\\sin{x})\\cdot (\\partial_{x}{(u\\cdot u_{x})})+(\\sinh{u})+(u_{tt})/(\\partial_{xx}{(u\\cdot \\partial_{xx}{{u}^{2}})})=0",
+            "({u_{x}}^{2})+(u)\\cdot (u_{x})/(x)+(u_{xx})\\cdot (u)+(u_{t})=0",
+            "(u_{t})+(u_{xx})+(u_{x})\\cdot (\\sinh{u})=0",
+            "(u_{x})\\cdot (u)+(u_{xx})+(u_{xxt})+(u_{t})=0",
+            "(u)\\cdot (u_{x})+(u_{xx})+(\\sin{t})+(u_{t})=0",
+            "(u_{xx})+(u_{t})+(t)\\cdot (\\partial_{x}{(u\\cdot u_{x})})/({x}^{2})+(u_{x})\\cdot (u)=0",
+            "(u_{xx})+(u_{xxx})+(u_{x})\\cdot (u)+(u_{t})=0"
+          ],
+          "final_rewards": [
+            0.9045240879058838,
+            0.8952410817146301,
+            0.878495991230011,
+            0.8778824806213379,
+            0.8777369856834412,
+            0.8747023344039917,
+            0.8738129138946533,
+            0.8736255764961243,
+            0.8725892901420593,
+            0.8722374439239502
+          ],
+          "hardware_failure_count": 0
+        },
+        "Eq_6_2_12": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 1998,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "numerical_failure": 2
+          },
+          "final_equations": [
+            "(\\partial_{x}{({u}^{-2}\\cdot u_{x})})+(\\partial_{xx}{\\frac{1}{u}})+(u_{t})+(u_{xxxxx})=0",
+            "(u_{t})+(u_{tt})+(u_{xx})+(u_{x})=0",
+            "(u_{t})+(u_{xx})+(u_{x})+(u_{xxt})=0",
+            "(u_{x})+(u_{t})+(u_{xxt})+(u_{xx})=0",
+            "({x}^{2})\\cdot (u_{x})+({u_{x}}^{2})+(u_{t})\\cdot ({x}^{2})+(u_{xx})\\cdot (u)\\cdot (u_{x})=0",
+            "(u)+(\\sin{u})+(\\sin{t})+(\\sin{t})\\cdot (u_{x})/(u_{tt})+(u_{t})=0",
+            "(u_{t})+(u_{xxx})+(u_{x})=0",
+            "(u_{t})+(u_{x})+(u_{xxt})/(x)+(u_{x})\\cdot (u)+(u_{xx})=0",
+            "(u_{x})+(u_{xxt})+(u_{xxx})+(u_{t})=0",
+            "(u_{x})+(u_{xxx})+(u_{t})=0"
+          ],
+          "final_rewards": [
+            0.8795880079269409,
+            0.8688594102859497,
+            0.865909993648529,
+            0.8639954328536987,
+            0.8632413744926453,
+            0.8581743836402893,
+            0.8551923632621765,
+            0.849367618560791,
+            0.8492512702941895,
+            0.8486860394477844
+          ],
+          "hardware_failure_count": 0
+        },
+        "PDE_divide": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 1998,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "numerical_failure": 2
+          },
+          "final_equations": [
+            "(\\sin{x})\\cdot (u_{xx})+(u_{t})+(u_{xx})=0",
+            "(t)\\cdot (\\sin{x})+(u_{tt})+(t)=0",
+            "(u)+(u_{t})+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(u)+(u_{x})\\cdot (u)=0",
+            "(u_{xx})+(u_{t})+(u_{x})=0",
+            "(u)/(x)/(x)+(u_{xx})+(u_{t})=0",
+            "(u)+(u_{t})+(u_{x})=0",
+            "(u)+(u_{xx})+(\\sqrt{x})\\cdot (\\sinh{u})+(u_{tt})=0",
+            "(u_{xx})+(x)\\cdot ({(u_{xx}+\\frac{u_{x}}{x})}^{2})+(u_{t})+(u_{x})/(x)=0",
+            "(u)+(\\sin{x})\\cdot (\\sin{u})+(u_{tt})+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.9042038917541504,
+            0.9001638293266296,
+            0.893484890460968,
+            0.8933607935905457,
+            0.8889333605766296,
+            0.881546139717102,
+            0.8795095086097717,
+            0.8786277770996094,
+            0.8784255385398865,
+            0.8783586621284485
+          ],
+          "hardware_failure_count": 0
+        },
+        "KdV_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 1998,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "numerical_failure": 2
+          },
+          "final_equations": [
+            "(u_{x})\\cdot (u)+(\\sinh{u})\\cdot (u_{x})+(u_{xxx})+(u_{t})=0",
+            "(u)\\cdot (u_{x})+({(u_{xx}+\\frac{u_{x}}{x})}^{2})+(u_{xxx})+(u_{t})=0",
+            "(u)\\cdot (u_{x})+(u_{xxxxx})+(u_{xxx})+(u_{t})=0",
+            "(u_{x})\\cdot (u)+(\\partial_{xx}{\\frac{1}{u}})+(u_{xxx})+(u_{t})=0",
+            "(u_{xxx})+(u_{x})\\cdot (\\sinh{u})+(u_{x})\\cdot (u)+(u_{t})=0",
+            "(u_{xxx})+(u_{t})+({u}^{2})/(t)+(u_{x})\\cdot (u)=0",
+            "(\\partial_{x}{(u\\cdot u_{x})})+(u_{xxxx})+(u_{xx})\\cdot (u)+(u_{xt})=0",
+            "(\\partial_{x}{(u\\cdot u_{x})})+(u_{xxxx})+(u_{xt})+({u_{x}}^{2})=0",
+            "(\\partial_{x}{(u\\cdot u_{x})})+(u_{xxxx})+(\\sinh{u})+(u_{xt})=0",
+            "(\\partial_{x}{(u\\cdot u_{x})})+(u_{xxxx})+(\\sin{t})+(u_{xt})=0"
+          ],
+          "final_rewards": [
+            0.878961443901062,
+            0.8788613677024841,
+            0.8788568377494812,
+            0.8788566589355469,
+            0.878825306892395,
+            0.8787763118743896,
+            0.8764460682868958,
+            0.8764426708221436,
+            0.8764349222183228,
+            0.8764345049858093
+          ],
+          "hardware_failure_count": 0
+        },
+        "Chaffee_Infante_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 1998,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "numerical_failure": 2
+          },
+          "final_equations": [
+            "(\\sin{x})\\cdot (u_{xx})+(u_{t})+(u_{xx})=0",
+            "(x)\\cdot (u_{xxx})+(\\sqrt{x})\\cdot (u_{xxx})+(u_{t})+(u_{xxxx})=0",
+            "({u}^{2})+(u_{xx})+(u)+(u_{t})=0",
+            "(\\sin{x})\\cdot (u_{xx})+(u_{t})+(u_{xx})+(u_{xxx})=0",
+            "(u)\\cdot (u)\\cdot (\\sinh{u})+(u_{tt})+(u_{xx})=0",
+            "(\\sin{x})\\cdot (u_{xx})+(u_{t})+(u_{xx})+(u_{xxx})/(u_{x})=0",
+            "(\\partial_{x}{(u\\cdot u_{x})})+(u_{xx})+(\\partial_{xx}{{u}^{3}})+(u_{tt})=0",
+            "(u_{x})+(u_{xxx})+(u_{x})\\cdot (\\sqrt{u})+(u_{t})\\cdot (u_{x})=0",
+            "(u_{x})+(u_{xxx})+(u_{t})+(u_{x})\\cdot (\\sqrt{u})=0",
+            "({u}^{2})+(u_{xx})+(u_{tt})+(u)=0"
+          ],
+          "final_rewards": [
+            0.8978051543235779,
+            0.875089704990387,
+            0.8750777244567871,
+            0.8744019865989685,
+            0.8740206956863403,
+            0.873006284236908,
+            0.8703385591506958,
+            0.8699078559875488,
+            0.8685165643692017,
+            0.8679924011230469
+          ],
+          "hardware_failure_count": 0
+        }
+      },
+      "top1_correct": 2,
+      "top10_correct": 2,
+      "first_pretrain_loss": 2.1833993054036074,
+      "last_pretrain_loss": 0.9270878166147748,
+      "training_seconds": 3185.887227149001
+    },
+    "ast_bpe_280": {
+      "cases": {
+        "Wave_equation": {
+          "top1_correct": true,
+          "top10_correct": true,
+          "evaluated": 257,
+          "ever_raw_complete_correct": true,
+          "ever_effective_correct_scored": true,
+          "invalid_status_counts": {
+            "unsupported_expression": 1017,
+            "incomplete": 33,
+            "variable_or_numeric_unavailable": 201,
+            "syntax_error": 492
+          },
+          "final_equations": [
+            "(u_{tt})+(u_{xx})=0",
+            "(u_{tt})+(u_{xxxx})+(u_{xx})=0",
+            "(u_{tt})+(u)+(u_{xx})=0",
+            "(u_{tt})+(\\sin{u})+(u_{xx})=0",
+            "(u_{xx})+(u_{tt})+(u_{t})\\cdot (u)\\cdot (u_{xxx})=0",
+            "(u_{tt})+(u_{xx})+(u_{t})=0",
+            "(u_{xx})+(\\exp{x})\\cdot (t)\\cdot (t)+(u_{tt})=0",
+            "(u_{tt})+({u}^{2})+(u_{xx})=0",
+            "(u_{tt})+(u_{xx})+(u_{xxtt})+(\\partial_{x}{(u\\cdot u_{x})})=0",
+            "(u_{tt})+(u_{x})+(u)+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.9315066933631897,
+            0.8966390490531921,
+            0.8966038227081299,
+            0.8966037631034851,
+            0.8966001272201538,
+            0.896599292755127,
+            0.8965992331504822,
+            0.8965991139411926,
+            0.8718389868736267,
+            0.8718370795249939
+          ],
+          "hardware_failure_count": 0
+        },
+        "Convection_diffusion_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 266,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1028,
+            "incomplete": 30,
+            "variable_or_numeric_unavailable": 183,
+            "syntax_error": 493
+          },
+          "final_equations": [
+            "(u_{t})+(u_{xxx})+(u_{x})+(u_{xx})=0",
+            "(u_{t})+(u_{xx})+(u_{xxt})+(u_{x})=0",
+            "(u_{t})+(t)\\cdot (t)+(u_{xx})+(u_{x})=0",
+            "(u_{x})+(u_{xxx})+(u_{xx})+(u_{t})=0",
+            "(u_{x})+(u_{xxt})+(u_{xx})+(u_{t})=0",
+            "(u_{xx})+(u_{t})+(u_{x})+(u_{xxx})=0",
+            "(\\sinh{u})+(u)+(u_{xx})+(\\exp{x})\\cdot (u)+(u_{t})=0",
+            "(u_{xx})+(u_{t})+(u_{xxt})+(u_{x})=0",
+            "(u_{t})+(u_{xx})+(u)+({u}^{2})\\cdot (x)\\cdot (x)+(u_{x})=0",
+            "(u_{t})+({u}^{2})+(u_{x})+(u_{xx})+(u)=0"
+          ],
+          "final_rewards": [
+            0.8722240328788757,
+            0.8703165054321289,
+            0.870198130607605,
+            0.867925763130188,
+            0.8639775514602661,
+            0.862346887588501,
+            0.8600335121154785,
+            0.8588022589683533,
+            0.8509825468063354,
+            0.8509519696235657
+          ],
+          "hardware_failure_count": 0
+        },
+        "KG_equation": {
+          "top1_correct": true,
+          "top10_correct": true,
+          "evaluated": 264,
+          "ever_raw_complete_correct": true,
+          "ever_effective_correct_scored": true,
+          "invalid_status_counts": {
+            "unsupported_expression": 1033,
+            "incomplete": 31,
+            "variable_or_numeric_unavailable": 189,
+            "syntax_error": 483
+          },
+          "final_equations": [
+            "(u_{tt})+(u)+(u_{xx})=0",
+            "(u_{tt})+(\\sin{u})+(u_{xx})=0",
+            "(u_{tt})+(u_{xx})=0",
+            "(u_{tt})+({u}^{3})+(u_{xx})=0",
+            "(u_{tt})+({u}^{3})+(u)+(u_{xx})=0",
+            "(u_{tt})+(u)+(u_{xx})+(u_{t})=0",
+            "(u_{xx})+(u_{t})+(u_{tt})+(u)=0",
+            "(u_{tt})+(u_{xxxx})+(u_{xx})=0",
+            "(u)+(u_{tt})+(u_{xx})+({u}^{3})=0",
+            "(u_{tt})+({u}^{2})+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.903249204158783,
+            0.903230607509613,
+            0.8950122594833374,
+            0.889649510383606,
+            0.878298819065094,
+            0.8782981038093567,
+            0.8777207732200623,
+            0.8671042323112488,
+            0.861977756023407,
+            0.8616840243339539
+          ],
+          "hardware_failure_count": 0
+        },
+        "Burgers_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 237,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1065,
+            "incomplete": 31,
+            "variable_or_numeric_unavailable": 182,
+            "syntax_error": 485
+          },
+          "final_equations": [
+            "(u_{xx})+(u)\\cdot (u_{x})+(u_{xxt})+(u_{t})=0",
+            "(\\sinh{u})+(u)+(u_{xx})+(\\exp{x})\\cdot (u)+(u_{t})=0",
+            "(u_{t})+(u_{xxx})+(u)\\cdot (u_{x})+(u_{xx})=0",
+            "(u_{x})\\cdot (u)+(u)+({u}^{3})+(u_{t})+(u_{xx})=0",
+            "(u_{t})+(u_{xxt})+(u_{xx})+(u)\\cdot (u_{x})=0",
+            "(u_{xx})+(u)\\cdot (u_{x})+(u_{xx})\\cdot (u_{xx})+(u_{t})+(u_{xxxx})=0",
+            "(u_{x})\\cdot (\\sinh{u})+(u_{t})+(u)\\cdot (u_{tt})+(u_{xx})+(u_{xxx})+(u)=0",
+            "(u_{xx})+(u)\\cdot (u_{x})+(u_{t})+({u_{x}}^{2})+({u}^{2})\\cdot (u_{x})+(u_{xx})\\cdot (u)=0",
+            "(u)\\cdot (u_{x})+(u_{t})+(u_{x})\\cdot (u_{xx})+(u)\\cdot (u_{xxx})+(u_{xxxxx})=0",
+            "(u_{xxx})+(u)+({u_{x}}^{2})+(u_{t})\\cdot (u_{xx})+(u_{xx})\\cdot (u)=0"
+          ],
+          "final_rewards": [
+            0.8721574544906616,
+            0.8586606383323669,
+            0.854411780834198,
+            0.85438072681427,
+            0.8537362217903137,
+            0.8534630537033081,
+            0.8379282355308533,
+            0.8377214670181274,
+            0.8326445817947388,
+            0.8228865265846252
+          ],
+          "hardware_failure_count": 0
+        },
+        "Eq_6_2_12": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 246,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1063,
+            "incomplete": 30,
+            "variable_or_numeric_unavailable": 181,
+            "syntax_error": 480
+          },
+          "final_equations": [
+            "(u_{t})+(u_{xx})+(u_{xxt})+(u_{x})=0",
+            "(x)\\cdot (u_{x})+(u)/(x)/(x)+(u_{t})\\cdot (x)+(u_{t})\\cdot (x)\\cdot (x)\\cdot (x)=0",
+            "(u_{x})+(u_{xxt})+(u_{xx})+(u_{t})=0",
+            "(\\sinh{u})+(u)+(u_{xx})+(\\exp{x})\\cdot (u)+(u_{t})=0",
+            "({x}^{2})\\cdot (u_{x})+(u_{t})+(u_{xx})+(u_{x})\\cdot (x)=0",
+            "(u_{t})+(u_{x})+(u_{xxx})=0",
+            "(u_{x})+(u_{xxt})+(u_{xxx})+(u_{t})=0",
+            "(u_{x})+(u_{t})+(u_{xxx})=0",
+            "(u_{t})+(u_{xxx})+(u_{x})+(u_{xx})=0",
+            "(u_{t})+(u_{x})+(u_{xxt})=0"
+          ],
+          "final_rewards": [
+            0.865909993648529,
+            0.8655763864517212,
+            0.8639954328536987,
+            0.8586072325706482,
+            0.8565030694007874,
+            0.8551923632621765,
+            0.8492512702941895,
+            0.8486860394477844,
+            0.8436083793640137,
+            0.8376501798629761
+          ],
+          "hardware_failure_count": 0
+        },
+        "PDE_divide": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 253,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1036,
+            "incomplete": 29,
+            "variable_or_numeric_unavailable": 189,
+            "syntax_error": 493
+          },
+          "final_equations": [
+            "(u)+(u_{t})+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(u)\\cdot (u_{x})+(u)=0",
+            "(u_{t})+(u)/(x)/(x)+(u_{xx})=0",
+            "(u)+(u_{t})+(u_{xx})=0",
+            "({x}^{2})\\cdot (u_{x})+(u_{t})+(u_{xx})+(u_{x})\\cdot (x)=0",
+            "(u_{t})+(u_{tt})+(u)+(u_{xx})=0",
+            "(u_{t})+(u_{tt})+(u_{xx})+(u_{x})/(x)=0",
+            "(u_{t})+(u_{x})+(u_{xxt})+(\\sin{u})=0",
+            "(u_{xx})+(u_{t})+(u_{xxt})+(u_{x})=0",
+            "(u_{xx})+(u_{t})+(u_{x})+(u_{xxx})=0"
+          ],
+          "final_rewards": [
+            0.893484890460968,
+            0.8933607935905457,
+            0.8868193030357361,
+            0.879206657409668,
+            0.8788343667984009,
+            0.8782492280006409,
+            0.8777831792831421,
+            0.8751586079597473,
+            0.8666213750839233,
+            0.865776538848877
+          ],
+          "hardware_failure_count": 0
+        },
+        "KdV_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 238,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1054,
+            "incomplete": 34,
+            "variable_or_numeric_unavailable": 184,
+            "syntax_error": 490
+          },
+          "final_equations": [
+            "(u_{xxx})+(u_{t})+(u)\\cdot (u_{x})+(u_{xx})\\cdot ({u_{x}}^{2})\\cdot (u)=0",
+            "(u_{t})+(u_{xxx})+(u)\\cdot (u_{x})+(u_{xx})=0",
+            "(u_{x})\\cdot (u)+(\\sin{u})+(u_{xxx})+(u_{t})+(u_{x})=0",
+            "(u_{x})\\cdot (u)+(u_{t})+(u_{x})\\cdot (u_{xx})+(u_{xxt})+(u_{x})+(u_{xxx})=0",
+            "(u_{xx})\\cdot (u)+({u_{x}}^{2})+(u_{t})+(u)\\cdot (u)\\cdot (u)\\cdot (u)=0",
+            "(\\sinh{u})+(u)+(u_{xx})+(\\exp{x})\\cdot (u)+(u_{t})=0",
+            "(u_{xxx})+(u_{xxt})+(u)\\cdot (u_{x})+(u_{t})+({u}^{2})+(u)+(u_{xx})/(u)+(u_{xx})=0",
+            "({u}^{3})+({u_{x}}^{2})+(u_{t})+(u_{xx})\\cdot (u)+({u}^{2})+(u)=0",
+            "(u_{x})\\cdot (\\sinh{u})+(u_{t})+(u)\\cdot (u_{tt})+(u_{xx})+(u_{xxx})+(u)=0",
+            "(u_{t})+(u)\\cdot (u_{x})+(u_{xxt})+(u_{xxx})+(u_{xxx})\\cdot (u)+(u_{x})+(u_{xx})\\cdot (u_{t})+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.8787980675697327,
+            0.8669574856758118,
+            0.8594907522201538,
+            0.8437069058418274,
+            0.8314344882965088,
+            0.8284812569618225,
+            0.8186264038085938,
+            0.8157801628112793,
+            0.8118650317192078,
+            0.8084985613822937
+          ],
+          "hardware_failure_count": 0
+        },
+        "Chaffee_Infante_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 229,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1063,
+            "incomplete": 30,
+            "variable_or_numeric_unavailable": 176,
+            "syntax_error": 502
+          },
+          "final_equations": [
+            "(\\sinh{u})\\cdot (u)+(u_{t})+({u_{x}}^{2})+(u)\\cdot (u_{xx})=0",
+            "(u_{xx})\\cdot (u)+({u_{x}}^{2})+(u_{t})+(u)\\cdot (u)\\cdot (u)\\cdot (u)=0",
+            "({u}^{3})+(u_{t})+(u)+(u_{xx})+(u_{xxxx})=0",
+            "(\\sinh{u})+(u)+(u_{xx})+(\\exp{x})\\cdot (u)+(u_{t})=0",
+            "(u_{xx})+({u}^{2})+(u)+(u_{t})=0",
+            "({x}^{2})\\cdot (u_{x})+(u_{t})+(u_{xx})+(u_{x})\\cdot (x)=0",
+            "(u_{xx})\\cdot (u_{t})+(u_{xxt})\\cdot (u)+(u_{x})\\cdot (u)+(u_{t})=0",
+            "({u}^{3})+({u_{x}}^{2})+(u_{t})+(u_{xx})\\cdot (u)+({u}^{2})+(u)=0",
+            "(u_{t})+({u}^{2})+({u}^{3})+(u_{xxxx})+(u)+(u_{xx})=0",
+            "(u_{x})\\cdot (u)+(\\sin{u})+(u_{xxx})+(u_{t})+(u_{x})=0"
+          ],
+          "final_rewards": [
+            0.8714941143989563,
+            0.8703553676605225,
+            0.8600366711616516,
+            0.8581721186637878,
+            0.856695830821991,
+            0.8518422245979309,
+            0.8450294137001038,
+            0.8438833355903625,
+            0.8437078595161438,
+            0.8394172787666321
+          ],
+          "hardware_failure_count": 0
+        }
+      },
+      "top1_correct": 2,
+      "top10_correct": 2,
+      "first_pretrain_loss": 3.015548047029747,
+      "last_pretrain_loss": 0.9398755697334338,
+      "training_seconds": 3431.8797401250013
+    },
+    "ast_bpe_315": {
+      "cases": {
+        "Wave_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 256,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1004,
+            "syntax_error": 537,
+            "variable_or_numeric_unavailable": 171,
+            "incomplete": 32
+          },
+          "final_equations": [
+            "(u_{tt})+(u_{x})/(x)+(u_{xx})=0",
+            "(u_{tt})+(\\sin{u})\\cdot ({u}^{2})+(u_{xx})=0",
+            "(u_{xx})+(u_{tt})+(\\sinh{u})=0",
+            "(u_{xx})+(u_{tt})+(u)\\cdot (x)\\cdot (t)=0",
+            "(u_{xx})+(u_{tt})+(u)\\cdot (\\sinh{u})=0",
+            "(u_{xx})+(u_{tt})+(u)\\cdot (u_{x})=0",
+            "(u_{tt})+(u_{xx})+(t)\\cdot (\\sqrt{x})=0",
+            "(u_{xx})+(u_{tt})+(\\sqrt{x})\\cdot (t)=0",
+            "(u_{tt})+(u)\\cdot (\\sin{u})+(u_{xx})=0",
+            "(u_{xx})+({u}^{3})+(u_{xxxx})+(u_{tt})=0"
+          ],
+          "final_rewards": [
+            0.8966245651245117,
+            0.8966038823127747,
+            0.8966019153594971,
+            0.8966005444526672,
+            0.8965998888015747,
+            0.8965994715690613,
+            0.8965993523597717,
+            0.896599292755127,
+            0.8965991139411926,
+            0.8719832897186279
+          ],
+          "hardware_failure_count": 0
+        },
+        "Convection_diffusion_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 253,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1002,
+            "syntax_error": 545,
+            "variable_or_numeric_unavailable": 166,
+            "incomplete": 34
+          },
+          "final_equations": [
+            "(u_{t})+(u_{xx})+(u)\\cdot (x)\\cdot (t)+(u_{x})=0",
+            "(u_{t})+(u_{tt})+(u_{xx})+(u_{x})=0",
+            "(u_{t})+(u_{xx})+(u)+(u_{x})=0",
+            "(u_{x})+(u_{xxx})+(u_{t})+(u_{xx})=0",
+            "(u_{x})+(u_{t})+(u_{xx})+(u)\\cdot (u_{x})=0",
+            "(u_{xx})+(u_{t})+(u_{x})+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(u_{xxx})+(u)\\cdot (u_{x})+(u_{x})+(u_{xx})=0",
+            "(u_{x})+(u_{xxx})+(u_{xx})+(u)\\cdot (u_{x})+(u_{t})=0",
+            "(u_{x})+(u_{t})+(u_{xx})+(u)+(u)\\cdot (u_{x})=0",
+            "(u_{x})+(u_{t})+({u}^{2})+(u)+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.8701277375221252,
+            0.8701272010803223,
+            0.870125412940979,
+            0.867925763130188,
+            0.8631572127342224,
+            0.8582596778869629,
+            0.8532944917678833,
+            0.8488798141479492,
+            0.8441376090049744,
+            0.8441345691680908
+          ],
+          "hardware_failure_count": 0
+        },
+        "KG_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 241,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 996,
+            "syntax_error": 541,
+            "variable_or_numeric_unavailable": 190,
+            "incomplete": 32
+          },
+          "final_equations": [
+            "(u_{xx})+(u_{tt})+(\\sinh{u})=0",
+            "(u_{tt})+(\\sin{u})\\cdot ({u}^{2})+(u_{xx})=0",
+            "(u_{xx})+({u}^{2})\\cdot (\\sin{u})+(u_{tt})=0",
+            "(u_{tt})+(u_{xx})+(u)+({u_{t}}^{3})=0",
+            "(u_{tt})+({u}^{3})+(u_{xx})+(u)=0",
+            "(u_{tt})+(u)+({u}^{2})+(u_{xx})=0",
+            "(u_{tt})+(u_{xx})+(u_{x})/(x)+(\\sinh{u})=0",
+            "(u_{xx})+(u_{tt})+(u)+({u}^{2})=0",
+            "(u_{xx})+(u)+({u}^{3})+(u_{tt})=0",
+            "(u_{xx})+(u_{x})/(x)+(u_{tt})+(\\sinh{u})=0"
+          ],
+          "final_rewards": [
+            0.9026418328285217,
+            0.8901491165161133,
+            0.8851511478424072,
+            0.8782991170883179,
+            0.878298819065094,
+            0.8782981038093567,
+            0.8782927989959717,
+            0.8777210116386414,
+            0.8777208924293518,
+            0.8777114748954773
+          ],
+          "hardware_failure_count": 0
+        },
+        "Burgers_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 230,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 989,
+            "syntax_error": 566,
+            "variable_or_numeric_unavailable": 185,
+            "incomplete": 30
+          },
+          "final_equations": [
+            "(u_{xx})/(u)/(u)+(u_{tt})+({u}^{3})+({u_{x}}^{2})/(u)/(u)/(u)=0",
+            "(u_{x})\\cdot (u)+(u_{t})+(u_{x})+(u_{xx})=0",
+            "(u_{x})\\cdot (u)+(u_{t})+(u_{xx})+(u)=0",
+            "(u_{xx})+(u)\\cdot (u_{x})+(u_{t})+(u_{xxx})=0",
+            "(u_{xx})+(u_{t})+(u_{xxt})+(u)\\cdot (u_{x})=0",
+            "(u_{xx})\\cdot ({u_{x}}^{2})\\cdot (u)+({u}^{2})+(u_{x})\\cdot (u_{x})\\cdot (u_{x})\\cdot (u_{x})+(u_{t})=0",
+            "(u_{t})+(u_{xx})+(u)+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(u_{xxx})+(u)\\cdot (u_{x})+(u_{x})+(u_{xx})=0",
+            "(u_{xx})\\cdot ({u_{x}}^{2})\\cdot (u)+({u}^{2})+(u_{x})\\cdot (u_{x})\\cdot (u_{x})\\cdot (u_{x})+(u_{t})+(u)\\cdot (u_{xxx})=0",
+            "({u_{x}}^{2})\\cdot (u)+(u_{xx})\\cdot ({u}^{2})+(u_{tt})+({u_{x}}^{2})\\cdot (u_{x})/(x)+(u)\\cdot (u_{xx})+(u)=0"
+          ],
+          "final_rewards": [
+            0.8791328072547913,
+            0.8741405606269836,
+            0.873627781867981,
+            0.8722374439239502,
+            0.8721574544906616,
+            0.8543367385864258,
+            0.8533416390419006,
+            0.8369110822677612,
+            0.8356621861457825,
+            0.8332308530807495
+          ],
+          "hardware_failure_count": 0
+        },
+        "Eq_6_2_12": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 251,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 989,
+            "syntax_error": 559,
+            "variable_or_numeric_unavailable": 168,
+            "incomplete": 33
+          },
+          "final_equations": [
+            "(u_{t})+(u_{tt})+(u_{xx})+(u_{x})=0",
+            "(u_{t})+(u_{x})+(u_{xxx})=0",
+            "(u_{x})+(u_{t})+(u_{xxx})=0",
+            "(u_{x})+(u_{xxx})+(u_{t})+(u_{xx})=0",
+            "(u_{t})+(u)\\cdot (u_{x})+(u_{xxt})+(u_{xxx})+(u_{x})=0",
+            "(u_{tt})+(u_{xxt})+(u_{xx})=0",
+            "(u_{tt})+(u_{xxt})+(x)=0",
+            "(u_{t})+(u_{xxx})+(u)\\cdot (u_{x})+(u_{x})+(u_{xx})=0",
+            "(u_{x})+(u)\\cdot (u_{x})\\cdot (u)\\cdot (u)\\cdot (u)+(u_{t})+(u_{xxt})=0",
+            "(u_{x})+(u_{x})\\cdot (u)+(u_{t})+(u_{xxt})=0"
+          ],
+          "final_rewards": [
+            0.8688594102859497,
+            0.8551923632621765,
+            0.8486860394477844,
+            0.8354939222335815,
+            0.8324728012084961,
+            0.8300933241844177,
+            0.8295271992683411,
+            0.8250236511230469,
+            0.8215036988258362,
+            0.8203259706497192
+          ],
+          "hardware_failure_count": 0
+        },
+        "PDE_divide": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 243,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1007,
+            "syntax_error": 548,
+            "variable_or_numeric_unavailable": 170,
+            "incomplete": 32
+          },
+          "final_equations": [
+            "(u_{xx})+(u_{t})+(\\sin{x})\\cdot (u_{xx})=0",
+            "({u}^{2})\\cdot (u_{t})+(\\sqrt{x})\\cdot (u_{x})+({u}^{3})=0",
+            "(u_{t})+(u_{tt})+(u_{xx})+(u)=0",
+            "(u_{t})+(u)+(u_{xx})\\cdot (u)=0",
+            "(u_{t})+(u_{x})\\cdot (u_{xx})\\cdot ({u}^{2})+(\\sin{u})+(u_{x})\\cdot (u)\\cdot (u_{x})\\cdot (u_{x})=0",
+            "(u_{t})+(u_{xx})+(u)+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(u_{xx})+(u)+(u_{x})=0",
+            "(u_{x})+(u_{t})+(u_{xx})+(u)\\cdot (u_{x})=0",
+            "(u)+(u)\\cdot (u_{xxx})+(u_{t})+(u_{xx})=0",
+            "(u_{t})+(u_{tt})+(u_{xx})+(u_{x})=0"
+          ],
+          "final_rewards": [
+            0.9041956663131714,
+            0.8828824162483215,
+            0.8782492280006409,
+            0.8749080300331116,
+            0.8709734082221985,
+            0.8692102432250977,
+            0.8655772805213928,
+            0.861293375492096,
+            0.8601153492927551,
+            0.8577744960784912
+          ],
+          "hardware_failure_count": 0
+        },
+        "KdV_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 234,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 996,
+            "syntax_error": 553,
+            "variable_or_numeric_unavailable": 186,
+            "incomplete": 31
+          },
+          "final_equations": [
+            "(u)\\cdot (u_{xxx})+(u_{x})\\cdot ({u}^{2})+(u_{t})+(u_{x})\\cdot (u_{xx})=0",
+            "(u_{xxxx})+({u_{x}}^{2})+(u_{tt})+(u_{xx})\\cdot (u)=0",
+            "(u_{xxxx})+(\\partial_{x}{(u\\cdot u_{x})})+(u_{tt})+(u_{xx})=0",
+            "(u)\\cdot (u_{xx})+({u_{x}}^{2})+(u_{xxxx})+(u_{tt})=0",
+            "(u_{t})+(u_{xxx})+(u)\\cdot (u_{x})+(u_{x})+(u_{xx})=0",
+            "(u_{xxxx})+(x)+(u_{tt})+(u_{xx})\\cdot (u)+({u_{x}}^{2})=0",
+            "(u_{xxx})\\cdot (u)+(u_{xx})\\cdot (u_{x})+(u)\\cdot (u_{x})+(u_{t})=0",
+            "(u_{xx})+(u_{xx})\\cdot (t)+(u_{tt})+(u)+({x}^{2})=0",
+            "({u}^{3})+({u_{x}}^{2})+(u_{tt})+(u)+(u)\\cdot (u_{xx})+({u}^{2})=0",
+            "({u}^{3})+(u_{x})\\cdot (u_{xx})+(u)+({u_{x}}^{2})/(u)/(u)/(u)+(u)\\cdot (u)\\cdot (u)\\cdot (u)+(u_{t})+(u_{xx})+(u_{xxxx})=0"
+          ],
+          "final_rewards": [
+            0.8713799715042114,
+            0.8659564256668091,
+            0.8653789162635803,
+            0.8619488477706909,
+            0.8478577733039856,
+            0.8469011187553406,
+            0.8265702128410339,
+            0.8179207444190979,
+            0.8156953454017639,
+            0.808584451675415
+          ],
+          "hardware_failure_count": 0
+        },
+        "Chaffee_Infante_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 246,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1014,
+            "syntax_error": 544,
+            "variable_or_numeric_unavailable": 163,
+            "incomplete": 33
+          },
+          "final_equations": [
+            "(u_{xx})+(u_{t})+(\\sin{x})\\cdot (u_{xx})=0",
+            "({u}^{3})+(u_{tt})+(u)+(u_{xx})=0",
+            "({u}^{3})+(u)+({u}^{2})+(u_{t})+(u_{xx})=0",
+            "({u}^{2})+(t)\\cdot (x)+(u)+(u_{xx})+(u_{t})=0",
+            "(u_{xx})+(u_{tt})+(u)\\cdot (u_{xx})+({u}^{3})=0",
+            "(u_{t})+(u_{x})\\cdot (u)+(\\sin{x})\\cdot (t)\\cdot (t)\\cdot (t)+(u)\\cdot (u_{t})+(u_{x})\\cdot (\\exp{x})=0",
+            "({u}^{2})+(u)\\cdot (u_{xx})+({u_{x}}^{2})+(u)+(u_{t})=0",
+            "({u_{x}}^{2})\\cdot (u)+(u_{xx})\\cdot ({u}^{2})+(u_{tt})+({u_{x}}^{2})+(u)\\cdot (u_{xx})=0",
+            "(u_{xx})+(u_{xx})\\cdot (t)+(u_{tt})+(u)=0",
+            "({u}^{2})+({u_{x}}^{2})+(u)+(u_{t})+({u}^{3})+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.8975428342819214,
+            0.8658004999160767,
+            0.8595842123031616,
+            0.8557959198951721,
+            0.8509255051612854,
+            0.8496637940406799,
+            0.8437165021896362,
+            0.8436225652694702,
+            0.842681884765625,
+            0.8407350182533264
+          ],
+          "hardware_failure_count": 0
+        }
+      },
+      "top1_correct": 0,
+      "top10_correct": 0,
+      "first_pretrain_loss": 3.1721449753023543,
+      "last_pretrain_loss": 1.0235224055044305,
+      "training_seconds": 3176.821524740006
+    },
+    "ast_bpe_350": {
+      "cases": {
+        "Wave_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 232,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1094,
+            "incomplete": 25,
+            "syntax_error": 476,
+            "variable_or_numeric_unavailable": 173
+          },
+          "final_equations": [
+            "(u_{tt})+(u_{xx})+(\\sinh{u})=0",
+            "(u_{xx})+(\\sin{u})+(u_{tt})=0",
+            "(u_{xx})+(u_{tt})+(\\sinh{u})\\cdot (\\sinh{u})=0",
+            "(u_{xx})+(u_{tt})+(\\sin{u})\\cdot (\\sin{u})=0",
+            "(u_{xx})+(u_{tt})+(\\sin{u})\\cdot ({u}^{2})=0",
+            "(u_{tt})+(\\sqrt{x})\\cdot (t)+(u_{xx})=0",
+            "(u_{xx})+(u_{tt})+(\\sqrt{x})\\cdot (t)=0",
+            "(u_{xx})+(u_{tt})+(x)\\cdot (t)=0",
+            "(u_{tt})+(u_{xx})+(\\sin{u})\\cdot (u)=0",
+            "(u_{xx})+(\\sin{x})+(u_{tt})=0"
+          ],
+          "final_rewards": [
+            0.8966038823127747,
+            0.8966019749641418,
+            0.8965998888015747,
+            0.8965998291969299,
+            0.8965996503829956,
+            0.8965993523597717,
+            0.896599292755127,
+            0.8965991735458374,
+            0.8965991139411926,
+            0.8965989947319031
+          ],
+          "hardware_failure_count": 0
+        },
+        "Convection_diffusion_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 219,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1089,
+            "incomplete": 24,
+            "syntax_error": 486,
+            "variable_or_numeric_unavailable": 182
+          },
+          "final_equations": [
+            "(u_{x})+(u_{xxx})+(u_{xx})+(u_{t})=0",
+            "(u_{x})+(u_{t})+(u_{xx})+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(\\sinh{u})+(u_{x})+(u_{xx})+({u_{x}}^{2})\\cdot (u)=0",
+            "(u_{x})+(u_{t})+({u}^{2})+(u)+(u_{xx})=0",
+            "(u_{xx})+(u)+(u_{t})+(t)\\cdot (x)+(u_{x})=0",
+            "(u_{xx})+(u)/(x)/(x)+(u_{t})+(u_{x})\\cdot (u)/(x)+({u}^{2})+(u_{x})=0",
+            "({u_{x}}^{2})/(u)/(u)/(u)+(u_{t})+(u_{x})/(u)/(u)+(u_{xx})/(u)/(u)=0",
+            "({u}^{3})+({u_{x}}^{2})+(u_{t})+(u_{xx})\\cdot (u)+({u}^{2})+(u)=0",
+            "(u_{x})\\cdot ({u}^{2})+({u}^{2})\\cdot (u_{xxx})+(u_{xx})\\cdot (u_{x})\\cdot (u_{xx})+(u_{x})\\cdot (u_{xx})\\cdot (u)+(u_{xxt})+(u_{x})\\cdot (u_{x})\\cdot (u_{x})+(u_{t})+({u_{x}}^{2})\\cdot (u_{x})\\cdot (u_{xxx})=0",
+            "(u_{xt})+(u_{tt})+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.867925763130188,
+            0.8631572127342224,
+            0.8509586453437805,
+            0.8441345691680908,
+            0.8405576348304749,
+            0.8246365189552307,
+            0.7983430027961731,
+            0.781117856502533,
+            0.7631707191467285,
+            0.7402846813201904
+          ],
+          "hardware_failure_count": 0
+        },
+        "KG_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 213,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1101,
+            "incomplete": 25,
+            "syntax_error": 476,
+            "variable_or_numeric_unavailable": 185
+          },
+          "final_equations": [
+            "(u_{tt})+(u_{xx})+(\\sinh{u})=0",
+            "(u_{xx})+(\\sin{u})+(u_{tt})=0",
+            "(u_{xx})+(u_{tt})+(\\sin{u})\\cdot ({u}^{2})=0",
+            "(u_{xx})+({u}^{3})+(u_{tt})=0",
+            "({u_{x}}^{2})/(u)/(u)/(u)+(u_{t})+(u_{x})/(u)/(u)+(u_{xx})/(u)/(u)=0",
+            "(u_{tt})+(\\sin{x})\\cdot (t)+(u_{xx})+(u)=0",
+            "(u_{xx})+(u_{tt})+(\\sin{x})\\cdot (t)+(u)=0",
+            "(u_{xx})+(\\exp{x})\\cdot (t)\\cdot (\\sin{u})+(u_{tt})+(u)=0",
+            "(u_{xx})+(u_{tt})+(\\exp{x})\\cdot (t)\\cdot (t)+(u)=0",
+            "(u_{xx})+(u_{tt})+(\\sin{u})+(x)\\cdot (u_{x})=0"
+          ],
+          "final_rewards": [
+            0.9032430052757263,
+            0.9026337265968323,
+            0.8851511478424072,
+            0.8845663666725159,
+            0.8784583806991577,
+            0.8782982230186462,
+            0.877720832824707,
+            0.8777207732200623,
+            0.8777207136154175,
+            0.8776996731758118
+          ],
+          "hardware_failure_count": 0
+        },
+        "Burgers_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 203,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1096,
+            "incomplete": 23,
+            "syntax_error": 476,
+            "variable_or_numeric_unavailable": 202
+          },
+          "final_equations": [
+            "({u_{x}}^{2})/(u)/(u)/(u)+(u_{t})+(u_{x})/(u)/(u)+(u_{xx})/(u)/(u)=0",
+            "(u_{x})\\cdot (u)+(u_{t})+(u_{xx})+(u)=0",
+            "(u_{xx})+(u)\\cdot (u_{x})+(u_{t})+(u_{xxt})=0",
+            "(u_{t})+(u_{xx})+(u_{xxt})+(u)\\cdot (u_{x})=0",
+            "(u_{xx})+(u_{xxt})+(u)\\cdot (u_{xx})+(u_{t})+({u}^{3})+(u)\\cdot (u_{x})=0",
+            "(u_{xx})+(u_{t})+(u)\\cdot ({u_{x}}^{2})+(u_{xx})\\cdot ({u}^{2})=0",
+            "(u_{xx})+(u_{xx})\\cdot (t)+(u_{tt})+(u)=0",
+            "(u_{x})\\cdot ({u}^{2})/(x)+(u_{xx})+(u_{tt})+(\\sin{u})\\cdot (t)\\cdot (t)=0",
+            "(u)\\cdot (u_{x})+(u_{t})+(u_{xx})\\cdot (u_{x})=0",
+            "(u)\\cdot (u)\\cdot (u)\\cdot (u)+({u}^{2})+(u)+(u_{t})+({u_{x}}^{2})/(u)/(u)+(u_{xx})/(u)=0"
+          ],
+          "final_rewards": [
+            0.8795620203018188,
+            0.873627781867981,
+            0.8721574544906616,
+            0.8537362217903137,
+            0.8375535011291504,
+            0.8353582620620728,
+            0.8103569746017456,
+            0.8049863576889038,
+            0.7706140279769897,
+            0.7416964173316956
+          ],
+          "hardware_failure_count": 0
+        },
+        "Eq_6_2_12": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 220,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1084,
+            "incomplete": 25,
+            "syntax_error": 497,
+            "variable_or_numeric_unavailable": 174
+          },
+          "final_equations": [
+            "(u_{xt})+(u_{tt})+(u_{xx})=0",
+            "(u_{x})+(u_{t})+(u_{xxx})=0",
+            "(u_{x})+(u_{xxx})+(u_{xx})+(u_{t})=0",
+            "(u_{x})+(u_{t})+({u}^{2})\\cdot (u_{x})+(u_{xxx})=0",
+            "(u_{x})+(u)\\cdot (u_{x})\\cdot (u)\\cdot (u)\\cdot (u)+(u_{t})+(u_{xxt})=0",
+            "(u_{x})+(u_{x})\\cdot (u)+(u_{t})+(u_{xxt})=0",
+            "(u_{t})+(u_{x})+(u)\\cdot (u)\\cdot (u)\\cdot (u)\\cdot (u_{x})+(u_{xxt})=0",
+            "(u_{t})+(\\sinh{u})+(u_{x})+(u_{xx})+({u_{x}}^{2})\\cdot (u)=0",
+            "(u_{x})+(u_{t})+(u_{xx})+(u)\\cdot (u_{x})=0",
+            "(u_{x})+(u_{t})+({u}^{2})+(u)+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.8565448522567749,
+            0.8486860394477844,
+            0.8354939222335815,
+            0.8269741535186768,
+            0.8215036988258362,
+            0.8203259706497192,
+            0.8150013089179993,
+            0.7971299290657043,
+            0.7939445376396179,
+            0.7764545679092407
+          ],
+          "hardware_failure_count": 0
+        },
+        "PDE_divide": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 228,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1095,
+            "incomplete": 26,
+            "syntax_error": 479,
+            "variable_or_numeric_unavailable": 172
+          },
+          "final_equations": [
+            "(u)+(u_{t})+(u)\\cdot (u_{x})=0",
+            "({u_{x}}^{2})+({u_{x}}^{2})\\cdot (\\sin{x})+(u)\\cdot (u_{xx})+(u_{t})=0",
+            "(u)+(u_{xx})+(u_{t})+(u_{x})\\cdot (u)=0",
+            "(u)\\cdot (u_{t})+(u_{x})/(x)+(u_{tt})+({u}^{3})=0",
+            "(\\sinh{u})+(u_{x})\\cdot (\\sinh{u})+(u_{t})+({u_{x}}^{2})\\cdot (u)=0",
+            "(u_{x})+(u_{t})+(u_{xx})+(u)\\cdot (u_{x})=0",
+            "(u_{t})+(u_{xx})+(u)+(u_{tt})+({u}^{3})=0",
+            "(u_{t})\\cdot ({u_{t}}^{3})+({u}^{3})\\cdot (u_{xxt})+(u_{t})=0",
+            "(u_{x})+(u_{xxx})+(u_{xx})+(u_{t})=0",
+            "(u_{t})+(\\sinh{u})+(u_{x})+(u_{xx})+({u_{x}}^{2})\\cdot (u)=0"
+          ],
+          "final_rewards": [
+            0.893484890460968,
+            0.8792105317115784,
+            0.8688040971755981,
+            0.866894006729126,
+            0.8629956245422363,
+            0.861293375492096,
+            0.8591471910476685,
+            0.8583502173423767,
+            0.8509492874145508,
+            0.8491542339324951
+          ],
+          "hardware_failure_count": 0
+        },
+        "KdV_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 203,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1095,
+            "incomplete": 24,
+            "syntax_error": 472,
+            "variable_or_numeric_unavailable": 206
+          },
+          "final_equations": [
+            "(\\partial_{x}{(u\\cdot u_{x})})+(u_{tt})+(u_{xxxx})+(u_{xx})=0",
+            "(u_{xxx})+({x}^{4})+({u}^{3})+(u_{x})\\cdot (u)+(u_{t})=0",
+            "(u)\\cdot (u_{xxx})+(u_{t})+(u_{x})\\cdot ({u}^{2})+(u_{xx})\\cdot (u_{x})+(u_{xxt})=0",
+            "(u)\\cdot (u_{xxx})+(u_{x})\\cdot ({u}^{2})+(u_{t})+(u_{x})\\cdot (u_{xx})+(u_{xx})=0",
+            "(u_{t})+(u_{xxx})+({u_{x}}^{2})+(u_{x})\\cdot ({u}^{2})+(u)\\cdot (u_{x})=0",
+            "({u_{x}}^{2})/(u)/(u)/(u)+(u_{t})+(u_{x})/(u)/(u)+(u_{xx})/(u)/(u)=0",
+            "(u)\\cdot (u_{xxx})+(u_{x})\\cdot (u_{xx})+(u_{x})\\cdot ({u}^{2})+(u_{xxx})+(u_{t})+(u_{xx})=0",
+            "(u_{xx})+(u_{xx})\\cdot (t)+(u_{tt})+(u)=0",
+            "(u_{xx})\\cdot (u)+({u_{x}}^{2})+(u_{t})+(u)\\cdot (u)\\cdot (u)\\cdot (u)=0",
+            "({u}^{3})+(u_{xx})\\cdot ({u}^{2})+(u)\\cdot ({u_{x}}^{2})+(u_{t})+(u_{xx})=0"
+          ],
+          "final_rewards": [
+            0.8652613162994385,
+            0.8594126105308533,
+            0.855832040309906,
+            0.8523481488227844,
+            0.8482353687286377,
+            0.845742404460907,
+            0.8371418118476868,
+            0.8363041877746582,
+            0.8314344882965088,
+            0.8230625987052917
+          ],
+          "hardware_failure_count": 0
+        },
+        "Chaffee_Infante_equation": {
+          "top1_correct": false,
+          "top10_correct": false,
+          "evaluated": 223,
+          "ever_raw_complete_correct": false,
+          "ever_effective_correct_scored": false,
+          "invalid_status_counts": {
+            "unsupported_expression": 1092,
+            "incomplete": 27,
+            "syntax_error": 486,
+            "variable_or_numeric_unavailable": 172
+          },
+          "final_equations": [
+            "({u}^{2})+(u)+(u_{t})+(u_{xx})=0",
+            "(u_{xx})\\cdot (u)+({u_{x}}^{2})+(u_{t})+(u)\\cdot (u)\\cdot (u)\\cdot (u)=0",
+            "(u_{t})+(u)\\cdot (u)\\cdot (u)\\cdot (u)+(u)\\cdot (u_{xx})+({u_{x}}^{2})=0",
+            "(u)\\cdot (u_{t})+(u_{x})/(x)+(u_{tt})+({u}^{3})=0",
+            "(u_{t})+(u_{xx})+(u)+(u_{tt})+({u}^{3})=0",
+            "(u_{xxt})\\cdot (u)+(u_{x})\\cdot (u_{xt})+(u_{t})\\cdot ({u}^{2})=0",
+            "(u_{xx})\\cdot (u_{t})+(u_{xxt})\\cdot (u)+(u_{x})\\cdot (u)+(u_{t})=0",
+            "({u}^{3})+({u_{x}}^{2})+(u_{t})+(u_{xx})\\cdot (u)+({u}^{2})+(u)=0",
+            "(u_{t})+({u}^{2})+(u)\\cdot (u)\\cdot (u)\\cdot (u)+(u)\\cdot (u_{xx})+({u_{x}}^{2})=0",
+            "(u_{xx})+(u_{xx})\\cdot (t)+(u_{tt})+(u)=0"
+          ],
+          "final_rewards": [
+            0.8750777244567871,
+            0.8703553676605225,
+            0.8603982329368591,
+            0.860061526298523,
+            0.8570224642753601,
+            0.8487071990966797,
+            0.8450294137001038,
+            0.8438833355903625,
+            0.8427705764770508,
+            0.842681884765625
+          ],
+          "hardware_failure_count": 0
+        }
+      },
+      "top1_correct": 0,
+      "top10_correct": 0,
+      "first_pretrain_loss": 3.252220887058186,
+      "last_pretrain_loss": 1.0391341738355984,
+      "training_seconds": 3019.031790247005
+    }
+  },
+  "repository_base_commit": "815cc37adcdd714c9e9bd547a0561bb75f82901c",
+  "artifact_hashes_verified": true,
+  "storage_policy": {
+    "policy": "retain_pretrain_and_final_weights_v1",
+    "retained": [
+      "shared_pretrain/*/pretrained.pt",
+      "cases/*/*/cycle_0.pt",
+      "cases/*/*/cycle_5.pt",
+      "cases/*/*/searched.pt",
+      "all active training/search/candidate restart states",
+      "all candidate traces, histories, diagnostics and weight hashes"
+    ],
+    "released": "cycle_1.pt through cycle_4.pt only AFTER diagnostics and case completion",
+    "reason": "bounded artifact storage; mathematical runtime and budgets remain unchanged"
+  },
+  "recoveries": [
+    {
+      "incident": "cuda_host_to_device_stall",
+      "stage": "ast_bpe_280_pretraining",
+      "completed_epoch_checkpoint": 31,
+      "checkpoint_sha256": "6bfe01d15f8d5b2e6a47a27fcf94516e89cf74935e62c35c331618e8e933d3d9",
+      "utc": "2026-11-03T19:42:31.866846+00:00",
+      "mathematical_source_changed": false,
+      "completed_eqgpt_cases_reused": 8,
+      "stack_file": "recovery636-stack.txt",
+      "resumed_epoch": 33,
+      "history_prefix_preserved": true,
+      "optimizer_steps_before": 4929,
+      "optimizer_steps_after": 5247,
+      "changed_parameter_tensors": 64,
+      "recovery_verified": true,
+      "verified_utc": "2026-11-03T19:46:50.549019+00:00"
+    },
+    {
+      "incident": "storage_volume_migration",
+      "stage": "ast_bpe_315_pretraining",
+      "arm": "ast_bpe_315",
+      "completed_epoch_checkpoint": 36,
+      "checkpoint_backup_relative": "work/recovery636-ast315-storage.pt",
+      "checkpoint_sha256": "d68e71a087b943351e2c01514fa05a249016915ecefb35f75e313ade9905fc96",
+      "mathematical_source_changed": false,
+      "completed_case_models_reused": 16,
+      "utc": "2026-11-03T21:47:59.952221+00:00",
+      "resumed_epoch": 42,
+      "history_prefix_preserved": true,
+      "optimizer_steps_before": 5724,
+      "optimizer_steps_after": 6678,
+      "changed_parameter_tensors": 64,
+      "recovery_verified": true,
+      "verified_utc": "2026-11-03T22:10:04.183502+00:00"
+    },
+    {
+      "incident": "cuda_host_to_device_stall",
+      "stage": "ast_bpe_315_pretraining",
+      "arm": "ast_bpe_315",
+      "completed_epoch_checkpoint": 98,
+      "checkpoint_backup_relative": "outputs/large636/recovery636-ast315-epoch98.pt",
+      "checkpoint_sha256": "10b77c6c8421e85311789f45911b00c721a740f083d84b2d18df147fc0ec20e3",
+      "mathematical_source_changed": false,
+      "completed_case_models_reused": 16,
+      "stack_file": "recovery636-stack-ast315-epoch98.txt",
+      "utc": "2026-11-03T22:46:27.035627+00:00",
+      "resumed_epoch": 99,
+      "history_prefix_preserved": true,
+      "optimizer_steps_before": 15582,
+      "optimizer_steps_after": 15741,
+      "changed_parameter_tensors": 64,
+      "recovery_verified": true,
+      "verified_utc": "2026-11-03T22:50:43.526449+00:00"
+    },
+    {
+      "incident": "cuda_synchronization_stall",
+      "kind": "search",
+      "stage": "ast_bpe_350_Convection_diffusion_equation_search",
+      "arm": "ast_bpe_350",
+      "case": "Convection_diffusion_equation",
+      "cycle": 2,
+      "completed_attempts_in_cycle": 75,
+      "checkpoint_backup_relative": "outputs/large636/recovery-search636-ast350-convection",
+      "checkpoint_hashes": {
+        "search_progress.pt": "6b44780bb7c36079ac9163c2b6a9d4fc641bcffcd0843e37f99d5506d858144a",
+        "attempt_progress.pt": "85991162d6e54c44227dcabd3f00b60cc9fdf72e3c4b1b3e6873857227fb86b8"
+      },
+      "mathematical_source_changed": false,
+      "completed_case_models_reused": 25,
+      "stack_file": "recovery636-stack-ast350-search.txt",
+      "utc": "2026-11-04T00:42:45.789819+00:00",
+      "recovery_verified": true,
+      "model_and_optimizer_preserved": true,
+      "completed_cycle_history_preserved": true,
+      "candidate_prefix_preserved": true,
+      "rng_and_evaluator_state_retained": true,
+      "resumed_attempt_checkpoint": 125,
+      "optimizer_steps_preserved": [
+        5
+      ],
+      "verified_utc": "2026-11-04T00:46:28.584885+00:00"
+    }
+  ],
+  "storage_migration": {
+    "logical_result_path": "C:\\Users\\28678\\Documents\\Codex\\2026-11-04\\https-github-com-xtr1976536-tokenizer-pde\\outputs\\large636",
+    "backing_directory": "D:\\desktop\\CodexRuns\\2026-11-04-tokenizer-pde-636-01a1a261\\large636",
+    "unique_files_verified": 182,
+    "unique_bytes_verified": 3240974924,
+    "all_files_sha256_verified": true,
+    "hardlinks_preserved": true,
+    "mathematical_source_changed": false,
+    "utc": "2026-11-03T21:47:59.952221+00:00",
+    "verified_old_copy_released": false,
+    "old_copy_retained_path": "C:\\Users\\28678\\Documents\\Codex\\2026-11-04\\https-github-com-xtr1976536-tokenizer-pde\\outputs\\large636-before-storage-migration",
+    "old_copy_retained_reason": "Automatic approval review rejected recursive removal: blocked by policy; no more specific reason supplied",
+    "hash_manifest": "storage_migration636_hashes.json",
+    "backing_acl_repair": "Granted current Windows user FullControl on this dedicated task folder and descendants; inherited entries retained",
+    "initial_resume_error": "Inherited D-folder ACL allowed Write but lacked Delete/Replace, blocking atomic RUN.json replacement",
+    "linux_atomic_replace_verified": true,
+    "atomic_replace_verified_utc": "2026-11-03T22:04:03.271699+00:00"
+  }
+}

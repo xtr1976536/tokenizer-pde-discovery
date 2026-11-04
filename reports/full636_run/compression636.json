@@ -1,0 +1,29 @@
+{
+  "method": "NTFS transparent compression of immutable recovery snapshots",
+  "files": {
+    "outputs/large636/recovery636-ast315-epoch98.pt": {
+      "logical_bytes": 384137093,
+      "stored_bytes": 383291392,
+      "sha256": "10b77c6c8421e85311789f45911b00c721a740f083d84b2d18df147fc0ec20e3",
+      "content_unchanged": true,
+      "file_retained": true
+    },
+    "outputs/large636/recovery-search636-ast350-convection/search_progress.pt": {
+      "logical_bytes": 385742292,
+      "stored_bytes": 382406656,
+      "sha256": "6b44780bb7c36079ac9163c2b6a9d4fc641bcffcd0843e37f99d5506d858144a",
+      "content_unchanged": true,
+      "file_retained": true
+    },
+    "outputs/large636/recovery-search636-ast350-convection/attempt_progress.pt": {
+      "logical_bytes": 841722,
+      "stored_bytes": 671744,
+      "sha256": "85991162d6e54c44227dcabd3f00b60cc9fdf72e3c4b1b3e6873857227fb86b8",
+      "content_unchanged": true,
+      "file_retained": true
+    }
+  },
+  "logical_bytes": 770721107,
+  "stored_bytes": 766369792,
+  "rejected_deletions_executed": false
+}

@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "model_state_contents": 36,
+  "verified_model_paths": 100,
+  "all_tensor_hashes_match_original_training_and_search": true,
+  "files": [
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "3f6c1d7f24436d422374116bb531706cfd032bdbdc236c3ae65755d064f0b95a",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_280__cycle_0.pt",
+      "tensor_sha256": "9a215d7745ec85bd7e6d68c833b0ee5b9aac848b58c99624ebac98fd01c5e299",
+      "mapped_paths": 9,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__KdV_equation__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "eac612238f16b322db9370b9dca757d6ecccf918c4185b0435196793cf9d6f7c",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "4832a4d13af7984a9b4b9871570fe4c1992449dd560463ee39e663767fbb18e6",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "13f5ea452220f48e6c53342e9315d2d495f64fc17678d17f7e658f78540c4937",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__KG_equation__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "f1d86d78fb9e2d795b10dcf535591680105a84962d333d6acc622078eb4c6981",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "00b6aa03f038c35c9b344dce0cfbc08f68333599943160ceadc08b9492a2328f",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Burgers_equation__eqgpt_reference__cycle_0.pt",
+      "tensor_sha256": "e2b6ea75d732c6255f2cd5d0dac775e43db20a501f718af6bbf758d116fa45bc",
+      "mapped_paths": 9,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__KG_equation__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "13d9e1d485eea4dddb78b5788b3fd6e865af31f159705bdcbc3d9457be85411f",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "0a3fa5ca2b5a44c6b4f414dea1aa68bcc69b569427ec0b46e6e67077a909f823",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__PDE_divide__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "7a6ee1c648e162a4aaef66151987462ec094f8eea4226ba22d914711ba432afd",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Wave_equation__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "563b81884dddf45d868b9122d52d0867f84ba9dd94c9419a2a3f3acd1c0bcd63",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__KdV_equation__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "0f2c9898bb446da981b556e39c23c4b70944a78244d62042a4ab0bb502fe1630",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__Eq_6_2_12__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "371b7432931d124a5096955929c05d2e0b7f3c6e344d4764636f232d5ea228d4",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__PDE_divide__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "d77d2afea26a5bd9112cd7683ef0ce53708298f0d26b33501167d1920c728e14",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "022ad53cbf585b9e538476332cc3eb830df057c351e117aac80d232265f88b3d",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Eq_6_2_12__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "ffccc43cbb6aefee8a74863c13ecb1fa10fe444aae6442c6053bacfc0c843163",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__Eq_6_2_12__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "00fe778bbf4b6ddba8bfe2310a2f59d4f5386daf449218137308a0c7046477d0",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_315__cycle_0.pt",
+      "tensor_sha256": "daae262dba8b2168c8bdb530b2ccdb8ef538eb3496a94171fccaa85fa2c02ea5",
+      "mapped_paths": 9,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Eq_6_2_12__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "2ebf5597360fc0cafd367bb29305570104c18f381cd314c16dd9213f8019e37b",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__KdV_equation__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "0c52b1c9b998fd7b249a01eb782e9db95592ed9364a37ce25cebb279395b4983",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "1f149062e32ae1619ddf008c2c7fdd3f3d96eccc02b52f106d6a90cad83a014e",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__PDE_divide__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "42d2dc5610f46569561e04c0b1f6d4a832ae0873e580f6a0b8d836f7c49865e8",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "f0cbbdc1e5b83ae2878f7c6a1ce3dc7d6242d4b2c4e5a691c8a5e304f5bd5a2c",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__PDE_divide__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "cbc22cf227c7de7e4929bbb78055c7b670bf79db3e9bc9172b6070a9702c8078",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__KdV_equation__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "aaae77e784642bc1eb5210aa19caa4e7a63d511da3d40f4bc9a15c7fb3f30db7",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Burgers_equation__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "56799652a23e6496df40e04ec0c56280e66e6f315051e3bdff241a98f41e4a7a",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "977e8ccd2b2b2fb99583a88c1e50f3d54e0a49bfeeaef120f0d40b0019a791ba",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__KG_equation__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "f98098570bbe11a03b6b65cb6e2391080608e74dd6f8aac556c909171b59789d",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_280__cycle_5.pt",
+      "tensor_sha256": "7f27c15590806dad2238e9035e897bf9e35e8e63e116d87c1f5c87ef9719547d",
+      "mapped_paths": 2,
+      "parameter_values": 38245144
+    },
+    {
+      "asset": "cases__KG_equation__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "1523b117fd7207b0cfeea0161b9479e84037dc70b5d322d1dfcc7107749875c6",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_315__cycle_5.pt",
+      "tensor_sha256": "620851cac58317c17e920c8553a5b4ab47110c4c67bc24e9471ea5cdec178fb3",
+      "mapped_paths": 2,
+      "parameter_values": 38298939
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "891c34caa87ae0ef609add08c9c6b2c167b680879beb74d2143586f975b80cf8",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_350__cycle_0.pt",
+      "tensor_sha256": "637df77afaa37f67e9086bf15b542da5a421b5bde10c098fa5bd0e0492658433",
+      "mapped_paths": 9,
+      "parameter_values": 38352734
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__eqgpt_reference__cycle_5.pt",
+      "tensor_sha256": "6082e42b13451f75f14919b1fe225266c7ee9f33b816bbd321869f572354a9e5",
+      "mapped_paths": 2,
+      "parameter_values": 37902393
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_350__cycle_5.pt",
+      "tensor_sha256": "31e0f6860d2461739fc640e4cadc3a0fb6fca0b4be2490506dd9684eef128440",
+      "mapped_paths": 2,
+      "parameter_values": 38352734
+    }
+  ]
+}

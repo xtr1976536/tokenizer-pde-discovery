@@ -12,7 +12,7 @@ AST-BPE 动态演示：[在线版本（Sites，本人可见）](https://ast-bpe-
 |---|---|---|---|
 | 上游分词评估 | 636条，训练/验证/测试509/64/63 | 四项实验完成 | [上游报告](experiments/upstream_current636/README.md) |
 | 下游PDE发现 | 212条，增强后6784条 | 4模型×8案例完成，64,000次候选尝试 | [下游报告](reports/full212_run/README.md) |
-| 大语料下游 | 636条，增强后20352条 | 数据与词表就绪，正式训练未启动 | [数据](data/formulas/636) |
+| 大语料下游 | 636条，增强后20352条 | 4模型×8案例完成，64,000次候选尝试 | [大语料报告](reports/full636_run/README.md) |
 
 ## 上游：四个分词器
 
@@ -55,6 +55,17 @@ AST-BPE 动态演示：[在线版本（Sites，本人可见）](https://ast-bpe-
 
 表中为自动结构分类。八案例共享已拟合MLP，当前流程不执行最终PINN系数优化。公共评分修正及回归验证见[评分记录](reports/scoring_fixes_validation/README.md)。
 
+636条完整实验也已完成，相同模型与搜索协议的结果如下：
+
+| 模型 | Top-1正确 | Top-10包含正确方程 |
+|---|---:|---:|
+| EqGPT | 2/8 | 2/8 |
+| Hard 280 | 2/8 | 2/8 |
+| Hard 315 | 0/8 | 0/8 |
+| Hard 350 | 0/8 | 0/8 |
+
+636条各模型预训练100 epoch、15,900次更新，使用CUDA；212条使用Apple MPS。两档分别学习词表，等epoch不等更新次数/算力，不能将差异单独归因于语料量。完整结果、运行增量、断点恢复和保留范围见[636条报告](reports/full636_run/README.md)。大语料运行源码通过基础提交加补丁单独还原，保留现有小语料及上游代码。
+
 ## 安装与运行
 
 Python 3.11，需C编译器构建Hard后端；设备支持CPU、Apple MPS或CUDA。
@@ -80,6 +91,8 @@ python -m scripts.pde_experiment run --scale 212 --device mps
 
 小试入口为`python -m scripts.pde_experiment smoke --scale 212 --device mps`；从头运行同样需先另存历史`experiments/smoke/212`。已完成模型按下节恢复权重。
 
+636条的原始断点恢复运行环境应独立还原，再指定新的输出目录；[复现步骤](reports/full636_run/README.md#代码复现)不会覆盖本仓库的历史实验。
+
 ## 权重
 
 212条完整实验的164个唯一检查点约25.1 GB，对应228个路径，通过[GitHub Release](https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full212-815cc37)交付。进度与SHA-256验证见[权重说明](reports/full212_run/WEIGHTS.md)。
@@ -89,6 +102,13 @@ python -m scripts.pde_experiment run --scale 212 --device mps
 python scripts/download_full212_weights.py
 # 只恢复指定模型和案例；需要GitHub CLI
 python scripts/download_full212_weights.py --arm ast_bpe_350 --case Wave_equation --download
+```
+
+636条权重通过[独立Release](https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full636-815cc37)交付：40份不同内容，约6.66 GB，对应104个规范路径，含全部现存预训练/最终模型和独特恢复状态。原实验已释放第1至4轮中间权重，其轨迹与哈希仍在；[保留说明及下载](reports/full636_run/WEIGHTS.md)。
+
+```bash
+python scripts/download_full636_weights.py
+python scripts/download_full636_weights.py --arm ast_bpe_280 --case Wave_equation --download
 ```
 
 ## 文件导航
@@ -101,6 +121,8 @@ python scripts/download_full212_weights.py --arm ast_bpe_350 --case Wave_equatio
 | [data/mlp_cache](data/mlp_cache) | 八案例固定数值缓存 |
 | [experiments/upstream_current636](experiments/upstream_current636) | 上游协议、词表、逐公式计数与诊断 |
 | [experiments/full/212](experiments/full/212) | 下游训练历史、64,000候选、逐轮轨迹、完成哈希 |
+| [experiments/full/636](experiments/full/636) | 大语料100 epoch历史、64,000候选、逐轮轨迹、诊断与完成哈希 |
+| [reports/full636_run](reports/full636_run/README.md) | 大语料报告、运行补丁、去重清单、三轮归档检查与Release权重映射 |
 | [experiments/smoke](experiments/smoke) | 两档历史小试记录 |
 | [reports](reports/README.md) | 语料、评分、运行和三轮仓库检查索引 |
 | [src](src) / [native](native) | 共享Python实现与C后端 |
@@ -118,3 +140,5 @@ python -m scripts.audit_repository --round 3
 ```
 
 三轮检查分别核对资产/链接与数据、代码/词表/结果、独立检出与GitHub权重交付。记录见[仓库检查](reports/repository_audit)。第三方源码、词表和文献的许可见[NOTICE.md](NOTICE.md)。
+
+本次636条正式实验归档另做[三轮独立检查](reports/full636_run/AUDIT.md)，保留之前的小语料及上游检查记录。

@@ -3,6 +3,7 @@
 | 目录 | 内容 |
 |---|---|
 | [full212_run](full212_run/README.md) | 212条下游完整实验日志、结果与权重 |
+| [full636_run](full636_run/README.md) | 636条下游完整实验、运行增量、全部现存权重与三轮归档检查 |
 | [scoring_fixes_validation](scoring_fixes_validation/README.md) | 评分修正、回归和固定候选重评 |
 | [scorer_audit](scorer_audit/README.md) | 原评分实现语义审计 |
 | [corpus_revision](corpus_revision/README.md) | 636条语料来源与23条替换记录 |

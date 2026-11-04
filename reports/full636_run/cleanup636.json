@@ -1,0 +1,12 @@
+{
+  "status": "retained_due_to_automatic_review_rejection",
+  "reason_returned": "blocked by policy",
+  "old_c_migration_backup_retained": true,
+  "verified_temporary_recovery_snapshots_retained": true,
+  "rejected_actions": [
+    "Remove verified old C migration duplicate",
+    "Remove the three verified temporary recovery snapshot files"
+  ],
+  "rejected_deletions_executed": false,
+  "alternative_deletion_attempted": false
+}

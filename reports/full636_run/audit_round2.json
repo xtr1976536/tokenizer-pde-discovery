@@ -1,0 +1,35 @@
+{
+  "round": 2,
+  "status": "PASS",
+  "runtime_fingerprint": "e69f7045189d5b244ed84f562bf1246b4fd1312379aaa5a9a50f513029bd9c41",
+  "verified_runtime_source_files": 74,
+  "critical_model_scoring_tokenizer_files_unchanged": [
+    "src/math_tokenizer/eqgpt/models.py",
+    "src/math_tokenizer/eqgpt/scoring_fixes.py",
+    "src/math_tokenizer/eqgpt/study3_corpus.py",
+    "src/math_tokenizer/eqgpt/tokenizer_adapters.py",
+    "src/math_tokenizer/hard_ast_2026.py",
+    "native/hard_ranked_2026.c"
+  ],
+  "small_and_large_settings_identical": true,
+  "recomputed_results": {
+    "eqgpt_reference": {
+      "top1": 2,
+      "top10": 2
+    },
+    "ast_bpe_280": {
+      "top1": 2,
+      "top10": 2
+    },
+    "ast_bpe_315": {
+      "top1": 0,
+      "top10": 0
+    },
+    "ast_bpe_350": {
+      "top1": 0,
+      "top10": 0
+    }
+  },
+  "regression_tests": "47 passed",
+  "tests_log_sha256": "09a80243f5463efa9f60dea4c6ea07f9622c4141f94c0d8779a51e6ad5779eef"
+}

@@ -1,0 +1,12 @@
+{
+  "round": 1,
+  "status": "PASS",
+  "raw_artifact_hashes": 326,
+  "orchestration_helpers": 20,
+  "case_model_groups": 32,
+  "candidates": 64000,
+  "unique_retained_weights": 40,
+  "retained_paths": 104,
+  "released_intermediate_paths": 128,
+  "released_intermediates_documented": true
+}

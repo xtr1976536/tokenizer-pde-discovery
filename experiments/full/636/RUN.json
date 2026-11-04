@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "seed": 525,
+    "layers": 6,
+    "epochs": 100,
+    "batch_size": 128,
+    "positions": 50,
+    "search_limit": 48,
+    "learning_rate": 0.0001,
+    "cycles": 5,
+    "attempts": 400,
+    "continuation_epochs": 5,
+    "continuation_lr": 1e-05,
+    "epi": 0.2
+  },
+  "formal_settings": {
+    "seed": 525,
+    "layers": 6,
+    "epochs": 100,
+    "batch_size": 128,
+    "positions": 50,
+    "search_limit": 48,
+    "learning_rate": 0.0001,
+    "cycles": 5,
+    "attempts": 400,
+    "continuation_epochs": 5,
+    "continuation_lr": 1e-05,
+    "epi": 0.2
+  },
+  "smoke": false,
+  "scale": 636,
+  "device": "cuda",
+  "source_sha256": "6b061c15a9e545dd692d67305da9805a327975d5bbae1b6c4bbeee597638acb6",
+  "code": "e69f7045189d5b244ed84f562bf1246b4fd1312379aaa5a9a50f513029bd9c41",
+  "runner": "b8015ede38e76347ec4e14ff7f3b0c3ea08a74c1fff4ae07243ccef2440e5abc",
+  "checkpoint_policy": "epoch_and_25_candidates_v1",
+  "python": "3.11.18",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.0.6",
+    "tokenizers": "0.23.3"
+  }
+}

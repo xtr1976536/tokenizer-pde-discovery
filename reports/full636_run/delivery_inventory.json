@@ -1,0 +1,35 @@
+{
+  "nonweight_run_files": 326,
+  "checkpoint_paths": 104,
+  "unique_checkpoint_contents": 40,
+  "reused_212_weights": 0,
+  "source_evidence": [
+    "summary636.json",
+    "summary636.txt",
+    "preflight636.json",
+    "verification.txt",
+    "runtime-requirements.freeze.txt",
+    "storage_policy636.json",
+    "experiment636.log",
+    "restarts636.json",
+    "recovery636-stack.txt",
+    "storage_migration636.json",
+    "storage_migration636_hashes.json",
+    "recovery636-stack-ast315-epoch98.txt",
+    "recovery98-validation.log",
+    "recovery636-stack-ast350-search.txt",
+    "recovery-search636-validation.json",
+    "compression636.json",
+    "cleanup636.json"
+  ],
+  "excluded_duplicates": [
+    "50 migration backup weights and one extra copy are duplicates; the unique epoch-36 state is retained once",
+    "runtime-source.zip (replaced by base commit + delta patch)",
+    "pde636_complete_results.tar (contains the same run files)",
+    "email636 transport archives"
+  ],
+  "retention": "cycle_1.pt to cycle_4.pt were released by the completed run; per-cycle traces and diagnostic weight hashes retained",
+  "backup_weight_paths_checked": 52,
+  "additional_recovery_contents": 1,
+  "original_run_checkpoint_paths": 103
+}

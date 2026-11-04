@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "path": "orchestration/preflight636.py",
+      "sha256": "2439f5e14e6760985be37d8515750e0aa63b0be3760e955f274f5e064312d12b",
+      "bytes": 3327
+    },
+    {
+      "path": "orchestration/finalize636.py",
+      "sha256": "de9011b91a72487ef80a6d591f97697557f58e5831309c77655767b94551287e",
+      "bytes": 7345
+    },
+    {
+      "path": "orchestration/retain636.py",
+      "sha256": "c694b68d859b8b258f36d430b139c36941df8651a98c764457dcdbd840c9cbc8",
+      "bytes": 2779
+    },
+    {
+      "path": "orchestration/run_full636.sh",
+      "sha256": "38783ed2b1f0390d87ab07d15f1c254981fccfe6118ab2fd9944ded35ca662fc",
+      "bytes": 270
+    },
+    {
+      "path": "orchestration/runtime_env.sh",
+      "sha256": "cb8cefb174fe95b2120cc6ce44151efce88feb9ca262a83b62d497cf86b7d1c1",
+      "bytes": 601
+    },
+    {
+      "path": "orchestration/guard_full636.py",
+      "sha256": "71f12bee6b877c8f1fce286eee688f433fa1cc96143e2cd0ad5432a260fa2641",
+      "bytes": 2208
+    },
+    {
+      "path": "orchestration/watch636.py",
+      "sha256": "0ada2e720fe46e066d222c03055dabb6776fd8e2f0bd21625ecadc57bc48a193",
+      "bytes": 1467
+    },
+    {
+      "path": "orchestration/copy_storage636.py",
+      "sha256": "5e7628db302a1c0fcd44703399dfe5a8daaf1f88934fb92a7b19825990944fcd",
+      "bytes": 2553
+    },
+    {
+      "path": "orchestration/record_recovery98_636.py",
+      "sha256": "6c073f097c382a08eceaa37290d517acf61f9c6768eb1037220f607e4e1ca467",
+      "bytes": 1662
+    },
+    {
+      "path": "orchestration/record_search_recovery636.py",
+      "sha256": "3fff0c96ebf46ba9c65fb7c079f343a04f12d8a2aa1185185fadf4da2d38ceb3",
+      "bytes": 1750
+    },
+    {
+      "path": "orchestration/verify_recovery636.py",
+      "sha256": "7c0514e53d118e08d0e7a36563f6060de5bdfa487b4db9be130bae75540ee404",
+      "bytes": 1906
+    },
+    {
+      "path": "orchestration/verify_search_recovery636.py",
+      "sha256": "f833557585f3d8f498b0e17f9a96bece5b82b66d1d21224aa78d3fa4880cb85d",
+      "bytes": 3077
+    },
+    {
+      "path": "orchestration/verify_compression636.py",
+      "sha256": "b7853c77cb71dd80499c18a3a7e98bfa176f5e17071159d9cb2cfefda7e2ebf2",
+      "bytes": 1620
+    },
+    {
+      "path": "orchestration/check_runtime.sh",
+      "sha256": "d1b26e69767938408d2d06fed05d3c45e5d72fee3d51baabae8272190d595aaa",
+      "bytes": 335
+    },
+    {
+      "path": "orchestration/check_recovery636.sh",
+      "sha256": "934b61231b0e169f21711f6fd1db453fceb7298ee92d9c5356c8f9e300d12ccc",
+      "bytes": 215
+    },
+    {
+      "path": "orchestration/check_search_recovery636.sh",
+      "sha256": "a5c2aa70d675a28ef006e8c06997d0f65177dbf9e960b5c29f79250278caca14",
+      "bytes": 222
+    },
+    {
+      "path": "orchestration/check_storage636.sh",
+      "sha256": "b7034f88aa06ace40b85b3a2b7104e7d1e3ab65e7526be5f2f5741e183178ede",
+      "bytes": 220
+    },
+    {
+      "path": "orchestration/storage636_atomic_probe.py",
+      "sha256": "514c1b363ee1a55700084aaaf969b67358b3c78c2050235775bc0b5f2c91e1cd",
+      "bytes": 955
+    },
+    {
+      "path": "orchestration/await_recovery98_636.py",
+      "sha256": "bc02b4928d1801998e41e29cf3cca25df8ae263336c0f0a0db8d7722514d4a3f",
+      "bytes": 1128
+    },
+    {
+      "path": "orchestration/package636.py",
+      "sha256": "fc1f8893dfffc0323e26fb56a8b8e0757a800192dc36f147171f27c9a235af30",
+      "bytes": 4000
+    }
+  ],
+  "scope": "Original machine-specific experiment launch, preflight, recovery, retention, migration and result-verification helpers; retained as provenance, not the portable rerun entrypoint",
+  "excluded": "Email/transport helpers, temporary dependency caches and process handles are not experiment source"
+}

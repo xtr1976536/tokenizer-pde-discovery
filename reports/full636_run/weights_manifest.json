@@ -1,0 +1,437 @@
+{
+  "repository": "xtr1976536/tokenizer-pde-discovery",
+  "tag": "full636-815cc37",
+  "training_base_commit": "815cc37adcdd714c9e9bd547a0561bb75f82901c",
+  "scale": 636,
+  "unique_assets": 40,
+  "checkpoint_paths": 104,
+  "total_unique_bytes": 6657087684,
+  "files": [
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "009d86332f555bfbeea58b3c83c1dd180549ed8cb61f4c7abbb4545628f249a2",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_280__cycle_0.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021427,
+      "sha256": "04cdb85b791d91889a29a49fcba4481a615a7e66e87545461f53c856cfd9d138",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/KdV_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/KG_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/PDE_divide/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_280/cycle_0.pt",
+        "experiments/full/636/shared_pretrain/ast_bpe_280/pretrained.pt"
+      ]
+    },
+    {
+      "asset": "cases__KdV_equation__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "0523a61b183ea4387f1728913e5d00ed69836a665fd588fc8ece5a3113e8ef79",
+      "paths": [
+        "experiments/full/636/cases/KdV_equation/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/KdV_equation/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "0572badfa5d5ba38f6316dc8afd8aeea167fa4ba23c554a3660acf8d6ee94c8a",
+      "paths": [
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "0be3fbbad070280ea9b349c62eb4616925f5f786c02f20153bc993b432779a18",
+      "paths": [
+        "experiments/full/636/cases/Wave_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "recovery636-ast315-epoch98.pt",
+      "tag": "full636-815cc37",
+      "bytes": 384137093,
+      "sha256": "10b77c6c8421e85311789f45911b00c721a740f083d84b2d18df147fc0ec20e3",
+      "paths": [
+        "experiments/full/636/recovery636-ast315-epoch98.pt"
+      ]
+    },
+    {
+      "asset": "cases__KG_equation__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "1af114fa7b7e4e8f3e0ab3fb93f327bc50e8161b46e46b9b61845de6d43106d2",
+      "paths": [
+        "experiments/full/636/cases/KG_equation/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/KG_equation/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "20e562095a61f8a2c40159699079b2820f9a145de6f1cc9867c8062c5b879175",
+      "paths": [
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__eqgpt_reference__cycle_0.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650419,
+      "sha256": "23697f89deaaf33ff2c71df471bde797484c7ee8e7349dc8d82e2d6356199daf",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/Eq_6_2_12/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/KdV_equation/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/KG_equation/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/PDE_divide/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/cases/Wave_equation/eqgpt_reference/cycle_0.pt",
+        "experiments/full/636/shared_pretrain/eqgpt_reference/pretrained.pt"
+      ]
+    },
+    {
+      "asset": "cases__KG_equation__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "25f19b784a60b27cc2f9162898967262ec031c0852810a8ce27e1d0c0f89cf0d",
+      "paths": [
+        "experiments/full/636/cases/KG_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/KG_equation/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "2d2d6c57272e2326a1804e3ddd519ff18bde2f35270a049019c32a16f902df82",
+      "paths": [
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__PDE_divide__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "2defb28d258d20ba6b08565e4da76ffd3ee2f2670cb946db1261de0f5eb98030",
+      "paths": [
+        "experiments/full/636/cases/PDE_divide/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/PDE_divide/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Wave_equation__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "3409ef8b9ce88d2c1c0d5c1d7dfce1863570be7b78fd241aafaf0b5e84d7c6e2",
+      "paths": [
+        "experiments/full/636/cases/Wave_equation/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/Wave_equation/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__KdV_equation__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "3cfc7160d6e6ad747edf9aa9a3dd7bbf96142a9dd84a23a99b0242ada593d1a0",
+      "paths": [
+        "experiments/full/636/cases/KdV_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/KdV_equation/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Eq_6_2_12__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "40f2facb2833aa8f5a4d8d06bf9f9344f3b835b33528c6b59ef3a75b6291f399",
+      "paths": [
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__PDE_divide__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "49f78cf1a6f5b355430948cc3173b481740ec6d3b5fe1b0cdb89ce85c393c570",
+      "paths": [
+        "experiments/full/636/cases/PDE_divide/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/PDE_divide/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "53b4ee810b1ec363075b265b40f1519329a2ccc8106e47ac79d2f58ff78d1a30",
+      "paths": [
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Eq_6_2_12__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "5538af2dc361b9aa3a62c7aa4130e1ee94fa8df328de08d344ebc7b26ec72f05",
+      "paths": [
+        "experiments/full/636/cases/Eq_6_2_12/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/Eq_6_2_12/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "recovery-search636-ast350-convection__search_progress.pt",
+      "tag": "full636-815cc37",
+      "bytes": 385742292,
+      "sha256": "6b44780bb7c36079ac9163c2b6a9d4fc641bcffcd0843e37f99d5506d858144a",
+      "paths": [
+        "experiments/full/636/recovery-search636-ast350-convection/search_progress.pt"
+      ]
+    },
+    {
+      "asset": "cases__Eq_6_2_12__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "724e9d96100d334fe8847a7ed16481a452b86b1881361969d604be3e1dbacd4f",
+      "paths": [
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "recovery-search636-ast350-convection__attempt_progress.pt",
+      "tag": "full636-815cc37",
+      "bytes": 841722,
+      "sha256": "85991162d6e54c44227dcabd3f00b60cc9fdf72e3c4b1b3e6873857227fb86b8",
+      "paths": [
+        "experiments/full/636/recovery-search636-ast350-convection/attempt_progress.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_315__cycle_0.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236595,
+      "sha256": "99362186da843466deac64c7da39626e5567cb0d7182c2593cd6d5d1e64a07d3",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/KdV_equation/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/KG_equation/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/PDE_divide/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_315/cycle_0.pt",
+        "experiments/full/636/shared_pretrain/ast_bpe_315/pretrained.pt"
+      ]
+    },
+    {
+      "asset": "cases__Eq_6_2_12__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "9bf8c500583cf71fcf9c4fd0e435db748bc31d4750b80b0fdce1be2c2ea011ca",
+      "paths": [
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__KdV_equation__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "a1c607fd4df61e0915486c3dc0647eaae8441fd00a00ace081004556f56f77c0",
+      "paths": [
+        "experiments/full/636/cases/KdV_equation/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/KdV_equation/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "a3ebd44b6b58768e25fee67afda87b2b1537b2b606cdd8b1827a5570f76e90f5",
+      "paths": [
+        "experiments/full/636/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__PDE_divide__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "a7c280bedd2b43f6f4a17a898dae05932466a3f94ebf28f9ec7e79a61d125b86",
+      "paths": [
+        "experiments/full/636/cases/PDE_divide/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/PDE_divide/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Chaffee_Infante_equation__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "ab03d2e482410823fa96cc6d24f72c696fa6e761c5a5e37278065d05951bf42e",
+      "paths": [
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__PDE_divide__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "acb987738e41a5381ac8e7844ac0b7fd04e156d96061a09c6086b5e58e91d877",
+      "paths": [
+        "experiments/full/636/cases/PDE_divide/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/PDE_divide/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__KdV_equation__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "b1894d2ab9b63c3426d51dccaf4643edd1cf442c3b803be9ece1e768f8fd0067",
+      "paths": [
+        "experiments/full/636/cases/KdV_equation/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/KdV_equation/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "bc8b869668f62d96ce38b4cd89c1cbc6067396a1e9fd10eb1c73ddd2a7ceb944",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/Burgers_equation/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "c102b7f2f958ec7a3b343dda493265f84fa03d7f8834725a0413f92b0de34d45",
+      "paths": [
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__KG_equation__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "c3470579f83438ee978282a469d863fc7345537a1b693796d1c87b4c51197295",
+      "paths": [
+        "experiments/full/636/cases/KG_equation/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/KG_equation/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_280__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153021109,
+      "sha256": "d1dcfa0c690973b3805d85b37f761dc77b6838fab5157c6122b00aa0eefc2708",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_280/cycle_5.pt",
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_280/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__KG_equation__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "d3216a29ccf1573d9fdec98e9d2a9d56f43630aa925e66e69cd0826c104fa8fe",
+      "paths": [
+        "experiments/full/636/cases/KG_equation/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/KG_equation/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_315__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153236277,
+      "sha256": "e017afaa8f061fd8fe1cb80c5d16f57a37bea9900dd7388d8477037b700667a4",
+      "paths": [
+        "experiments/full/636/cases/Wave_equation/ast_bpe_315/cycle_5.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_315/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Wave_equation__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "e3b87e2a99d01409170c774d1cfad2d7b6e3f6d9cf9d998db6685f7053dac36a",
+      "paths": [
+        "experiments/full/636/cases/Wave_equation/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_350__cycle_0.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451763,
+      "sha256": "e73e40086dac549ab2d15ff4b26f8bdb86a4db8d275eb63531ac7a85193ebd7a",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/Eq_6_2_12/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/KdV_equation/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/KG_equation/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/PDE_divide/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/cases/Wave_equation/ast_bpe_350/cycle_0.pt",
+        "experiments/full/636/shared_pretrain/ast_bpe_350/pretrained.pt"
+      ]
+    },
+    {
+      "asset": "cases__Convection_diffusion_equation__eqgpt_reference__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 151650101,
+      "sha256": "ee307ecd6e4908600635c32e05635ab59de9c17831e2b4610d4b869329e41cb9",
+      "paths": [
+        "experiments/full/636/cases/Convection_diffusion_equation/eqgpt_reference/cycle_5.pt",
+        "experiments/full/636/cases/Convection_diffusion_equation/eqgpt_reference/searched.pt"
+      ]
+    },
+    {
+      "asset": "cases__Burgers_equation__ast_bpe_350__cycle_5.pt",
+      "tag": "full636-815cc37",
+      "bytes": 153451445,
+      "sha256": "ff8120b2f6d012d9f5d1513540e42ab8ce6da200ada8e92c2428f9c4ef269c69",
+      "paths": [
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_350/cycle_5.pt",
+        "experiments/full/636/cases/Burgers_equation/ast_bpe_350/searched.pt"
+      ]
+    },
+    {
+      "asset": "recovery__storage_migration_ast315_epoch36.pt",
+      "tag": "full636-815cc37",
+      "bytes": 384134917,
+      "sha256": "d68e71a087b943351e2c01514fa05a249016915ecefb35f75e313ade9905fc96",
+      "paths": [
+        "experiments/full/636/recovery/storage_migration_ast315_epoch36.pt"
+      ],
+      "kind": "historical_restart_snapshot",
+      "epoch": 36
+    }
+  ]
+}

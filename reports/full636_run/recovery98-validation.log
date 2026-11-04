@@ -1,0 +1,19 @@
+{
+  "incident": "cuda_host_to_device_stall",
+  "stage": "ast_bpe_315_pretraining",
+  "arm": "ast_bpe_315",
+  "completed_epoch_checkpoint": 98,
+  "checkpoint_backup_relative": "outputs/large636/recovery636-ast315-epoch98.pt",
+  "checkpoint_sha256": "10b77c6c8421e85311789f45911b00c721a740f083d84b2d18df147fc0ec20e3",
+  "mathematical_source_changed": false,
+  "completed_case_models_reused": 16,
+  "stack_file": "recovery636-stack-ast315-epoch98.txt",
+  "utc": "2026-11-03T22:46:27.035627+00:00",
+  "resumed_epoch": 99,
+  "history_prefix_preserved": true,
+  "optimizer_steps_before": 15582,
+  "optimizer_steps_after": 15741,
+  "changed_parameter_tensors": 64,
+  "recovery_verified": true,
+  "verified_utc": "2026-11-03T22:50:43.526449+00:00"
+}

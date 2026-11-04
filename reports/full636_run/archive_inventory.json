@@ -1,0 +1,212 @@
+[
+  {
+    "archive": "runtime-source.zip",
+    "bytes": 19941383,
+    "weight_entries": [
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/Burgers_equation/surrogate_cache.pt",
+        "bytes": 170011
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/Chaffee_Infante_equation/surrogate_cache.pt",
+        "bytes": 170011
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/Convection_diffusion_equation/surrogate_cache.pt",
+        "bytes": 170011
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/Eq_6_2_12/surrogate_cache.pt",
+        "bytes": 170011
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/KG_equation/surrogate_cache.pt",
+        "bytes": 170011
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/KdV_equation/surrogate_cache.pt",
+        "bytes": 167289
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/PDE_divide/surrogate_cache.pt",
+        "bytes": 170011
+      },
+      {
+        "path": "tokenizer-pde-discovery/data/mlp_cache/Wave_equation/surrogate_cache.pt",
+        "bytes": 170011
+      }
+    ]
+  },
+  {
+    "archive": "pde636_complete_results.tar",
+    "bytes": 6487582720,
+    "weight_entries": [
+      {
+        "path": "large636/cases/Burgers_equation/ast_bpe_280/cycle_0.pt",
+        "bytes": 153021427
+      },
+      {
+        "path": "large636/cases/Burgers_equation/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/Burgers_equation/ast_bpe_315/cycle_0.pt",
+        "bytes": 153236595
+      },
+      {
+        "path": "large636/cases/Burgers_equation/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/Burgers_equation/ast_bpe_350/cycle_0.pt",
+        "bytes": 153451763
+      },
+      {
+        "path": "large636/cases/Burgers_equation/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/Burgers_equation/eqgpt_reference/cycle_0.pt",
+        "bytes": 151650419
+      },
+      {
+        "path": "large636/cases/Burgers_equation/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/Convection_diffusion_equation/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/Convection_diffusion_equation/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/Convection_diffusion_equation/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/Convection_diffusion_equation/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/Eq_6_2_12/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/Eq_6_2_12/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/Eq_6_2_12/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/Eq_6_2_12/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/KG_equation/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/KG_equation/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/KG_equation/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/KG_equation/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/KdV_equation/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/KdV_equation/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/KdV_equation/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/KdV_equation/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/PDE_divide/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/PDE_divide/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/PDE_divide/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/PDE_divide/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/cases/Wave_equation/ast_bpe_280/cycle_5.pt",
+        "bytes": 153021109
+      },
+      {
+        "path": "large636/cases/Wave_equation/ast_bpe_315/cycle_5.pt",
+        "bytes": 153236277
+      },
+      {
+        "path": "large636/cases/Wave_equation/ast_bpe_350/cycle_5.pt",
+        "bytes": 153451445
+      },
+      {
+        "path": "large636/cases/Wave_equation/eqgpt_reference/cycle_5.pt",
+        "bytes": 151650101
+      },
+      {
+        "path": "large636/recovery-search636-ast350-convection/attempt_progress.pt",
+        "bytes": 841722
+      },
+      {
+        "path": "large636/recovery-search636-ast350-convection/search_progress.pt",
+        "bytes": 385742292
+      },
+      {
+        "path": "large636/recovery636-ast315-epoch98.pt",
+        "bytes": 384137093
+      }
+    ]
+  },
+  {
+    "archive": "pde636_download_and_restore.zip",
+    "bytes": 24405,
+    "weight_entries": []
+  },
+  {
+    "archive": "pde636_results_and_source.zip",
+    "bytes": 35006264,
+    "weight_entries": []
+  }
+]

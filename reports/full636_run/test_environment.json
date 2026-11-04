@@ -1,0 +1,10 @@
+{
+  "archive_tests_platform": "Windows-11-10.0.26100-SP0",
+  "python": "3.12.8",
+  "torch": "2.9.0+cpu",
+  "device": "CPU",
+  "native_sources": "Unmodified native/frontend_v6.c and native/hard_ranked_2026.c compiled with MSVC 14.37 x64; only loader adapted",
+  "independent_existing_repository_tests": "44 passed in 33.02s",
+  "independently_reconstructed_runtime_tests": "47 passed in 68.82s",
+  "original_cuda_pre_run_tests": "47 passed, retained verification.txt; CUDA training was not repeated in this import"
+}

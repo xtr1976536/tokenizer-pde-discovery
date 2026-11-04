@@ -1,0 +1,18 @@
+{
+  "round": 3,
+  "status": "PASS",
+  "existing_protected_trees_unchanged": true,
+  "modified_existing_files": [
+    ".gitattributes",
+    "ENVIRONMENT.md",
+    "README.md",
+    "reports/README.md",
+    "reports/repository_audit/README.md"
+  ],
+  "new_files": 390,
+  "no_existing_files_deleted": true,
+  "markdown_local_links": 70,
+  "public_release": "https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full636-815cc37",
+  "remote_assets_verified": true,
+  "existing_full212_release_assets_preserved": true
+}

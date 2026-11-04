@@ -1,0 +1,13 @@
+{
+  "policy": "retain_pretrain_and_final_weights_v1",
+  "retained": [
+    "shared_pretrain/*/pretrained.pt",
+    "cases/*/*/cycle_0.pt",
+    "cases/*/*/cycle_5.pt",
+    "cases/*/*/searched.pt",
+    "all active training/search/candidate restart states",
+    "all candidate traces, histories, diagnostics and weight hashes"
+  ],
+  "released": "cycle_1.pt through cycle_4.pt only AFTER diagnostics and case completion",
+  "reason": "bounded artifact storage; mathematical runtime and budgets remain unchanged"
+}

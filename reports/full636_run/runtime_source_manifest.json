@@ -1,0 +1,459 @@
+{
+  "base_commit": "815cc37adcdd714c9e9bd547a0561bb75f82901c",
+  "source_files": [
+    {
+      "path": "src/math_tokenizer/__init__.py",
+      "sha256": "3c380fb442f59a27b5418201c0110e1016bfd9724b22f1d7336a92e950bff3cf",
+      "base_sha256": "3c380fb442f59a27b5418201c0110e1016bfd9724b22f1d7336a92e950bff3cf",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/active_benchmark.py",
+      "sha256": "f123388370ba9b42186e190d70bdd6a455147097028c8ff1a855fb4467e7b79c",
+      "base_sha256": "f123388370ba9b42186e190d70bdd6a455147097028c8ff1a855fb4467e7b79c",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/ast.py",
+      "sha256": "44f5d4beb0f8747e9b041072f739c2815665957b84fb6ca8b21017eeab97c30d",
+      "base_sha256": "44f5d4beb0f8747e9b041072f739c2815665957b84fb6ca8b21017eeab97c30d",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/ast_v3.py",
+      "sha256": "bbdae22be4722074482bd5ddaffb968e41eb92c6d171f796b773411379429c43",
+      "base_sha256": "bbdae22be4722074482bd5ddaffb968e41eb92c6d171f796b773411379429c43",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/atoms_v4.py",
+      "sha256": "640e71f168b17eb251c0df12d4ef39e4f0d603825b751d37d1d3e4570f6bf1eb",
+      "base_sha256": "640e71f168b17eb251c0df12d4ef39e4f0d603825b751d37d1d3e4570f6bf1eb",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/baselines.py",
+      "sha256": "0292b297df833998a1e9cf3b684a3ee2b3c0b66de2cc4e90c718ec606c620e8a",
+      "base_sha256": "0292b297df833998a1e9cf3b684a3ee2b3c0b66de2cc4e90c718ec606c620e8a",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/baselines_v6.py",
+      "sha256": "1d34f0d210d986e77d8a2e9bdd0db7fc8117020d4ba0166f6fd44c9cdb4a1156",
+      "base_sha256": "1d34f0d210d986e77d8a2e9bdd0db7fc8117020d4ba0166f6fd44c9cdb4a1156",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/bpe.py",
+      "sha256": "95997c1a7dbb1b28405305eb1ff964c4eaa42081cdf5767e81f5bf81c0a89adc",
+      "base_sha256": "95997c1a7dbb1b28405305eb1ff964c4eaa42081cdf5767e81f5bf81c0a89adc",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/corpus.py",
+      "sha256": "66591c2697e525216427bffb18cca85cd0e3160994d547f76638132a4c4bd080",
+      "base_sha256": "66591c2697e525216427bffb18cca85cd0e3160994d547f76638132a4c4bd080",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/__init__.py",
+      "sha256": "cfa1752abb5049120af7fc757e96aed09e9280358ce61c8f6f201d231b277e86",
+      "base_sha256": "cfa1752abb5049120af7fc757e96aed09e9280358ce61c8f6f201d231b277e86",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/author.py",
+      "sha256": "6bee82aaf0713ec378411f00fded65ee45779b03b9a0febd5973b38d9d0aa139",
+      "base_sha256": "6bee82aaf0713ec378411f00fded65ee45779b03b9a0febd5973b38d9d0aa139",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/cached_batches.py",
+      "sha256": "9670f6afe473fb3475bff47c134e0a05f6abda6177719c75b4b9c0a1a4d81c93",
+      "base_sha256": "9670f6afe473fb3475bff47c134e0a05f6abda6177719c75b4b9c0a1a4d81c93",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/checkpointing.py",
+      "sha256": "71897aea4cd8ea7cd54e9efd11ae28849f6cc6332dbc56664260a139c856fcf5",
+      "base_sha256": null,
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/compact_alphabet.py",
+      "sha256": "df224e644de910fa32faeba75ec265d1372d4273b9c9f65725e7b4f9f2eefa9d",
+      "base_sha256": "df224e644de910fa32faeba75ec265d1372d4273b9c9f65725e7b4f9f2eefa9d",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/corpus_conversion.py",
+      "sha256": "0163516d5a409ebbe4c3418c6e81fabe33f27599b91fa6f1c12f6952b1523ac9",
+      "base_sha256": "0163516d5a409ebbe4c3418c6e81fabe33f27599b91fa6f1c12f6952b1523ac9",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/data.py",
+      "sha256": "ffca537199b8beb17e243bee677c8bf3e09233ca92a044c8d60c464e80f42de2",
+      "base_sha256": "ffca537199b8beb17e243bee677c8bf3e09233ca92a044c8d60c464e80f42de2",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/diverse_v4.py",
+      "sha256": "9e5cc871384f1795bc00d4443c24c5ceaa7bda0c67900091148e1126dde17bed",
+      "base_sha256": "9e5cc871384f1795bc00d4443c24c5ceaa7bda0c67900091148e1126dde17bed",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/eqgpt_fast_config.py",
+      "sha256": "ab591f3ee3f26097f56e4840cb7f1e54a42d4ffe5c791f232972d34d4d5b1404",
+      "base_sha256": "ab591f3ee3f26097f56e4840cb7f1e54a42d4ffe5c791f232972d34d4d5b1404",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/eqgpt_fast_tokenizers.py",
+      "sha256": "6a08372de64b1b3949763fd8df4287d8f311c995db61f89cfb6ad3993a9e73cd",
+      "base_sha256": "6a08372de64b1b3949763fd8df4287d8f311c995db61f89cfb6ad3993a9e73cd",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/evaluation.py",
+      "sha256": "531a73276fee36594d44cd1e35156cce550d08705e8758871b71e4164bcddde1",
+      "base_sha256": "531a73276fee36594d44cd1e35156cce550d08705e8758871b71e4164bcddde1",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/existing_surrogate.py",
+      "sha256": "885a39c2f563c02ab9b2f7f6f4c51437b3c3a3c603f027fc8a0541e617efbb4c",
+      "base_sha256": "885a39c2f563c02ab9b2f7f6f4c51437b3c3a3c603f027fc8a0541e617efbb4c",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/expanded_corpus.py",
+      "sha256": "38a7aa4eacb5a9e6a60ea105cfd30a89eae60879dcb27e9b7d0cfaea45c1556c",
+      "base_sha256": "38a7aa4eacb5a9e6a60ea105cfd30a89eae60879dcb27e9b7d0cfaea45c1556c",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/expanded_preflight.py",
+      "sha256": "0b2644be8be4864678cc09ef42740bd2d03c3b83b0eb7c753e9927f99748ee01",
+      "base_sha256": "0b2644be8be4864678cc09ef42740bd2d03c3b83b0eb7c753e9927f99748ee01",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/experiment.py",
+      "sha256": "50d975b6c9e2694ea0723c78d1beb5c8b4664f848012d8d64539d7b7ccd79f72",
+      "base_sha256": "5507ff012e17b40320071eca1c2d2570c010a114a77d84d8eb54f6d12e13657c",
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/frozen_math.py",
+      "sha256": "f51d87abf314b2ec395f3f6e4c8a72739a7390ece6311a330cfdc42931be0e27",
+      "base_sha256": "f51d87abf314b2ec395f3f6e4c8a72739a7390ece6311a330cfdc42931be0e27",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/latex_codec.py",
+      "sha256": "3bac7aa68948228b9acf157cf4aaedff7f854d61c71dd4439b6e4b380707bdfb",
+      "base_sha256": "3bac7aa68948228b9acf157cf4aaedff7f854d61c71dd4439b6e4b380707bdfb",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/latex_experiment.py",
+      "sha256": "f71f68059f0186f9a8d7f97731738c635218029a578c70cb272d38c7d0f48cde",
+      "base_sha256": "f71f68059f0186f9a8d7f97731738c635218029a578c70cb272d38c7d0f48cde",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/latex_generation.py",
+      "sha256": "407daab2c75021aad54098e2012669b8f3c2ec5c842ae1311c9bf6da9cec1fe5",
+      "base_sha256": "407daab2c75021aad54098e2012669b8f3c2ec5c842ae1311c9bf6da9cec1fe5",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/latex_tokenizers.py",
+      "sha256": "ce00749be1c1374496c3b99437c3c26aa1a9c492e4d763718cde9ce691a9f015",
+      "base_sha256": "ce00749be1c1374496c3b99437c3c26aa1a9c492e4d763718cde9ce691a9f015",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/models.py",
+      "sha256": "4b4741d2ef5f745960ceeabdf3c5f18bd9c1423eb4e6599be5f3063aabbd224f",
+      "base_sha256": "4b4741d2ef5f745960ceeabdf3c5f18bd9c1423eb4e6599be5f3063aabbd224f",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/paired_pipeline.py",
+      "sha256": "c4d2a8dc1e1fb55e3b913206edd464eea4142db62c78fa697d9ef4d4af35b28b",
+      "base_sha256": "5de494de08b51ef9bceb792b11078d0dc285cb4df04d60f6b28ebf5bb8bad4db",
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/paper_normalization.py",
+      "sha256": "a270d58c81da9c3bb94b5fe4ddcb631cf411c719a4fe01c45c67fce4b544e1c8",
+      "base_sha256": "a270d58c81da9c3bb94b5fe4ddcb631cf411c719a4fe01c45c67fce4b544e1c8",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/pde_frozen.py",
+      "sha256": "2c3ebec619788fcb217aab1c3901e5a89529dddbced90cc622a652579997aa29",
+      "base_sha256": "2c3ebec619788fcb217aab1c3901e5a89529dddbced90cc622a652579997aa29",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/round1_config.py",
+      "sha256": "ec9a8595a711a1dd568ff44b8b758ab20e31164a3414ebca0f254e41007aaf41",
+      "base_sha256": "ec9a8595a711a1dd568ff44b8b758ab20e31164a3414ebca0f254e41007aaf41",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/round1_runtime.py",
+      "sha256": "413c92ab95fbc9ca25891d1689c91deddb6b34d1d4028391f38a9643e274e4bd",
+      "base_sha256": "b75a2e01ee643a99b8e41e5237f5a53195b0263257befc8e514010b7e93ea14a",
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/scoring_fixes.py",
+      "sha256": "90ae18d090f191e2c6ae8f06536083ba3c8219ce9463e9c8be0835e98afe269a",
+      "base_sha256": "90ae18d090f191e2c6ae8f06536083ba3c8219ce9463e9c8be0835e98afe269a",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/shared8.py",
+      "sha256": "e0cd64812938c0afe1e068a74b4ba81c92d9ce48b3a9fb10b732f2c58eda63e9",
+      "base_sha256": "e0cd64812938c0afe1e068a74b4ba81c92d9ce48b3a9fb10b732f2c58eda63e9",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/shared8_config.py",
+      "sha256": "2a5492b515e4c3e398f74aa04a232a3ccdc38d925b92cb8c2d97a1f5fcee3fa9",
+      "base_sha256": "2a5492b515e4c3e398f74aa04a232a3ccdc38d925b92cb8c2d97a1f5fcee3fa9",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/study3_corpus.py",
+      "sha256": "46edb8f0fe2ee47791f5e16c50dd866df8d4886fa985c2147806833c6bead4ce",
+      "base_sha256": "46edb8f0fe2ee47791f5e16c50dd866df8d4886fa985c2147806833c6bead4ce",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/study3_protocol.py",
+      "sha256": "04611f1b4c156f9dcd495ad26fa98a7ce53aa6cb4d5a8274761d5da69e8e91cf",
+      "base_sha256": "04611f1b4c156f9dcd495ad26fa98a7ce53aa6cb4d5a8274761d5da69e8e91cf",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/study3_search.py",
+      "sha256": "262975c62e51d7ce598d8f734bcabfaaf956e9170bb72ec531a11603da63ce06",
+      "base_sha256": "8e101e13e6726035b35b507558f58efb561e2ad3825d4d21b23ba40a3aaa665d",
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "src/math_tokenizer/eqgpt/tokenizer_adapters.py",
+      "sha256": "0a49d64184d1dfc412ff770dda1ccec24b9ee1e8058722665c5d90543f461c33",
+      "base_sha256": "0a49d64184d1dfc412ff770dda1ccec24b9ee1e8058722665c5d90543f461c33",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/frontend_v6.py",
+      "sha256": "8f257a3e8968b436033853cb3ac19f76623d04881dddc89e4581d37fe2663a3b",
+      "base_sha256": "8f257a3e8968b436033853cb3ac19f76623d04881dddc89e4581d37fe2663a3b",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/hard_ast_2026.py",
+      "sha256": "6b4988b72af70d35b3c55112e0e0e0cb968eaedcc5c2bde6c976f2b5104b1d1c",
+      "base_sha256": "6b4988b72af70d35b3c55112e0e0e0cb968eaedcc5c2bde6c976f2b5104b1d1c",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/measure_v5.py",
+      "sha256": "dfdf469306eae1dd7aea00f3942ff89211b6226496c2d6ab356c52ab55d2aaf9",
+      "base_sha256": "dfdf469306eae1dd7aea00f3942ff89211b6226496c2d6ab356c52ab55d2aaf9",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/merge_v2.py",
+      "sha256": "a58c0444cdda06343b9fd6c166c720fa0811b95714edd5ae088f821c7eec1906",
+      "base_sha256": "a58c0444cdda06343b9fd6c166c720fa0811b95714edd5ae088f821c7eec1906",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/metrics_v2.py",
+      "sha256": "468c34883c4e58ffd8365d3e2090d22db2eb304ac2900d7304bbd755ddacd97e",
+      "base_sha256": "468c34883c4e58ffd8365d3e2090d22db2eb304ac2900d7304bbd755ddacd97e",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/native_v3.py",
+      "sha256": "889a095ebb1903a720e34e786c7b4a424b2766317bfe56f2258ec057a3a68f67",
+      "base_sha256": "889a095ebb1903a720e34e786c7b4a424b2766317bfe56f2258ec057a3a68f67",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/pde_protocol.py",
+      "sha256": "ba41a8adceb3269c4ddbc9bcc4c851a53010d2ad0dfbb0012a68bb36042d230f",
+      "base_sha256": "ba41a8adceb3269c4ddbc9bcc4c851a53010d2ad0dfbb0012a68bb36042d230f",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/rl_mask_v6.py",
+      "sha256": "5cd5c05ca3de356976cbfe96573218b64e704c08f8ccbfcd1718ce7ae0e4495e",
+      "base_sha256": "5cd5c05ca3de356976cbfe96573218b64e704c08f8ccbfcd1718ce7ae0e4495e",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/rl_route_v6.py",
+      "sha256": "9da241bbf340d6bfcc20195fab85f10e07f9b2de73c7e500459ee430b8118936",
+      "base_sha256": "9da241bbf340d6bfcc20195fab85f10e07f9b2de73c7e500459ee430b8118936",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/rl_vocab_v5.py",
+      "sha256": "2377d7f209b89055048de6ed5c326b6996c7810100a2c9f4ae7526bc0b042d4f",
+      "base_sha256": "2377d7f209b89055048de6ed5c326b6996c7810100a2c9f4ae7526bc0b042d4f",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/structure_v2.py",
+      "sha256": "d717bb15e12e5e7a56cad85037fc7c097a043f7a9b189cda50636cdac1d44b3f",
+      "base_sha256": "d717bb15e12e5e7a56cad85037fc7c097a043f7a9b189cda50636cdac1d44b3f",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/structure_v3.py",
+      "sha256": "f55e6bf1d7ad361918e990b9427649bf225b32858bde0d3eee647f74679ef381",
+      "base_sha256": "f55e6bf1d7ad361918e990b9427649bf225b32858bde0d3eee647f74679ef381",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/trajectory_v5.py",
+      "sha256": "8ad51c1e34f2f5019bfb00795bafa05de0663d84aea76b88cdf1305b593da954",
+      "base_sha256": "8ad51c1e34f2f5019bfb00795bafa05de0663d84aea76b88cdf1305b593da954",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "src/math_tokenizer/validation_v2.py",
+      "sha256": "c65ad80bb47219c89f8abd5522987c9e09f938a295737d3e823c720c8baa6a49",
+      "base_sha256": "c65ad80bb47219c89f8abd5522987c9e09f938a295737d3e823c720c8baa6a49",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "base_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "scripts/audit_scorer.py",
+      "sha256": "c363d7f39285d03f7eb19541050f6b3b1d89da391c82cb488c56e0c687e891a6",
+      "base_sha256": "c363d7f39285d03f7eb19541050f6b3b1d89da391c82cb488c56e0c687e891a6",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "scripts/audit_training_fairness.py",
+      "sha256": "92f80c077fef91cc3d179a72b3c81d9e1c69aa21205d11b3137b3e3f1ddc2c6a",
+      "base_sha256": "92f80c077fef91cc3d179a72b3c81d9e1c69aa21205d11b3137b3e3f1ddc2c6a",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "sha256": "8c52e5422ce684969955da0a096c20298a21f5d943e50e9af34250089a572287",
+      "base_sha256": "8c52e5422ce684969955da0a096c20298a21f5d943e50e9af34250089a572287",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "scripts/pde_experiment.py",
+      "sha256": "b8015ede38e76347ec4e14ff7f3b0c3ea08a74c1fff4ae07243ccef2440e5abc",
+      "base_sha256": "b0537e1360a3840b960817249988aaf0e9951d03ee0123196bd97ea469481f02",
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "scripts/prepare_downstream_corpus.py",
+      "sha256": "f681e3ecaa27806a54a1c46449bbef6cf3e991edbfdb0f4de1b95b6b800030a7",
+      "base_sha256": "f681e3ecaa27806a54a1c46449bbef6cf3e991edbfdb0f4de1b95b6b800030a7",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "tests/test_author_terminal_policy.py",
+      "sha256": "2f3938f8ae5e24f5eff62bb9333d2c3a8506e9020e0e5b5e07b626b288a96864",
+      "base_sha256": "2f3938f8ae5e24f5eff62bb9333d2c3a8506e9020e0e5b5e07b626b288a96864",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "tests/test_paired_pipeline.py",
+      "sha256": "c23e78ad5a646427ac1013acac3093200ee61dae27bd0261cc9bede5884c8c7f",
+      "base_sha256": "c23e78ad5a646427ac1013acac3093200ee61dae27bd0261cc9bede5884c8c7f",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "tests/test_restart.py",
+      "sha256": "70f49d1522b576d0745874c648aa38464e4a188ee646c9ccba6b2f6244cacffa",
+      "base_sha256": null,
+      "storage": "runtime.patch"
+    },
+    {
+      "path": "tests/test_scoring_fixes.py",
+      "sha256": "790c3b397c55b7ab35263b97d5a1c4c3a8055c28af5c4b684310c3d7eb3e6f3d",
+      "base_sha256": "790c3b397c55b7ab35263b97d5a1c4c3a8055c28af5c4b684310c3d7eb3e6f3d",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "tests/test_study3_corpus.py",
+      "sha256": "f84682965e38bfc0ee7c1636b9aedcb5a7c47b2c3b5634701d90518ae63965a9",
+      "base_sha256": "f84682965e38bfc0ee7c1636b9aedcb5a7c47b2c3b5634701d90518ae63965a9",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "tests/test_two_scales.py",
+      "sha256": "9002ba9f1f6f4e0c7485511cf2c0e984e8441048d7971e5f3a17ec19ed193976",
+      "base_sha256": "9002ba9f1f6f4e0c7485511cf2c0e984e8441048d7971e5f3a17ec19ed193976",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "native/compact_codec_v6.c",
+      "sha256": "464e31f4badaf118f194ca22239fd5b160454425ece411d2cff757b8f6051299",
+      "base_sha256": "464e31f4badaf118f194ca22239fd5b160454425ece411d2cff757b8f6051299",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "native/decoder.c",
+      "sha256": "24d54c0dcaaee8ae71f52e53f5cd89384400dca186ceb5a1b6dc6ee5a9f7428f",
+      "base_sha256": "24d54c0dcaaee8ae71f52e53f5cd89384400dca186ceb5a1b6dc6ee5a9f7428f",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "native/decoder_v4.c",
+      "sha256": "92d817dac52f73a0f4fce485ac75e8550d2155936deab92a710bb11e0ad75988",
+      "base_sha256": "92d817dac52f73a0f4fce485ac75e8550d2155936deab92a710bb11e0ad75988",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "native/frontend_v6.c",
+      "sha256": "6bf1e9a5a81524b3dc4ae7bc5011db5bcaefd4b97ded3dbe24f59cca291dd701",
+      "base_sha256": "6bf1e9a5a81524b3dc4ae7bc5011db5bcaefd4b97ded3dbe24f59cca291dd701",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "native/hard_ranked_2026.c",
+      "sha256": "660624be32d6758293dba99515dc1b79446a85404fd61efa6f1e16050ea4f19c",
+      "base_sha256": "660624be32d6758293dba99515dc1b79446a85404fd61efa6f1e16050ea4f19c",
+      "storage": "existing_base_commit"
+    },
+    {
+      "path": "native/python_frontend_v6.c",
+      "sha256": "f7533b8818f204887efb5fe074bc9daa35b86f8bcf705142683626933bbe0e5e",
+      "base_sha256": "f7533b8818f204887efb5fe074bc9daa35b86f8bcf705142683626933bbe0e5e",
+      "storage": "existing_base_commit"
+    }
+  ],
+  "patch_sha256": "84bafd62ec57b53301b9312000d7e1e1a07f91146b4abcc4c2f18534e967a468",
+  "changed_files": [
+    "src/math_tokenizer/eqgpt/checkpointing.py",
+    "src/math_tokenizer/eqgpt/experiment.py",
+    "src/math_tokenizer/eqgpt/paired_pipeline.py",
+    "src/math_tokenizer/eqgpt/round1_runtime.py",
+    "src/math_tokenizer/eqgpt/study3_search.py",
+    "scripts/pde_experiment.py",
+    "tests/test_restart.py"
+  ]
+}

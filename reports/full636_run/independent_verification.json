@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checkout": "independent Git clone with core.autocrlf=false",
+  "artifact_files_verified": 326,
+  "existing_repository_tests": "44 passed",
+  "reconstructed_runtime_tests": "47 passed",
+  "runtime_source_files_verified": 74,
+  "runtime_fingerprint": "e69f7045189d5b244ed84f562bf1246b4fd1312379aaa5a9a50f513029bd9c41",
+  "compiled_backend": "Original C sources, MSVC x64; loader-only adaptation",
+  "test_environment_file": "test_environment.json"
+}

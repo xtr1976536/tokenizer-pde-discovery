@@ -1,0 +1,18 @@
+{
+  "logical_result_path": "C:\\Users\\28678\\Documents\\Codex\\2026-11-04\\https-github-com-xtr1976536-tokenizer-pde\\outputs\\large636",
+  "backing_directory": "D:\\desktop\\CodexRuns\\2026-11-04-tokenizer-pde-636-01a1a261\\large636",
+  "unique_files_verified": 182,
+  "unique_bytes_verified": 3240974924,
+  "all_files_sha256_verified": true,
+  "hardlinks_preserved": true,
+  "mathematical_source_changed": false,
+  "utc": "2026-11-03T21:47:59.952221+00:00",
+  "verified_old_copy_released": false,
+  "old_copy_retained_path": "C:\\Users\\28678\\Documents\\Codex\\2026-11-04\\https-github-com-xtr1976536-tokenizer-pde\\outputs\\large636-before-storage-migration",
+  "old_copy_retained_reason": "Automatic approval review rejected recursive removal: blocked by policy; no more specific reason supplied",
+  "hash_manifest": "storage_migration636_hashes.json",
+  "backing_acl_repair": "Granted current Windows user FullControl on this dedicated task folder and descendants; inherited entries retained",
+  "initial_resume_error": "Inherited D-folder ACL allowed Write but lacked Delete/Replace, blocking atomic RUN.json replacement",
+  "linux_atomic_replace_verified": true,
+  "atomic_replace_verified_utc": "2026-11-03T22:04:03.271699+00:00"
+}

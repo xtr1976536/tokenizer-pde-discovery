@@ -1,5 +1,7 @@
 # 仓库整理与三轮检查
 
+本页保留此前小语料和上游的检查。新增636条正式实验的导入、结果复算、备份去重及Release检查单独记录于[full636_run/AUDIT.md](../full636_run/AUDIT.md)，不覆盖本页历史记录。
+
 - cleanup_inventory.json：删除旧入口/过时文档、重复作者数据替代为链接的清单。
 - duplicates.json：Git索引中完全相同文件的分组与处理。
 - round1.json、round2.json、round3.json：每轮逐项验证结果。

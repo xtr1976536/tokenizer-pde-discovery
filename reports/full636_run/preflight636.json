@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "scale": 636,
+  "sources": 636,
+  "augmented_samples": 20352,
+  "python": "3.11.18",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA RTX A500 Laptop GPU",
+  "commit": "815cc37adcdd714c9e9bd547a0561bb75f82901c",
+  "corpus": {
+    "eqgpt_reference": {
+      "samples": 20352,
+      "max_tokens": 47
+    },
+    "ast_bpe_280": {
+      "samples": 20352,
+      "max_tokens": 47
+    },
+    "ast_bpe_315": {
+      "samples": 20352,
+      "max_tokens": 43
+    },
+    "ast_bpe_350": {
+      "samples": 20352,
+      "max_tokens": 39
+    }
+  },
+  "gpu_batch_validation": {
+    "batch": 128,
+    "sequence_length": 46,
+    "peak_allocated_bytes": 1428608512,
+    "seconds": 1.072831323999992,
+    "loss": 3.971668243408203
+  },
+  "mlp_caches": {
+    "Wave_equation": {
+      "cache_sha256": "a763e9428d7251000e7a221f931f6e1fedf1666a663f30678671566a1988ea49",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 4.3213367462158203e-07,
+      "fit_called": false
+    },
+    "Convection_diffusion_equation": {
+      "cache_sha256": "1906b573c07da916ed6ffb56bf6387aa94124767a160bf4d6567f4b472018451",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 2.980232238769531e-07,
+      "fit_called": false
+    },
+    "KG_equation": {
+      "cache_sha256": "6fc136605f08c3770ea40d90c3544feb4c5c4178bfc05c934bf9e63a14faa667",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 5.662441253662109e-07,
+      "fit_called": false
+    },
+    "Burgers_equation": {
+      "cache_sha256": "97d80b0271ebd8a8944415c179f41a70bef768c5ad4c2e60fa1136779a940e9a",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 4.172325134277344e-07,
+      "fit_called": false
+    },
+    "Eq_6_2_12": {
+      "cache_sha256": "ce274bf4abb7dee13ef16dbfa91ad0220ea0b3addc39fa1010bf1b9fe6ab0134",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 4.172325134277344e-07,
+      "fit_called": false
+    },
+    "PDE_divide": {
+      "cache_sha256": "75f515a35c01bb7116cbc8fbd788fac6ad5642f8e035c8486fe9845e79ba3727",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 4.172325134277344e-07,
+      "fit_called": false
+    },
+    "KdV_equation": {
+      "cache_sha256": "4505836f41303da1d0d41d7630ba0fe02c25f30243041c349b1edc0e24bd3d65",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 1.7103739082813263e-06,
+      "fit_called": false
+    },
+    "Chaffee_Infante_equation": {
+      "cache_sha256": "44b1f5ec9e2bfb349579f3f8b14ef4d5438a9ec5ae5e8ff198f3f67e8493dedc",
+      "device": "cuda",
+      "exact_weight_and_coordinate_hashes": true,
+      "stored_prediction_hash_exact": true,
+      "prediction_replay_rtol": 1e-05,
+      "prediction_replay_atol": 1e-05,
+      "maximum_absolute_difference": 7.152557373046875e-07,
+      "fit_called": false
+    }
+  }
+}

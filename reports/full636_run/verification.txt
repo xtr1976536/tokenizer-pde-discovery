@@ -1,0 +1,5 @@
+Pre-run verification
+Windows CPU: 47 tests passed (19.37s).
+Linux CUDA runtime: 47 tests passed (199.30s).
+Restart tests compare uninterrupted and interrupted/resumed pretraining, candidate boundaries and cycle boundaries, including stochastic training, exact final weight hashes, losses and candidate histories.
+Only the formal scale=636 experiment was launched. No scale=212 training or smoke experiment was launched.

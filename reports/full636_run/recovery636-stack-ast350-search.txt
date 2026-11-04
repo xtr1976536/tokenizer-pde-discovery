@@ -1,0 +1,18 @@
+Process 678: /mnt/c/Users/28678/Documents/Codex/2026-11-04/https-github-com-xtr1976536-tokenizer-pde/work/python-linux/cpython-3.11.18-linux-x86_64-gnu/bin/python3.11 -u -m scripts.pde_experiment run --scale 636 --device cuda --output /mnt/c/Users/28678/Documents/Codex/2026-11-04/https-github-com-xtr1976536-tokenizer-pde/outputs/large636
+Python v3.11.18 (/mnt/c/Users/28678/Documents/Codex/2026-11-04/https-github-com-xtr1976536-tokenizer-pde/work/python-linux/cpython-3.11.18-linux-x86_64-gnu/bin/python3.11)
+
+Thread 678 (active): "MainThread"
+    sample_and_evaluate (math_tokenizer/eqgpt/paired_pipeline.py:56)
+    search (math_tokenizer/eqgpt/study3_search.py:288)
+    run (scripts/pde_experiment.py:84)
+    main (scripts/pde_experiment.py:103)
+    <module> (scripts/pde_experiment.py:104)
+    _run_code (<frozen runpy>:88)
+    _run_module_as_main (<frozen runpy>:198)
+Thread 905 (idle): "tqdm_monitor"
+    Condition.wait (threading.py:331)
+    Event.wait (threading.py:629)
+    TMonitor.run (tqdm/_monitor.py:69)
+    Thread._bootstrap_inner (threading.py:1045)
+    Thread._bootstrap (threading.py:1002)
+Thread 906 (idle)

@@ -1,0 +1,11 @@
+{
+  "policy": "retain_pretrain_and_final_weights_v1",
+  "released_files": {
+    "cycle_1.pt": "c0f564941cf1660c9369bc565a524ab22289930f46ab59fe1f23c87080b38fbc",
+    "cycle_2.pt": "f320cc8e76779c57acf784b7c12f7bf41d4324f787a83445e60ad93f839c7c94",
+    "cycle_3.pt": "f2a9e0b57759e1600b0e63318bf4e0d7a2d3e81a3142475b060dc7693156a159",
+    "cycle_4.pt": "8336aa640809f544e4c829c976b54eb7af6fbf362f3023d2a79dd37ba4059541"
+  },
+  "released_after_diagnostics": true,
+  "updated_utc": "2026-11-03T18:48:17.289221+00:00"
+}

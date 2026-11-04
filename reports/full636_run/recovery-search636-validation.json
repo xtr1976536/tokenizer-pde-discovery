@@ -1,0 +1,28 @@
+{
+  "incident": "cuda_synchronization_stall",
+  "kind": "search",
+  "stage": "ast_bpe_350_Convection_diffusion_equation_search",
+  "arm": "ast_bpe_350",
+  "case": "Convection_diffusion_equation",
+  "cycle": 2,
+  "completed_attempts_in_cycle": 75,
+  "checkpoint_backup_relative": "outputs/large636/recovery-search636-ast350-convection",
+  "checkpoint_hashes": {
+    "search_progress.pt": "6b44780bb7c36079ac9163c2b6a9d4fc641bcffcd0843e37f99d5506d858144a",
+    "attempt_progress.pt": "85991162d6e54c44227dcabd3f00b60cc9fdf72e3c4b1b3e6873857227fb86b8"
+  },
+  "mathematical_source_changed": false,
+  "completed_case_models_reused": 25,
+  "stack_file": "recovery636-stack-ast350-search.txt",
+  "utc": "2026-11-04T00:42:45.789819+00:00",
+  "recovery_verified": true,
+  "model_and_optimizer_preserved": true,
+  "completed_cycle_history_preserved": true,
+  "candidate_prefix_preserved": true,
+  "rng_and_evaluator_state_retained": true,
+  "resumed_attempt_checkpoint": 125,
+  "optimizer_steps_preserved": [
+    5
+  ],
+  "verified_utc": "2026-11-04T00:46:28.584885+00:00"
+}
