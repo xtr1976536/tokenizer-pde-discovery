@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scales": [
+    636
+  ],
+  "experiments": [
+    "811_main_and_alphabet_capacity_matrix",
+    "simple_to_complex",
+    "predeclared_capacity_sweep",
+    "vocabulary_usage"
+  ],
+  "three_fold": false,
+  "split_counts": {
+    "train": 509,
+    "validation": 64,
+    "test": 63
+  },
+  "matrix_rows": 132,
+  "selected_hard_test_arms": 2,
+  "numerical_metric_note": "All rendered numeric lexemes are single-digit; numbers is degenerate at 100%",
+  "transformer_or_search_started": false
+}

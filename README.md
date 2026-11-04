@@ -50,3 +50,5 @@ python -m scripts.pde_experiment run --scale 636 --device mps
 GitHub repository: https://github.com/xtr1976536/tokenizer-pde-discovery (public).
 
 上游分词器三指标迁移方案及当前212/636 benchmark的限制审查见 [reports/upstream_plan/README.md](reports/upstream_plan/README.md)。212完整实验权重将通过独立GitHub Release归档，避免将模型二进制写入Git历史。
+
+当前636 benchmark的四项8:1:1上游实验已完成，采用用户指定的初始词表token数/最终词表token数指标；完整配置、结果和限制见 [上游实验报告](experiments/upstream_current636/README.md)。

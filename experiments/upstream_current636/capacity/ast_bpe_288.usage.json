@@ -1,0 +1,8 @@
+{
+  "total_ids": 288,
+  "active_train_ids": 160,
+  "active_test_ids": 91,
+  "unused_content_ids": 125,
+  "learned_zero_train": 48,
+  "learned_low_frequency_le10": 87
+}

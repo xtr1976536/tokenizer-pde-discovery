@@ -1,0 +1,29 @@
+{
+  "formulas": 21,
+  "sources": 20,
+  "cmd_pct": 90.27777777777777,
+  "num_pct": 100.0,
+  "counts": {
+    "initial_character_tokens": 1823,
+    "initial_method_tokens": 1823,
+    "final_tokens": 356,
+    "commands": 72,
+    "commands_intact": 65,
+    "numbers": 45,
+    "numbers_intact": 45,
+    "initial_vocab_tokens": 1823
+  },
+  "test_ids_sha256": "71982a67e3e9606dc02b09af25dd76a45909bf30736aa1734225ca730b3623c9",
+  "source_bytes_per_final_token": 5.120786516853933,
+  "tokenizer compression": 5.120786516853933,
+  "operation": 90.27777777777777,
+  "numbers": 100.0,
+  "initial_vocab_tokens": 1823,
+  "final_vocab_tokens": 356,
+  "compression_definition": "sum(actual initial-vocabulary encoding lengths) / sum(actual final-vocabulary encoding lengths)",
+  "initial_vocab_content_ids": 98,
+  "requested_formulas": 21,
+  "covered_formulas": 21,
+  "oov_formulas": 0,
+  "full_coverage": true
+}

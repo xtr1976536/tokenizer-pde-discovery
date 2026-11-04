@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "persisted_metrics_recomputed": 286,
+  "group_disjoint_fields": [
+    "id",
+    "source_group",
+    "template_sha256",
+    "canonical_sha256"
+  ],
+  "legacy_evaluation_and_loader_byte_identical": true,
+  "initial_encoder": "Hard no-merge singleton declared alphabet; fixed baseline singleton byte vocabulary verified",
+  "no_downstream_training": true
+}
