@@ -1,5 +1,5 @@
 {
-  "version": "current636-upstream-v1",
+  "version": "current636-upstream-v2-main256",
   "source_sha256": "edd2ed05c797c487b9ba76e594a8ce8487805018824b344e5cbdfec6f2ff34b8",
   "source_formulas": 636,
   "representation": "unaugmented structure_to_latex(gre_ids)",
@@ -713,7 +713,7 @@
     "llama3",
     "o200k_base"
   ],
-  "main_selection": "validation full-coverage Pareto plus ascii98/256",
+  "main_selection": "fixed ascii98/256 plus three legacy official baselines; other capacities only in capacity experiment",
   "initial_vocab": "Hard: singleton declared byte alphabet with no merges; fixed references: verified singleton 256-byte vocabulary before merges",
   "compression": "actual initial vocabulary tokens / actual final vocabulary tokens",
   "simple_complex": "same 8:1:1 source/template split; simple training subset, complex validation/test subsets; complexity-v2 score ranked 30/40/30 as historical corpus construction",

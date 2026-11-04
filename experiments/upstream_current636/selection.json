@@ -1,10 +1,8 @@
 [
   {
+    "method": "ast_bpe",
     "alphabet": "ascii98",
-    "total_ids": 256
-  },
-  {
-    "alphabet": "train_observed",
-    "total_ids": 512
+    "total_ids": 256,
+    "rule": "fixed by user; no validation capacity selection"
   }
 ]

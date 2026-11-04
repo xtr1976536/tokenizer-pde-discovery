@@ -124,3 +124,4 @@ simple_to_complex 416 COMPLETE
 simple_to_complex 450 COMPLETE
 COMPLETE
 USAGE_COMPLETE 24 7332
+MAIN256_REVISION PASS: fresh main256 training; exactly four main tokenizers; alphabet/capacity comparisons relocated to capacity/; independent256 and prefix vocabulary/merge contents identical.

@@ -4,9 +4,9 @@
     636
   ],
   "experiments": [
-    "811_main_and_alphabet_capacity_matrix",
+    "811_main_fixed_four_tokenizers",
     "simple_to_complex",
-    "predeclared_capacity_sweep",
+    "capacity_sweep_and_alphabet_matrix",
     "vocabulary_usage"
   ],
   "three_fold": false,
@@ -16,7 +16,8 @@
     "test": 63
   },
   "matrix_rows": 132,
-  "selected_hard_test_arms": 2,
+  "selected_hard_test_arms": 1,
   "numerical_metric_note": "All rendered numeric lexemes are single-digit; numbers is degenerate at 100%",
-  "transformer_or_search_started": false
+  "transformer_or_search_started": false,
+  "main_tokenizers": 4
 }

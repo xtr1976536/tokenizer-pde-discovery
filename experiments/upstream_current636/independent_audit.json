@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "persisted_metrics_recomputed": 286,
+  "persisted_metrics_recomputed": 289,
   "group_disjoint_fields": [
     "id",
     "source_group",
@@ -17,5 +17,8 @@
     "tokenizers": "0.23.3",
     "tiktoken": "0.14.0",
     "numpy": "2.4.6"
-  }
+  },
+  "main_tokenizers": 4,
+  "main_ast_bpe_total_ids": 256,
+  "main_fresh_training_matches_independent_capacity_and_parent_prefix": true
 }

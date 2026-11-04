@@ -1,0 +1,10 @@
+[
+  {
+    "alphabet": "ascii98",
+    "total_ids": 256
+  },
+  {
+    "alphabet": "train_observed",
+    "total_ids": 512
+  }
+]

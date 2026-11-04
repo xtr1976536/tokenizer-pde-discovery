@@ -67,7 +67,7 @@ def prepare():
   rows.append(dict(id=r['source_id'],latex=t,source_group=r['source_group'],template_sha256=sha(''.join(out).encode()),canonical_sha256=sha(re.sub(r'\s+','',t).encode()),complexity=complexity(t)))
  for i,r in enumerate(sorted(rows,key=lambda r:(r['complexity']['score'],r['id']))):r['complexity_bin']='simple' if i<len(rows)*.3 else 'moderate' if i<len(rows)*.7 else 'complex'
  plans,split=split_corpus(rows)
- protocol=dict(version='current636-upstream-v1',source_sha256=sha(source.read_bytes()),source_formulas=636,representation='unaugmented structure_to_latex(gre_ids)',split=split,legacy_repository_commit='abff7a367b7a94f8814bf819ac54800e7cc62fdc',sizes=SIZES,capacity_sweep=SWEEP,baseline_names=['qwen2.5','llama3','o200k_base'],main_selection='validation full-coverage Pareto plus ascii98/256',initial_vocab='Hard: singleton declared byte alphabet with no merges; fixed references: verified singleton 256-byte vocabulary before merges',compression='actual initial vocabulary tokens / actual final vocabulary tokens',simple_complex='same 8:1:1 source/template split; simple training subset, complex validation/test subsets; complexity-v2 score ranked 30/40/30 as historical corpus construction',no_three_fold=True)
+ protocol=dict(version='current636-upstream-v2-main256',source_sha256=sha(source.read_bytes()),source_formulas=636,representation='unaugmented structure_to_latex(gre_ids)',split=split,legacy_repository_commit='abff7a367b7a94f8814bf819ac54800e7cc62fdc',sizes=SIZES,capacity_sweep=SWEEP,baseline_names=['qwen2.5','llama3','o200k_base'],main_selection='fixed ascii98/256 plus three legacy official baselines; other capacities only in capacity experiment',initial_vocab='Hard: singleton declared byte alphabet with no merges; fixed references: verified singleton 256-byte vocabulary before merges',compression='actual initial vocabulary tokens / actual final vocabulary tokens',simple_complex='same 8:1:1 source/template split; simple training subset, complex validation/test subsets; complexity-v2 score ranked 30/40/30 as historical corpus construction',no_three_fold=True)
  if (OUT/'protocol.json').exists():assert json.loads((OUT/'protocol.json').read_text())==protocol
  dump(OUT/'protocol.json',protocol);dump(OUT/'input_records.json',rows)
  return plans
@@ -82,7 +82,7 @@ def main():
   valid=[s for s in SIZES if s>=len(alphabet)+3]
   if missing:
    results.extend(dict(alphabet=name,total_ids=s,status='training_characters_not_covered',missing_bytes=missing) for s in SIZES);continue
-  folder=OUT/'matrix'/name;folder.mkdir(parents=True,exist_ok=True)
+  folder=OUT/'capacity'/'alphabet_matrix'/name;folder.mkdir(parents=True,exist_ok=True)
   parent=hard(train,alphabet,max(valid),folder/'parent.model.json')
   for size in SIZES:
    if size not in valid:results.append(dict(alphabet=name,total_ids=size,status='below_base_plus_controls'));continue
@@ -92,18 +92,15 @@ def main():
    val=evaluate(model,validation,folder/f'{size}.validation.json');tr=evaluate(model,train,folder/f'{size}.train.json')
    row=dict(alphabet=name,total_ids=size,status='evaluated',validation=val,train=tr);results.append(row)
    print('MATRIX',name,size,val['tokenizer compression'],flush=True)
- dump(OUT/'validation_results.json',results)
- metrics=['tokenizer compression','operation','numbers'];eligible=[r for r in results if r['status']=='evaluated' and r['validation']['full_coverage']]
- def dominates(a,b):return all(a['validation'][k]>=b['validation'][k] for k in metrics) and any(a['validation'][k]>b['validation'][k] for k in metrics)
- selected=[r for r in eligible if not any(dominates(a,r) for a in eligible) or (r['alphabet']=='ascii98' and r['total_ids']==256)]
- dump(OUT/'selection.json',[dict(alphabet=r['alphabet'],total_ids=r['total_ids']) for r in selected])
- tests=[]
- for r in selected:
-  folder=OUT/'matrix'/r['alphabet'];m=CompactAlphabet.load(folder/f"{r['total_ids']}.model.json")
-  tests.append(dict(method='ast_bpe',alphabet=r['alphabet'],total_ids=r['total_ids'],**evaluate(m,test,folder/f"{r['total_ids']}.test.json")))
+ dump(OUT/'capacity'/'alphabet_validation_results.json',results)
+ folder=OUT/'main';folder.mkdir(exist_ok=True)
+ m=hard(train,ALPHABET,256,folder/'ast_bpe_256.model.json')
+ for label,rr in [('train',train),('validation',validation)]:evaluate(m,rr,folder/f'ast_bpe_256.{label}.json')
+ tests=[dict(method='ast_bpe',alphabet='ascii98',total_ids=256,**evaluate(m,test,folder/'ast_bpe_256.test.json'))]
+ dump(OUT/'selection.json',[dict(method='ast_bpe',alphabet='ascii98',total_ids=256,rule='fixed by user; no validation capacity selection')])
  baseline={name:load(name) for name in ['qwen2.5','llama3','o200k_base']}
  for name,m in baseline.items():
-  evaluate(m,validation,OUT/f'{name}.validation.json');tests.append(dict(method=name,total_ids=m.vocab_size,**evaluate(m,test,OUT/f'{name}.test.json')))
+  evaluate(m,validation,folder/f'{name}.validation.json');tests.append(dict(method=name,total_ids=m.vocab_size,**evaluate(m,test,folder/f'{name}.test.json')))
  dump(OUT/'test_results.json',tests)
  # Fixed predeclared old capacity grid: all results reported, no test-based selection.
  for protocol,fit,val,held in [('capacity',train,validation,test),('simple_to_complex',[r for r in train if r['complexity_bin']=='simple'],[r for r in validation if r['complexity_bin']=='complex'],[r for r in test if r['complexity_bin']=='complex'])]:
@@ -129,6 +126,6 @@ def main():
   w=csv.DictWriter(f,fieldnames=list(summaries[0]),lineterminator='\n');w.writeheader();w.writerows(sorted(summaries,key=lambda r:r['file']))
  from scripts.analyze_current_upstream_usage import main as analyze_usage
  analyze_usage()
- dump(OUT/'COMPLETE.json',dict(status='PASS',scales=[636],experiments=['811_main_and_alphabet_capacity_matrix','simple_to_complex','predeclared_capacity_sweep','vocabulary_usage'],three_fold=False,split_counts={k:len(v) for k,v in plans.items()},matrix_rows=len(results),selected_hard_test_arms=len(selected),numerical_metric_note='All rendered numeric lexemes are single-digit; numbers is degenerate at 100%',transformer_or_search_started=False))
+ dump(OUT/'COMPLETE.json',dict(status='PASS',scales=[636],experiments=['811_main_fixed_four_tokenizers','simple_to_complex','capacity_sweep_and_alphabet_matrix','vocabulary_usage'],three_fold=False,split_counts={k:len(v) for k,v in plans.items()},matrix_rows=len(results),selected_hard_test_arms=1,main_tokenizers=4,numerical_metric_note='All rendered numeric lexemes are single-digit; numbers is degenerate at 100%',transformer_or_search_started=False))
  print('COMPLETE',flush=True)
 if __name__=='__main__':main()
