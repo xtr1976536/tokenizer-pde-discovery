@@ -1,0 +1,210 @@
+<div id="ast-bpe-process">
+  <h1>AST-BPE：从源树到 token</h1>
+  <p>跟随四条演示语料，观察词表训练、固定规则编码与字节解码。选择阶段，再逐步查看每次合并及其原因。</p>
+  <div class="viz-controls">
+    <label class="form-label">阶段
+      <select class="form-select" id="ab-phase">
+        <option value="training">Training · 词表学习</option>
+        <option value="encoding">Encoding · 固定规则编码</option>
+        <option value="decoding">Decoding · 字节还原</option>
+      </select>
+    </label>
+  </div>
+  <div class="viz-row ab-stepbar">
+    <button class="btn" id="ab-prev" type="button">上一步</button>
+    <button class="btn btn-primary" id="ab-next" type="button">下一步</button>
+    <span id="ab-step" class="tabular-nums" aria-live="polite"></span>
+  </div>
+  <div class="viz-row ab-status"><span id="ab-action"></span></div>
+  <div class="ab-why"><strong>为什么先做这一步？</strong><p id="ab-why" aria-live="polite"></p></div>
+  <div class="viz-row ab-legend">
+    <span><i class="ab-key"></i>当前合并 / 读取</span>
+    <button class="btn btn-ghost" id="ab-boundary" type="button" aria-pressed="false">边界示例：t= ✕</button>
+  </div>
+  <div class="text-small text-muted" id="ab-chart-label">固定的源树区间</div>
+  <div id="ab-chart"></div>
+  <div id="ab-ids" class="ab-ids"></div>
+  <div id="ab-candidates">
+    <div class="text-small text-muted" id="ab-count-title"></div>
+    <table class="table table-sm">
+      <thead><tr><th>候选 pair</th><th class="text-end">合法频次</th><th>选择</th></tr></thead>
+      <tbody id="ab-counts"></tbody>
+    </table>
+  </div>
+  <details id="ab-corpus"><summary>演示语料 · 4 条 · 256 → 272 个内部 token</summary><div id="ab-corpus-list"></div></details>
+  <div class="ab-source text-small"><a id="ab-source" target="_blank" rel="noopener noreferrer"></a><span> · d1eda76</span></div>
+  <hr>
+  <details><summary>读图说明与实现边界</summary>
+    <p>树节点表示原文的 AST/CST 字节区间，BPE 合并只改变下方 token 划分，不修改这棵源树。图中高亮的是本步实际合并或读取的范围。训练轮次作用于全部四条语料；图中只画第一条公式。</p>
+    <p>Training 指分词器学习词表，不是 Transformer 的梯度训练。顺序为：解析源区间 → 从单字节开始 → 统计合法相邻 pair → 选最高频 pair → 合并并重计数。每次重计数都可能改变下一轮的优先级。</p>
+    <p>Encoding 使用已经学好的 merge rank；较小 rank 优先，同 rank 时左边的位置优先。不存在的 pair 不进入候选队列，合并前还会检查邻接关系、版本和区间合法性。</p>
+    <p>Decoding 依次取出 vocab[id] 的字节，拼接后统一 UTF-8 解码。单个 token 可能只包含一个多字节字符的一部分，所以必须先拼接字节。</p>
+    <p>本演示使用底层 256 个单字节 ID，学到 16 个新 token 后在容量 272 处停止。仓库当前主配置的对外基础表为 98 个 ASCII/空白字符，紧凑映射与 PAD/EOS/BOS 是另外一层；本图不把内部 ID 当作最终模型 ID。</p>
+    <p>小语料用于解释算法，并非仓库 212/636 条正式训练的结果。支持的算术语法使用表达式 AST，其他语法保留绑定 CST；图示不声称是通用数学语义树。</p>
+  </details>
+  <p class="text-small"><a href="https://github.com/xtr1976536/tokenizer-pde-discovery" target="_blank" rel="noopener noreferrer">GitHub 仓库与可复核源码</a> · 原始示例校验：217 次原生 / 参考编码与逐字节还原一致。</p>
+</div>
+<style>
+#ast-bpe-process{color:var(--foreground);max-width:1000px;margin:auto;padding:12px 0 28px}
+#ast-bpe-process .ab-why{margin-top:12px;padding-left:14px;border-left:3px solid var(--border)}
+#ast-bpe-process .ab-why p{margin:6px 0 0;overflow-wrap:anywhere}
+#ast-bpe-process [hidden]{display:none!important}
+#ast-bpe-process .ab-stepbar{margin-top:16px;gap:8px}
+#ast-bpe-process .ab-status{margin-top:16px;min-height:28px;overflow-wrap:anywhere}
+#ast-bpe-process .ab-legend{margin:8px 0;gap:16px}
+#ast-bpe-process .ab-key{display:inline-block;width:10px;height:10px;margin-right:6px;background:var(--viz-series-1)}
+#ast-bpe-process .ab-ids{overflow-wrap:anywhere;margin:10px 0 18px}
+#ast-bpe-process .ab-source{margin-top:16px}
+#ast-bpe-process details{margin-top:12px}
+#ast-bpe-process #ab-corpus-list{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:8px}
+#ast-bpe-process .ab-tree{display:block;max-width:100%;overflow:visible}
+#ast-bpe-process .ab-tree text{fill:var(--foreground);font-weight:400}
+#ast-bpe-process .ab-tree .ab-edge{fill:none;stroke:var(--border);stroke-width:1.5}
+#ast-bpe-process .ab-tree .ab-node{fill:var(--background);stroke:var(--border);stroke-width:1}
+#ast-bpe-process .ab-tree .ab-active{fill:color-mix(in srgb,var(--viz-series-1) 17%,var(--background));stroke:var(--viz-series-1)}
+#ast-bpe-process .ab-tree .ab-blocked{fill:color-mix(in srgb,var(--viz-series-2) 15%,var(--background));stroke:var(--viz-series-2);stroke-dasharray:4 3}
+#ast-bpe-process .ab-tree .ab-band{fill:color-mix(in srgb,var(--viz-series-1) 6%,transparent)}
+#ast-bpe-process .ab-tree .ab-band-blocked{fill:color-mix(in srgb,var(--viz-series-2) 9%,transparent)}
+#ast-bpe-process .ab-tree .ab-muted{fill:var(--muted-foreground)}
+#ast-bpe-process .ab-tree .ab-token{fill:color-mix(in srgb,var(--foreground) 5%,var(--background));stroke:var(--border)}
+#ast-bpe-process .ab-tree .ab-moving{transition:transform .25s ease}
+@media(prefers-reduced-motion:reduce){#ast-bpe-process .ab-tree .ab-moving{transition:none}}
+</style>
+<script type="application/json" id="ab-data">__TRACE_DATA__</script>
+<script>
+(()=>{
+  const root=document.getElementById('ast-bpe-process');
+  const $=id=>root.querySelector('#'+id);
+  const data=JSON.parse(document.getElementById('ab-data').textContent);
+  const state={phase:'training',step:1,boundary:false};
+  const ns='http://www.w3.org/2000/svg';
+  const base='https://github.com/xtr1976536/tokenizer-pde-discovery/blob/'+data.commit+'/';
+  const modes=['training','encoding','decoding'];
+  const maxStep=()=>state.phase==='training'?data.training.length:state.phase==='encoding'?data.encoding.events.length:3;
+  const txt=id=>data.vocab[String(id)];
+  function el(tag,attrs={},text){const n=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;return n;}
+  function esc(t){return String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  function restore(s){
+    const v=s?.privateContent;
+    if(v&&modes.includes(v.phase)){state.phase=v.phase;state.step=Math.max(0,Math.min(Number(v.step)||0,maxStep()));state.boundary=!!v.boundary;}
+  }
+  function save(){window.openai?.setWidgetState?.({modelContent:{phase:state.phase,step:state.step,boundaryExample:state.boundary,formula:data.target,commit:data.commit},privateContent:{...state}})?.catch(()=>{});}
+  function why(){
+    if(state.boundary)return 't= 对应 [2,4)，而 u_t 子树是 [0,3)。两个区间部分相交，既不是包含关系也不是互不相交，因此这个 pair 在训练计数时被排除，编码时也不能执行。u_ 位于 u_t 内部，允许先合并；u_t= 完整包含 u_t，之后也可以合法合并。';
+    if(state.phase==='training'){
+      if(!state.step)return '先解析每条原文的源树区间，并将 UTF-8 字节设为初始 token，才能确定哪些邻接 pair 可以合法合并。随后统计全语料的合法出现次数。';
+      const e=data.training[state.step-1],a=e.rule[0],b=e.rule[1];
+      const tied=e.top.filter(p=>p.count===e.count);
+      let reason=`本轮 ${txt(a)} + ${txt(b)} 的合法频次是 ${e.count}，位于当前候选的最高频。`;
+      if(tied.length>1)reason+=`同频时比较 pair 的数字 ID 元组；(${a}, ${b}) 排在这些同频 pair 前面，因此先选它。`;
+      const parents=data.training.slice(0,state.step-1).filter(p=>p.rule[2]===a||p.rule[2]===b);
+      if(parents.length)reason+='它依赖已经形成的 '+parents.map(p=>`${p.new}（rank ${p.rank}）`).join('、')+'；这些 token 必须先存在，当前 pair 才能相邻出现。';
+      reason+=`选中后在全语料执行 ${e.replacements} 次不重叠替换，再更新受影响的 pair 频次。`;
+      if(!e.ranges.length)reason+='本轮作用于其他演示公式，所以当前这棵树下方的 token 没有变化。';
+      if(state.step===data.training.length)reason+='此时达到演示容量 272，训练停止；停止原因是预算用完，不是整条公式已不能继续合并。';
+      return reason;
+    }
+    if(state.phase==='encoding'){
+      if(!state.step)return '训练已经给每条规则固定了 rank。新公式先解析源树、拆成字节，再将当前相邻且已学到的 pair 放入优先队列。编码阶段不重新统计语料频次，也不重新学习词表。';
+      const e=data.encoding.events[state.step-1];
+      return `本步选择当前可执行候选中最小的 rank ${e.rank}，位置为 [${e.range[0]},${e.range[1]})。相同 rank 的候选按左端位置从左到右处理。确认 pair 仍然相邻、版本有效且不部分跨越源树区间后，才替换成 ID ${e.rule[2]}，并将新产生的左右邻接 pair 加入队列。训练中仅属于 v 的规则不会出现在这条 u 公式的候选中。`;
+    }
+    return ['ID 的先后顺序就是原文片段的先后顺序。先读取这个序列，不需要重新解析 AST，也不需要反向执行 merge 规则。','先读第一个 ID 265，查词表得到 u_t= 的字节。它必须排在后面的右侧表达式之前，才能保持原始文本顺序。','再读第二个 ID 271，查词表得到 u_x+u_{xx} 的字节，接在前一个片段后面；这里没有频率或 rank 排序。','所有字节拼接完成后才做 UTF-8 解码。一般情况下，一个 token 可能切开多字节字符；先逐 token 转字符串可能失败，而先拼接可逐字节还原原文。'][state.step];
+  }
+  restore(window.openai?.widgetState);
+  window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);render();}});
+  $('ab-phase').addEventListener('change',()=>{state.phase=$('ab-phase').value;state.step=0;state.boundary=false;render();save();});
+  $('ab-prev').addEventListener('click',()=>{state.step=Math.max(0,state.step-1);state.boundary=false;render();save();});
+  $('ab-next').addEventListener('click',()=>{state.step=Math.min(maxStep(),state.step+1);state.boundary=false;render();save();});
+  $('ab-boundary').addEventListener('click',()=>{state.boundary=!state.boundary;render();save();});
+  $('ab-corpus-list').innerHTML=data.corpus.map(t=>'<code>'+esc(t)+'</code>').join('');
+  const nodes=data.encoding.spans.map(([a,b])=>({a,b,children:[]}));
+  const tree=nodes.find(n=>n.a===0&&n.b===data.target.length);
+  for(const n of nodes){if(n===tree)continue;const p=nodes.filter(p=>p!==n&&p.a<=n.a&&p.b>=n.b).sort((p,q)=>(p.b-p.a)-(q.b-q.a))[0];p.children.push(n);}
+  function depths(n,d=0){n.depth=d;n.children.sort((a,b)=>a.a-b.a);n.children.forEach(c=>depths(c,d+1));}
+  depths(tree);
+  const leafDepth=Math.max(...nodes.map(n=>n.depth));
+  function drawTree(tokens,range,allRanges=[]){
+    const selections=state.boundary?(range?[range]:[]):allRanges.length?allRanges:(range?[range]:[]);
+    const w=Math.max(280,$('ab-chart').clientWidth),pad=7,cell=(w-pad*2)/data.target.length;
+    const leafY=36+leafDepth*48,tokenY=leafY+68,h=tokenY+44;
+    const svg=el('svg',{class:'ab-tree',width:w,height:h,viewBox:`0 0 ${w} ${h}`,role:'img','aria-label':`固定 AST/CST 源区间树；当前 ${tokens.length} 个 token，${state.boundary?'t= 因跨越 u_t 边界被拒绝':'高亮当前合并范围'}`});
+    svg.append(el('title',{},'源树不随 BPE 合并改变；下方 token 区间逐步合并'));
+    const X=n=>pad+(n.a+n.b)*cell/2,Y=n=>n.b-n.a===1?leafY:36+n.depth*48;
+    for(const r of selections)svg.append(el('rect',{x:pad+r[0]*cell,y:12,width:(r[1]-r[0])*cell,height:tokenY+17-12,class:state.boundary?'ab-band-blocked':'ab-band',rx:4}));
+    for(const n of nodes)for(const c of n.children){const x=X(n),y=Y(n)+13,xx=X(c),yy=Y(c)-13;svg.append(el('path',{d:`M${x},${y} C${x},${(y+yy)/2} ${xx},${(y+yy)/2} ${xx},${yy}`,class:'ab-edge'}));}
+    for(const n of nodes){
+      const label=data.target.slice(n.a,n.b),width=Math.min((n.b-n.a)*cell-3,Math.max(18,label.length*7.5+14));
+      let cl='ab-node';
+      if(selections.some(r=>n.a>=r[0]&&n.b<=r[1]))cl+=' ab-active';
+      if(state.boundary&&n.a===0&&n.b===3)cl='ab-node ab-blocked';
+      const g=el('g',{'data-tooltip':`源区间 [${n.a}, ${n.b}) · ${label}`});
+      g.append(el('rect',{x:X(n)-width/2,y:Y(n)-13,width,height:26,rx:5,class:cl}));
+      g.append(el('text',{x:X(n),y:Y(n)+4,'text-anchor':'middle',class:n.b-n.a===1?'':'text-small'},label));svg.append(g);
+    }
+    svg.append(el('text',{x:pad,y:leafY+39,class:'text-small ab-muted'},'当前 token'));
+    for(const t of tokens){
+      const g=el('g',{'data-tooltip':`ID ${t.id} · [${t.a}, ${t.b}) · ${t.text}`});
+      g.append(el('rect',{x:pad+t.a*cell+1,y:tokenY-15,width:(t.b-t.a)*cell-2,height:30,rx:4,class:!state.boundary&&selections.some(r=>t.a===r[0]&&t.b===r[1])?'ab-node ab-active':'ab-token'}));
+      g.append(el('text',{x:pad+(t.a+t.b)*cell/2,y:tokenY+4,'text-anchor':'middle',class:'text-small'},t.text));svg.append(g);
+    }
+    $('ab-chart').replaceChildren(svg);
+  }
+  function drawDecode(){
+    const w=Math.max(280,$('ab-chart').clientWidth),h=270,items=data.encoding.result;
+    const svg=el('svg',{class:'ab-tree',width:w,height:h,viewBox:`0 0 ${w} ${h}`,role:'img','aria-label':'token ID 查词表，顺序拼接字节，最后 UTF-8 解码；此过程不构建 AST'});
+    svg.append(el('title',{},'decode_bytes → UTF-8 decode'));
+    const selected=Math.min(state.step,2);
+    svg.append(el('text',{x:8,y:17,class:'text-small ab-muted'},'输入 IDs'));
+    items.forEach((t,i)=>{
+      const x=w*(i+.5)/items.length,bw=Math.min(w/2-18,190),on=i<selected;
+      svg.append(el('path',{d:`M${x},66 L${x},108 M${x},140 L${x},163 L${w/2},163 L${w/2},191`,class:'ab-edge'}));
+      svg.append(el('rect',{x:x-bw/2,y:34,width:bw,height:32,rx:5,class:on?'ab-node ab-active':'ab-node'}));
+      svg.append(el('text',{x,y:55,'text-anchor':'middle'},String(t.id)));
+      svg.append(el('rect',{x:x-bw/2,y:108,width:bw,height:32,rx:5,class:on?'ab-node ab-active':'ab-node'}));
+      svg.append(el('text',{x,y:129,'text-anchor':'middle',class:'text-small'},on?t.text:'待查 vocab'));
+    });
+    svg.append(el('text',{x:8,y:92,class:'text-small ab-muted'},'vocab[id] · bytes'));
+    const text=items.slice(0,selected).map(t=>t.text).join('');
+    svg.append(el('text',{x:8,y:183,class:'text-small ab-muted'},state.step===3?'UTF-8 解码结果':'按序拼接 bytes'));
+    svg.append(el('rect',{x:8,y:198,width:w-16,height:40,rx:5,class:state.step===3?'ab-node ab-active':'ab-node'}));
+    svg.append(el('text',{x:w/2,y:223,'text-anchor':'middle'},text||'∅'));
+    svg.append(el('text',{x:w/2,y:262,'text-anchor':'middle',class:'text-small ab-muted'},state.step===3?'逐字节还原 ✓':'AST 不参与解码'));
+    $('ab-chart').replaceChildren(svg);
+  }
+  function render(){
+    const train=state.phase==='training',decode=state.phase==='decoding';
+    $('ab-phase').value=state.phase;
+    $('ab-prev').disabled=state.step===0;$('ab-next').disabled=state.step===maxStep();
+    $('ab-step').textContent=`${train?'轮次':'步骤'} ${state.step} / ${maxStep()}`;
+    $('ab-boundary').hidden=decode;$('ab-boundary').setAttribute('aria-pressed',String(state.boundary));
+    $('ab-candidates').hidden=!train||state.boundary;
+    $('ab-corpus').hidden=!train;
+    let tokens=data.encoding.initial,range=null,action='',ranges=[];
+    if(train){
+      const event=data.training[Math.max(0,state.step-1)];
+      if(state.step){tokens=event.after;ranges=event.ranges;range=ranges[0]||null;action=`rank ${event.rank}：${txt(event.rule[0])} + ${txt(event.rule[1])} → ${event.new} · ID ${event.rule[2]}`;}
+      else action='初始化：每个 UTF-8 字节一个 token';
+      $('ab-count-title').textContent=`${state.step?'本轮合并前':'初始'} · 全部 4 条语料的合法相邻 pair（前 4 项）`;
+      $('ab-counts').innerHTML=event.top.map((p,i)=>`<tr><td><code>${esc(p.text[0])}</code> + <code>${esc(p.text[1])}</code></td><td class="text-end tabular-nums">${p.count}</td><td>${i===0?'✓ 最高频 / 同频按 ID':''}</td></tr>`).join('');
+      $('ab-source').href=base+'src/math_tokenizer/atoms_v4.py#L26';$('ab-source').textContent='源码：GrammarBPE.train → counts / merge';
+    }else if(!decode){
+      if(state.step){const event=data.encoding.events[state.step-1];tokens=event.after;range=event.range;action=`rank ${event.rank}：${txt(event.rule[0])} + ${txt(event.rule[1])} → ID ${event.rule[2]} · 区间合法 ✓`;}
+      else action='初始化：读取固定词表与 merge rank';
+      $('ab-source').href=base+'src/math_tokenizer/hard_ast_2026.py#L50';$('ab-source').textContent='源码：HardASTBPE.encode_reference / native encode';
+    }else{
+      tokens=data.encoding.result;
+      action=['输入固定 token 序列','读取 vocab[265] → bytes','读取 vocab[271] → 拼接 bytes','decode("utf-8") → 原始字符串'][state.step];
+      $('ab-source').href=base+'src/math_tokenizer/hard_ast_2026.py#L66';$('ab-source').textContent='源码：decode_bytes / decode';
+    }
+    if(state.boundary){tokens=data.encoding.initial;range=[2,4];action='t= · [2,4) 与 u_t · [0,3) 部分相交 → 拒绝 ✕';}
+    $('ab-action').textContent=action;
+    $('ab-why').textContent=why();
+    $('ab-chart-label').textContent=decode?'查词表 → 拼接 → UTF-8':'固定 AST/CST 源区间树 · 字节偏移 [start, end)';
+    $('ab-ids').innerHTML='<span class="text-small text-muted">内部 IDs · '+tokens.length+' tokens</span><br><code>['+tokens.map(t=>t.id).join(', ')+']</code>';
+    if(decode)drawDecode();else drawTree(tokens,range,ranges);
+  }
+  const observer=new ResizeObserver(()=>render());observer.observe($('ab-chart'));
+  render();
+})();
+</script>
