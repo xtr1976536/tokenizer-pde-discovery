@@ -2,7 +2,7 @@
 
 数学分词器的上游评估与PDE结构发现实验。仓库包含源公式、分词器、训练与搜索代码、逐候选结果、运行日志和检查记录。
 
-AST-BPE 动态演示：下载并打开 [独立网站](docs/index.html)，逐步查看训练、编码和解码，以及每一步的顺序原因。[演示源码与复现说明](visualization/README.md)。
+AST-BPE 动态演示：[在线版本（Sites，本人可见）](https://ast-bpe-training-encoding-decoding.chenshuhang491.chatgpt.site)，或下载并打开 [独立网站](docs/index.html)，逐步查看训练、编码和解码，以及每一步的顺序原因。[演示源码与复现说明](visualization/README.md)。公开 GitHub Pages 发布文件已就绪，管理员可在 Settings → Pages 选择 `main` 分支的 `/docs`。
 
 初始基础词表由完整256字节表缩至98个ASCII/空白字符；计入3个控制符后，初始占用由259降至101个ID。构造与紧凑映射过程见[初始词表压缩说明](docs/initial_vocabulary.md)。
 
