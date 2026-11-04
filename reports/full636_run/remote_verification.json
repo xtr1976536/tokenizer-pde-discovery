@@ -1,5 +1,25 @@
 {
-  "status": "PENDING",
+  "status": "PASS",
   "repository": "xtr1976536/tokenizer-pde-discovery",
-  "reason": "Awaiting final source push and fresh remote checkout"
+  "verified_source_commit": "0267ef7fd536754a3b5d6d838fa1dd8b37cee4c6",
+  "baseline_commit": "a925812fa695b90b0a94ba525d1128522d75b859",
+  "independent_remote_clone": true,
+  "remote_raw_artifact_hashes": 326,
+  "existing_paths_preserved": 1682,
+  "permitted_existing_documentation_and_scoped_attribute_updates": [
+    ".gitattributes",
+    "ENVIRONMENT.md",
+    "README.md",
+    "reports/README.md",
+    "reports/repository_audit/README.md"
+  ],
+  "deleted_existing_paths": 0,
+  "checkpoint_binaries_added_to_git": 0,
+  "full636_artifact_tree": "fa8c8c4304386c7bb1f7b3fe1e0d7c6608a12630",
+  "public_weights_release": "https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full636-815cc37",
+  "release_unique_weights": 40,
+  "release_assets_including_manifest": 41,
+  "all_release_server_sizes_and_sha256_verified": true,
+  "existing_full212_release_weights_preserved": 164,
+  "public_download_restore_test": "2 weights / 4 hardlinked paths / SHA-256 PASS"
 }

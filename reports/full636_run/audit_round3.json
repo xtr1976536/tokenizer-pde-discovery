@@ -14,5 +14,11 @@
   "markdown_local_links": 70,
   "public_release": "https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full636-815cc37",
   "remote_assets_verified": true,
-  "existing_full212_release_assets_preserved": true
+  "existing_full212_release_assets_preserved": true,
+  "fresh_remote_checkout_verified": true,
+  "remote_source_commit": "0267ef7fd536754a3b5d6d838fa1dd8b37cee4c6",
+  "remote_artifact_tree": "fa8c8c4304386c7bb1f7b3fe1e0d7c6608a12630",
+  "existing_repository_tests": "44 passed",
+  "reconstructed_runtime_tests": "47 passed",
+  "public_download_and_hardlink_restore": "PASS"
 }
