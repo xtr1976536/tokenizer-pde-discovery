@@ -72,7 +72,7 @@ def main():
                     raise RuntimeError(name + ': ' + result.stderr[-1500:])
                 time.sleep(3 * (attempt + 1))
         completed = 0
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
             futures = [pool.submit(upload, e) for e in entries]
             for future in concurrent.futures.as_completed(futures):
                 name, state = future.result()
