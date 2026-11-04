@@ -1,0 +1,1505 @@
+{
+  "training_commit": "815cc37adcdd714c9e9bd547a0561bb75f82901c",
+  "scale": 212,
+  "large_started": false,
+  "case_groups": 32,
+  "candidate_attempts": 64000,
+  "verified_case_nonweight_files": 256,
+  "files": [
+    {
+      "path": "experiments/full/212/COMPLETE.json",
+      "bytes": 791,
+      "sha256": "00eb53232ddcc730913ff2e35e190cd28e478c1e8368dfac1cadd9c4da498349"
+    },
+    {
+      "path": "experiments/full/212/RUN.json",
+      "bytes": 860,
+      "sha256": "0d23fbecdb513ea5fccf958e0de3cd5f493cefe746fcee37d5ea0d911f1ffc5a"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "3a7ae9fcc71b9f435236482c6a007c93d89a0ab76297fe4044442117ccc07db2"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452664,
+      "sha256": "cf40f42d81ea3dfa76a701b302e25c705fb309efd0d1330c941ed4ecbe1849f0"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 443279,
+      "sha256": "ad9f8d917a074310c0ab48ad5262b408aae6610b7cba54cc7b20563e261c4fdb"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 449399,
+      "sha256": "02e01262d94363851f1c34dcb53a56654c68c38884e16b3ec8e2c7de82c91d3a"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 451856,
+      "sha256": "91ecdb634573ec4c4a8bea3b1a402881c427be3745f341b58f0c592f5a43d28b"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 437784,
+      "sha256": "61a08bd2a282326c2e540f40dbe4236478b582203d1575e6194f53fd4edee280"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/diagnostics.json",
+      "bytes": 2541,
+      "sha256": "28248327f7e71efb9534297812e650eaa11ad434c93c661a4f6c0cc924ee9a96"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/mechanism.json",
+      "bytes": 432302,
+      "sha256": "4adb68f9377df8079d3330d9595dd818ad9f948f2124da310947313fff230faf"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/search.json",
+      "bytes": 2240366,
+      "sha256": "6d8c5dbe5d51b46e2318a73e47501a4132ee7a761fae226c020dfcce19a3f3d4"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "0960c04969cdf54702cff416443477f331a6b915bde7e867b9f213770e132ea9"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449791,
+      "sha256": "4a230b38b1ec5d632c9ae0297b5dbfa2dc90296039d6024003d3fe0b202eac2e"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 456697,
+      "sha256": "9690db8de25750d4c8ae1a528d173c6e99e6d3cd797f7ab79e9c4ce8ef3cb406"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 442699,
+      "sha256": "ed48f86de3e18ee9811d3e4477e4251dbcb3315fb8347efa133bbc70cbee02a7"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 459159,
+      "sha256": "c52a70a9d0a44510f3dacbcd5f6578529169f79802eecf3dba1dea0f65121af9"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 462867,
+      "sha256": "942ec705871c73e6a3afe5af7e620a1bb876a31fb1f0bf7529899eb57d7bccc1"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/diagnostics.json",
+      "bytes": 2542,
+      "sha256": "c595939b388f0c58ed1d788b2cc3b0bab345ef6d0608e002aba6787d6f3bfa58"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/mechanism.json",
+      "bytes": 482190,
+      "sha256": "906e0ca9c148218eb21b7e7eeb8101732ff7d3edb803728e483173fa219fd1d0"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/search.json",
+      "bytes": 2276558,
+      "sha256": "13e48a01742c7fb98eac3480d79fdd741b0ae648dc3efaac2c5d6676ac6838ea"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "08ae89f0456a8171a6cfb8f17d1675b169fe74db7bd97daa175165376ced6823"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 467162,
+      "sha256": "cf46fa8e520c0d7bbe492aa7e9f7f472837df17bd5bab49e1a0c14ba8c86f515"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 458631,
+      "sha256": "993e2f64e9f145c2a4cb127373375fca91f840d14d1d18187c0900bcfea731ae"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 467220,
+      "sha256": "af28f9f040a12c7ee398e7e50aa317dbe2c792017186e2927ce1fec1b113513c"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 466216,
+      "sha256": "35444bfb83f8b68166b86f0bc52717344d9fdb07cdc366966b5276523f22da06"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 477175,
+      "sha256": "64ad6bc5d3b7585aecea4822e95a8bab75c6edd775d7b00cb46071a1ab3167a5"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/diagnostics.json",
+      "bytes": 7161,
+      "sha256": "3011b97cb4b363561cdb68a4387050189e0a508254715b1606e2e8a79e5c4b43"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/mechanism.json",
+      "bytes": 538362,
+      "sha256": "dd42bfa56a058b389f4012c45419f33e1cd0072b8e9f4334a5d23e7462eb6409"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/search.json",
+      "bytes": 2341593,
+      "sha256": "e13a881ace25860156810185fea77e07e460d23f77519e562b0f1dccbbe1884d"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "dd34b6466199b8c23f3b2b467ca1bb6b3c19c18667beea9f24ac6aaa1597719d"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 772308,
+      "sha256": "bdb2273e1ef68e238c352fc7bd5d798238337582dc309b5c88c2e8c84f0eb1c1"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 789881,
+      "sha256": "aa18c54afda79cc9c18325036610df506b55fc714f777b5cceace260040429e6"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 805071,
+      "sha256": "dc34bd64862138dd39764e29fe1b732790c9622dd2853aab2fd0944e60478a01"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 797535,
+      "sha256": "614e8d2f75b0489458d74ddc84eeac14e045e5cfc59354300934ec31e75f43c8"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 778633,
+      "sha256": "d1c77b696508d73af24632dc185924bf3087c09e945e5517259072c91e746c32"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/diagnostics.json",
+      "bytes": 4849,
+      "sha256": "78440ef5565fcfc13acb7f80c07b782434e2903fea0974b64ed56cdd505e240a"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/mechanism.json",
+      "bytes": 1488127,
+      "sha256": "0f9f84936b0f7ca27fd1ffeb9ef1ae67017b6bfb200e85cd0152a0660e5e3a87"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/search.json",
+      "bytes": 3949184,
+      "sha256": "ef525a63c2d25110f1c273167ea4f57c4941542cc8235b957d830173ec9dd978"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "12056a5907a54e7027241de7fd3c29abb346731a9c02d442af16e5558a6cc2d7"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452681,
+      "sha256": "102339eb23fda686234b190bd39f293ddd50d91d8736c1da57ddaf3abaafb788"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 440180,
+      "sha256": "fcc4db587a198903a11498f66bfa16e12206075e609da5b4fd76730723dc4bca"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 448575,
+      "sha256": "8ebad1e9adaee0f8524df8cfd0b6191e6a9fa681f5b46fc9db4eec27cff62466"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 448865,
+      "sha256": "6e5f7e1973d1f62b7acb1f090afc9db5dd7730f1ef6c710271bfe21b66c78b1a"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 438137,
+      "sha256": "bc8461557ba28a4b1dd27c113e67e87337aea6b37fc665c85e70d4bf3a2b8575"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/diagnostics.json",
+      "bytes": 2546,
+      "sha256": "722f478861550a17aaf5504e0aa338be959990c370608d7fa510799bec1bedb7"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/mechanism.json",
+      "bytes": 421419,
+      "sha256": "75c1360dd524884f4b0fd340ce57bd1794407f9cfe07fba9789b743f8a4c7fc4"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/search.json",
+      "bytes": 2233746,
+      "sha256": "5f54ac122578cfa4b2b5a75153656f911230c86cf13a8cedd53f7965fb8bbc52"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "1245a1596bf4c5b9f7e73bb3808da9e2000f7510f432a1c890e5c0c6f37e465d"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449699,
+      "sha256": "9220641f078ec1714fe91b2378dcec2d05d1f5c4e405d51fcc7e0e672ae4150c"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 456516,
+      "sha256": "f93a23b43e86f58fede4068b23ec2d0d3e9e30f36a9808c04ca5a780087defaf"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 442962,
+      "sha256": "3639967b842900996fd44705c894f6ee50af36bab7d4f97d972ceedd621e61e7"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 458713,
+      "sha256": "1f86ecaf274259fa246aeb481f5686cc281e69db4b4fbe10ad4d8e4c2d398b12"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 459899,
+      "sha256": "0c2f86318267f1ec441523f48ea0a3c2c91222a15249bf6c700eb514df3f4f22"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/diagnostics.json",
+      "bytes": 2543,
+      "sha256": "2d82b5bae7f16d57c6d35a62f8939c28c4c2634ed1d6b3e17336b035ae3d1a42"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/mechanism.json",
+      "bytes": 475980,
+      "sha256": "23b31aa950b932c98865cf93abbda8e96f4a98a162ad65a766b9dda2a6050e00"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/search.json",
+      "bytes": 2273184,
+      "sha256": "0c17e06df59126761f725193b871e00560ff66cffe9d49bf5a3aaad31b28d73c"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "5e9a90d269ce197446f05133e41617b4a2025282d76089fc88ee796406bc197d"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 466828,
+      "sha256": "9c9428335229a69bd071409a7f77ca870e2a413c7fcefbbcbbd937206ce9c821"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 462720,
+      "sha256": "d7e8b3e6e33973ea056260d87ed8a9b124d585ab2fe94617c4ffbe6c7ae06f90"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 462603,
+      "sha256": "a8c62902a66faaef3c4b80230eeb3cc9eb636dd5c0476bc64ca14b2029199138"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 461273,
+      "sha256": "b2dff893a1e208c23fad92480858987d6c56b285f14e0377ae82d7d5e0c9bb08"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 474887,
+      "sha256": "d02174b1f5fa31da646217fd44c0a2a86fff0ce45ce41a651af9ad003fec1c15"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/diagnostics.json",
+      "bytes": 7160,
+      "sha256": "7cff5cc8827cdf1579dd34111bafe4ac912b59c07db9f56c5b2c4dff739bea57"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/mechanism.json",
+      "bytes": 535380,
+      "sha256": "0f22546d8d7f86e165cdfc44e3ec7b542fd2f06ba37f7543ed812e8db1bf8d3f"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/search.json",
+      "bytes": 2333456,
+      "sha256": "f2ec8a72ab3ab3d42488d90696bf5dd071cf968678909a1f7a3b4d4db770c586"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "7ed13f0f6e6d4377f6fe028d8ada0a3988b8e9afef5ab8eb3bcfcc6c0f544d4b"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 783705,
+      "sha256": "f37772123e6ca0924f619d9e12abf73e952600088b49e6ec384afd51f326b0a4"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 777384,
+      "sha256": "c72339fc69607e0a8c4a63bc38a68f788ba68fbfbc200ab60a02878ecd70b851"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 786237,
+      "sha256": "b1e6e5c36fd5ac07a9eb5c1778021142336cc278d08a64f8a1f0a5fe7f44b789"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 797316,
+      "sha256": "70893ec5486a906e4e7ac6d05f8f8ac8ab72dc90012434a4149f3026de19770b"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 800127,
+      "sha256": "97423698650091770b0931afb6d49c70789d95491104692cb9878a26a4e957b5"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/diagnostics.json",
+      "bytes": 2545,
+      "sha256": "8a4ecc5db3e01ff5fd1fea700eb5f6cb2bfac460f6a125d42120fb35f6933372"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/mechanism.json",
+      "bytes": 1489400,
+      "sha256": "8ee5ee6e58b8f1d328629a9c94eff6a7311cc8dd352b3b810c9f3a8abd0a5e1b"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/search.json",
+      "bytes": 3950397,
+      "sha256": "5ec1d1adf020521d24821e7ffcfaae1e3c420ce4c8bf7ee34349e84dc81ae9a8"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "9bb99a447aaf21b431f4a75f9d848f2ba737a5276dc7ebdab05ce47bdcd449ef"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452631,
+      "sha256": "8730bf5a2daf40214a73d1aa9d8c74b78d51278a694107bab31814364a36ed87"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 441544,
+      "sha256": "c6bfdd5b37a78936bc01b85c84187ad6492874b40407e8576bd149a1deb825b9"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 450203,
+      "sha256": "be6a06bac43715b521b64642154cd84aa40c7902b09b43f63cab82f5840e5932"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 448122,
+      "sha256": "d84d8c6cb110a88195708530991b907c6813d4160bd785d5179296597bfa1346"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 440741,
+      "sha256": "c3ebe6e1dd80dd174f7c14017309246a3657d35efd1833a2e60bd6cc3fec937c"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/diagnostics.json",
+      "bytes": 4761,
+      "sha256": "8d077de3f02729f755a9552619b3d063d2328b281298e9c04c7cc101c1283396"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/mechanism.json",
+      "bytes": 428059,
+      "sha256": "5e1b5777d4d50dfff126f06f5c7f9df019af46ce5038746171d9982ef48934a1"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/search.json",
+      "bytes": 2238474,
+      "sha256": "762f141d8d15322588fd17e069ed00db6072875c32a119a0bfa85de63adc6ea1"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "0afc1ff0b79147787b95dada604b53f25bc0776d496a7a8cf9b26ac59b97439c"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449725,
+      "sha256": "9c7b3fb08ae732113d7cd359155f3c06e5a26630e0060adab735a10a89973166"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 454415,
+      "sha256": "36475b21505eb79409a3b8bfe80502293ece8dc3d1556311c076e3900ec54060"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 444764,
+      "sha256": "e3a34c4bc553842b1ad83a4b7411ed9f9ce40205957922a7927af4a5cde6fe35"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 455341,
+      "sha256": "113611fb01b68dbc9132c12a70128b7e8eae300a6cba7fbcc70ea63b30ac86cd"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 458897,
+      "sha256": "1a408ff08813a4ed9539d825d699aab51361f8cac55260621f059ba999e35728"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/diagnostics.json",
+      "bytes": 2521,
+      "sha256": "a46aa5868b69fc9c3ab0bca94f39a19918cc2ad9614bfb6787048d674b4d0a6d"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/mechanism.json",
+      "bytes": 477405,
+      "sha256": "d1b376dc4da97183c33cb4a606f25a2c284d6deb6e3051ebc85cff3ce708f74b"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/search.json",
+      "bytes": 2268493,
+      "sha256": "081edf4d617d012136d52f6b76764e063489ca4bbeeaeaa8c0551f61b364d395"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "68178f7bdc7d46e5ca69f104c850c12be59b952ecb0ef39523f68ebfca4fcaa0"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 466698,
+      "sha256": "e21a000aa159b402cbabc892c5d48d280fe4bca4f0d2f24c4171b275824a70e3"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 462715,
+      "sha256": "e5bd10fca95a0c7282cb4c7970be45fec89dd1df4c12877ab48bbf9eafe288c0"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 461809,
+      "sha256": "c8762ce03b8c1334529b0740f7b4dd8916618ede4a7babb42db8a611777618fe"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 463516,
+      "sha256": "7120aa72c13e4b9ea431d76d6ac1c992f70a66ed0e70dddb8aa722c50d50017d"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 473048,
+      "sha256": "412947a1a00ff2eac1d678bfe3a11c6c8888f8fa44347792cf16e2b90950014d"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/diagnostics.json",
+      "bytes": 2519,
+      "sha256": "8895c3add04ca3dff56685adae02e891b4976250aa888c44ae5407342de0b75a"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/mechanism.json",
+      "bytes": 535554,
+      "sha256": "c877d67f13ae1c2922c1e31d7a90d1ac582c4028523e3e7c8a4e4be82674a17d"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/search.json",
+      "bytes": 2332875,
+      "sha256": "33fde1e649a71ac67c922c0112ddf2dc785b70b4fdbc6c5363091855ac81bd47"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "be1cfb2ca3d8b5d8c3a124b2d56f2220bf5e9b4d2bda285f15694e56eef71501"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 805094,
+      "sha256": "80406ffd437a9c2307e320684254883b06a4d1e29a31e55bb4684ddcfdcac85f"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 795349,
+      "sha256": "efee617af579f9b9c1e8faf1782aa1503a19a768a8f4058b544d86bf00036171"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 813675,
+      "sha256": "f8f53d83d4fb9b2cda9ba2732c8afcb42871bff3f5f20f0e5d7f2fe9c64d57db"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 792926,
+      "sha256": "06fd2780ef25776ed80e0702e7ead1dc18b42ce53253c979c1a89511ecd9e64a"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 799400,
+      "sha256": "1e7dfb18e55b5afbb5f874fc512b2e7a6b9d80a34dbf8999f7d9e9b1c47465dd"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/diagnostics.json",
+      "bytes": 9247,
+      "sha256": "3e31c61733e113f16d95876ceb5a74a26b85f9c54ae7391e731b796fe3b018cd"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/mechanism.json",
+      "bytes": 1479391,
+      "sha256": "2b3aadcd2d3eddefcaefee3d8aa3ce4310621fe74cf1dbb39b7b05c51aa0b42e"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/search.json",
+      "bytes": 4011845,
+      "sha256": "d0881b04e6a8544cbe427ca86e081257a3c9cceae3045c7b4bdf0d966bc2869f"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "5cbd3504f85df5ec371c79b9184d7946bb5a184c98386eac80d90a3bc4ec28dd"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452254,
+      "sha256": "0f4ed0407e4b428040a23ae93f4a9b3c8c391cd589412dbfe977e10a1c34bc6a"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 442555,
+      "sha256": "cdaec8873e32fd4f2cc343c51732112fd7d539949ec5367187319ab59caae015"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 451432,
+      "sha256": "bf9d5556b53cec28ff9407fe9f5f6217796c07bda44f2bd26f815e208d1aa735"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 453319,
+      "sha256": "385141877f5d1824336d6ec5cac50213ab23aa3931aae83ef0ada0baa6d82804"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 439747,
+      "sha256": "1d763dbe5531efd6f13b99050500cc491cbc24e13c628a7e75a5878a90695b18"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/diagnostics.json",
+      "bytes": 2521,
+      "sha256": "c0e5b6396580ac981a120194a3933bce3a7de91dc7afdb91b329ea2e1f6e1a51"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/mechanism.json",
+      "bytes": 437814,
+      "sha256": "7dbb1abba731a7b09a52b5bc1bab1a68db0acff47ab03c14971ba3f704a34d28"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/search.json",
+      "bytes": 2244208,
+      "sha256": "0fc16c93e1230816e5334899d99879e3e46de4152d5723442567b84ccc9decf1"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "c83cc5b4ea7b4e122d06955ec4d9c5d6bac7aa8d11f90b2b79490b1620bbdb11"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 448906,
+      "sha256": "9302c17eea6f52f582805dbdec842cbdc592fbfa7a6bb66c1ba4e299844d0332"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 452106,
+      "sha256": "d6348ff100d6c3d82ff22c553510416a2dcab2ff3d98ce37f3620450bfd46d90"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 444922,
+      "sha256": "bc7a1976e6b6a6a6aac3bb77c073b1c758ee054216913fd3213b1eb7c2d7b1c7"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 454290,
+      "sha256": "ef91fb9033370f093bcea26a79e90ce187945a89b09b5a2f2f3651fe15dd5b41"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 462765,
+      "sha256": "8f90df7ca73b88b3c7615f9c53c14a6a2ec7995e82e3ea4638341bbea7b34601"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/diagnostics.json",
+      "bytes": 2523,
+      "sha256": "efece79cdcb27db4639b1281df09fa2e28ff35a53998bd7aef58fbd0ced93dbe"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/mechanism.json",
+      "bytes": 492460,
+      "sha256": "db30bd7327d5dd7c984181c77aa8b8d04994be5cf5e70645b02d23ce11c71992"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/search.json",
+      "bytes": 2267735,
+      "sha256": "c16b6e4ef7eabca66b8c763385f8022e68d3193a9eea1451f2ae4a10f64a01f3"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "dc39d595a89bad3ddda7009a1caeead139646eb2f8abbd53685891f7af1bcc6f"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 466982,
+      "sha256": "37c29f6db69a0ebe7a075814d2086f811d6a7b06a8deb5bd5aef1534b542ce45"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 458689,
+      "sha256": "8e324df288db83a5c590ad8311f3ece7be33aadae22f6eb13559462b850816fd"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 463747,
+      "sha256": "6ff787374da8ac8fc08b056c288eb54ce5258de62ae97027166cac9457b5d0d4"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 461690,
+      "sha256": "863d68229297ccef8b7cf5e987982c647a73db28d792ff7c47c225d7636a6365"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 471773,
+      "sha256": "5d4aecb3e24c7494012892db6d221a822ba5998bc1bddee5cb817478a1155452"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/diagnostics.json",
+      "bytes": 7066,
+      "sha256": "9bc249adec5341de7170fb61c5570a7cea90510e7e92e93e92e99a2cfbda126c"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/mechanism.json",
+      "bytes": 532264,
+      "sha256": "e5f3a6a876645127ac9500aa1e1afa1b84cd94e9107bd2ca312af9788514db4e"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/search.json",
+      "bytes": 2327787,
+      "sha256": "ec137f7b2189472bdd406b36d6abf81bbdeb98efae8965140fd19fde423495a1"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "23737b9d99ec18a786b497ee8866c5c62b54b52c2f51b547172d6af4b1ba73a6"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 785712,
+      "sha256": "2e83d7ca2134ac91588239a6218a022410a4d8f2cbbea8a76c7510ddd1bc7e0f"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 785052,
+      "sha256": "30a0c2e219fe17bf070ff0b5e02beacf82e4c3033335445a1343ceea525e4150"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 808059,
+      "sha256": "18b9c63a9df1843b716162c3153c0499fb474c242ab97a9db73277ca2d1bc97c"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 805040,
+      "sha256": "b1ea798f7e0bc81d5ddada171fe0b50adea63c38c38719c9f5e8d737bbcd866f"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 767365,
+      "sha256": "d79979f71e5eabaad72b3fcd2b4de6962afadc13865c873089ebab79abe00703"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/diagnostics.json",
+      "bytes": 2520,
+      "sha256": "b8a4df40b2d84519cf16fec73e81be058be143cceba4faf6cfa7681780b258ee"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/mechanism.json",
+      "bytes": 1476453,
+      "sha256": "6cb862301e1d3e65cd863349f33e05dbddf48558a25cd2bb4516c7c234fe7a82"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/search.json",
+      "bytes": 3956246,
+      "sha256": "57e71833dba9728e34bafef6bc1515048155d205969d7d087f7814245de06fee"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "0d63dec8bbae09df7b66360f180867434aac402708235b36089263652e041b50"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452573,
+      "sha256": "711e441985dd8903cdd941909d6a580693835d8f24735f0b2cd83c0ed48d7942"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 442886,
+      "sha256": "74b8584eca772aa04311e5a5711028607de7b9fdf1ab014e0706f97d302947e0"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 446607,
+      "sha256": "8074b2fb4f26ddfc8e3e0dc9fd987d326a066f0e31e76816e3d463de998231c3"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 448100,
+      "sha256": "35473c286319bc8d59228fb376479c301878cb47cea39a3f0e2d7226d3222335"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 439473,
+      "sha256": "10c8c6f90dc3e77e20e7ef930206159713dab8217c998028d515cb40ecc9e1e9"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/diagnostics.json",
+      "bytes": 2522,
+      "sha256": "96468ee8aab33cb72e91d9d04a02b74ca031e56b32a86f3f7c0b726cb7ee1a55"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/mechanism.json",
+      "bytes": 437111,
+      "sha256": "2490caebec7fd853b0db18b5f3e43d8ba065b978afdc99505fa02a0fd463cef8"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/search.json",
+      "bytes": 2234528,
+      "sha256": "051d45f47d0601af97d591d4a61b02b1efd6424af2dec07aef0b518451d4469b"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "087abed454adfacf821b3dfe443a968ccc33ea6a51b90d1a921ec84096a05a44"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449578,
+      "sha256": "8648794f2af409c9812adf7a76d90235acfd5c5eef445b4004154556bbf8ebaa"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 452942,
+      "sha256": "aac5825b82547a60de99ea10bed783df08170fab477c3f25a37fb5dfef27572e"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 447109,
+      "sha256": "9db59df9ffde1a84aaea3b3da9e6a3105d55a6abc6484b79eba7d309a9030d46"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 454873,
+      "sha256": "acb1b70e66092291d145afc16ba92188598ce075b22ce95f94f117a709d8666f"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 459783,
+      "sha256": "131960a0ebfef608457d2ae4b3890a6a2d0683ae302d389f92b07fe9c5379898"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/diagnostics.json",
+      "bytes": 2522,
+      "sha256": "9da9dd6d98e4f388623e6b6cc9dfed0ab03fbeac45edc24ee461d05ac9b4f0df"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/mechanism.json",
+      "bytes": 485064,
+      "sha256": "323a1cc11ea5c873eb6c9d26a750aa9e5d95c297f475a719683fdd4f68bf7198"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/search.json",
+      "bytes": 2269142,
+      "sha256": "4bdd8e03b252307e2e95b94dd5bb6b3130b2a4307d29e2a603b1a511cd736b0c"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "9daba2c6191aff58ee68a6b4e4279d7dd6735d8614ea1b0fe6bdc6641a37ac2b"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 466721,
+      "sha256": "bc0e6f2a940937773234f11a1036c9fc00e2e52fb9654426a95dc5042aa7fa7c"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 461071,
+      "sha256": "aebff0c7f3d9bc3fa2690b703a327d851794450b3b3c460a75dfb8c871f64d6f"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 463481,
+      "sha256": "bba4248db9580548158113c07d3f2fbd85562953640d92c0ad4b502e39a8cb38"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 464518,
+      "sha256": "b79a7f1575bbe8ce9144f9d4f97e9675ec0075e0426ef80860fb16581564df5d"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 475160,
+      "sha256": "442dd7c4b1cbe527eabdc8799364f16522a306612cd8be2b86e049c00a1f9bd4"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/diagnostics.json",
+      "bytes": 2517,
+      "sha256": "c244393f7ac22fd96d9c43a6ef6e393d95b84655b3744b0598c857c7a03ba077"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/mechanism.json",
+      "bytes": 533923,
+      "sha256": "fd3810c26dc351a8f51514ad0a5589c9dc50a2b371036cf7ca30ec714c32547c"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/search.json",
+      "bytes": 2335770,
+      "sha256": "47417d3698fa3892ff858b2957e472ccc352507c1b90785350992b8faa983d7f"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "f21ef40f5b23aaa65b442d2af84d729cb31e4a0da104aca00306fe97254347a8"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 770896,
+      "sha256": "71db6f24b5746f8b1dae0c3d5d3f479800b245198ab05fc293c18d76590fcc2f"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 782023,
+      "sha256": "e800af0c9f7a80019bd51da7b4f30fa03224fdc9362a8d4edea05f5d7a40b735"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 786598,
+      "sha256": "675207685e0667a0ec42c8fef33d58a5df81101f1749980eaccde48b85714ba7"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 779569,
+      "sha256": "21f707c509d7704889cdd773ed69e78689e78df963589ff22d89e07333ea3af9"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 761589,
+      "sha256": "255ca32c11f2fe2decc1e124c50f0620ee34db092ca77a4c1c83a60ceda60927"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/diagnostics.json",
+      "bytes": 4771,
+      "sha256": "2cf309faa223a5555484c46a2de9b73c4344d06262c5f2988a63bfa6e1ae4d89"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/mechanism.json",
+      "bytes": 1473799,
+      "sha256": "2f24adb7cf399db1b6e421386847270a7ca809a4246893015730fa1a10416418"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/search.json",
+      "bytes": 3885375,
+      "sha256": "c05fc884a48042c63f02c61e5e443f0700ef37f1aa8cbe00fa4fc3ba36811fd8"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "c0e13792eec33172d8c43f5596f35c154fccaa366a217b81515dca0eab523b47"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452786,
+      "sha256": "b2d92fd52212d6b32c0cb67443e81a850cec6a986826c92f2fb67ce36f00a033"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 442452,
+      "sha256": "15ba384bfb378000dd45d78c6806ba8a0d4d3ca69c0f6924011a6a7c0230bd40"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 452651,
+      "sha256": "da328504ce65017aa9233db28858cd113408523b09490e013c354460981f62fc"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 446678,
+      "sha256": "6f206cd09c17475208726cf3153636ce116ff6de5d15440b86fe466606551963"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 441557,
+      "sha256": "c9f84031f4a0af79ee13c776a01acfb7eb8d768ad39d2a2f3c70a13bcb33bda8"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/diagnostics.json",
+      "bytes": 2541,
+      "sha256": "18b27d9fa5ce27e0937c28c5e44eff85a77277efd26465f46805e6206079c49e"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/mechanism.json",
+      "bytes": 434031,
+      "sha256": "6189980107e857753dd41660df52d9c75269ffe6333fed340da0247f3b115fb1"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/search.json",
+      "bytes": 2241511,
+      "sha256": "b218422f40e76ca3d4706645d66592b1bd03483352c2ac2162c7f06132e1db34"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "9033641b6dc29ff4768aa1d8a5e0d529ab70c4d88488090546fea00b9617ec87"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449636,
+      "sha256": "e0b0e5edb277a744004bf1ef615d2737c41df16ebf111dff095b8dc78a0af1ef"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 455885,
+      "sha256": "436d1586c023ab893b32074ffe0729b8625261e7f4a20556f21142b441be0199"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 444170,
+      "sha256": "69ed63239c150bac67306eb5d81d1dc42deaec8f90c4a1533196fedc956e028e"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 457747,
+      "sha256": "4b89900bd2934500fb728e181f4f9a6f725f2918e44ec28276f0d64e7022a285"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 464580,
+      "sha256": "96dc401b750016540446f04b9a279dfb94499ca0bb01c989648d6ac281190a2d"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/diagnostics.json",
+      "bytes": 18676,
+      "sha256": "88d4ed91fe63b44b6965d19f50a23bb5cd9ace9314d83ac790f97527015ed198"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/mechanism.json",
+      "bytes": 483381,
+      "sha256": "a7ea786cdc07bbc620babb6b92ec6cf23654e04a434d75be486a9e5dbbf3eab1"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/search.json",
+      "bytes": 2277333,
+      "sha256": "c939819cc399d1be20f75f9eab8ee64e758cf7564847ed44489ed18fcb76fe12"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "36289439fd83abb7f18d5909018dcab4ca51b0ecba8a33cd7dc7e11d57039e36"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 467004,
+      "sha256": "33ed1a0e3557cebd94d4f5688d4b1fe6438ece4d904ef5161c431fc3e74e4d55"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 461921,
+      "sha256": "c929c8396437541d785c0a07b89304a737d123cabb7b7c1c790237cd297e1d07"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 462473,
+      "sha256": "1f46291ee102e32d5add68504a3da49eea92d4e442fb44561ca1858aeaa3891b"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 462496,
+      "sha256": "dbafcc70c86c1b264815bb01a07c74fd0b3793c4b85fd1bcd69420c307fbd724"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 476051,
+      "sha256": "03c20d25405b284986b7539bb58b9ef480b4c0af80764adbc824d7a0bc1a22cb"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/diagnostics.json",
+      "bytes": 11756,
+      "sha256": "4d4928b3bcbfa6c1494bc7ff30042702fd44925cd9f7237926c3d78944cde38d"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/mechanism.json",
+      "bytes": 542184,
+      "sha256": "faab6de115adc7e5619e3dbb1e448423195eaab293018b7146dcc025103ed4c2"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/search.json",
+      "bytes": 2335180,
+      "sha256": "5d52b96bf46136508ae7e80a926f140e260f2fbe6ee7a3ae162caff0182aa4ee"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "cc26dcb5307b95bb7f9bbc4a62eb3a1b8dd6536228aac6b9ec0252b2a3f71429"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 771785,
+      "sha256": "58ed6bd45d0892e8fcd13cd3f42c83f3c2d3879a992e09844ff97f9aaac0913f"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 780607,
+      "sha256": "0dcdebbc75041bbb3465a44633ef2a7d5e19ce31c0037c7d7fe9326ea5e4db6e"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 807615,
+      "sha256": "a86127425ec961ba7b31bd6d0c49db6e96f0a4f46976c10b3340b3fc29b8b397"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 791201,
+      "sha256": "5e7614b32123c72e66979d6d3c4f4851c9dc9bfd95d819d43a1b60ef1b5dbed9"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 780799,
+      "sha256": "afc751cda6a6640ecf6a8613ed977e59eabea07f8562ed8cc403829fcf9443e3"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/diagnostics.json",
+      "bytes": 9478,
+      "sha256": "8a0581ecff38cfe2fa3495300ac3bd59e4fbd53a4f80d4b678e75229e33fe24f"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/mechanism.json",
+      "bytes": 1477817,
+      "sha256": "fd2d234f90ccdc04b56437bb7e466d787d90e1befd6ee06b92f8229a821c71dc"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/search.json",
+      "bytes": 3937507,
+      "sha256": "05d11b302b6302303829a7a6d32e706601004c0df484ec73c9c779e96b73ea3b"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "6c4376ad9049f6bdbaf74d6820879ad7d661826f0cf8289865df16993181b02c"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452565,
+      "sha256": "f164b1b8a83c7c080cdad965fc1b9e647b3e67e05502580cb6e431aadd7c11fb"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 442574,
+      "sha256": "cdead974e891b667627bafa620f56ac4c138b190ac1441ada860477f29bd21d4"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 452403,
+      "sha256": "3e86ddfa7beb8ce447c434a5cd34d86248b07a835bd14c49a0ede1a49dcf6275"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 451077,
+      "sha256": "9e4d02feffa654cc799faead460093a4ea7a25b0668ff232ec01b67609f2e63f"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 446569,
+      "sha256": "4475e6d9949f97af702186d43a65a7d078b094bf1e98a9fdb4297bb6cf2d7d0e"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/diagnostics.json",
+      "bytes": 2545,
+      "sha256": "81c522231f66959a43d7ca8642282cf2e7b70fd4a34f64fe616a85df6f40c380"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/mechanism.json",
+      "bytes": 426600,
+      "sha256": "22b30a6fe884e4beeaf4b6a578c91c54a3246f6698676fe9a82e997dd7678acf"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/search.json",
+      "bytes": 2250473,
+      "sha256": "4d3a03065508a03f33f16040e3577c0b5bab95b3311559869fab2d4747372fc8"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "a45fc492e3487bbec36843595f6a6a16a186c87349a6ad70366359aa81bf1b15"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449495,
+      "sha256": "4423998844ec61551819135dfebe756d152e71682bc4ef56069c2a70748b1487"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 454451,
+      "sha256": "9b85e696103ab02423624d8e8d78470bcb1485b9205ee8498c112d3babaebd82"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 442294,
+      "sha256": "af1861028cc33146ec144e4950cc5debff9f7dde0d04e6d45daf5fd13badfb00"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 455888,
+      "sha256": "558d942d8e1babeadc0b64012497e6a5c507eb66629cd0a5a646363a5efa3c76"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 462179,
+      "sha256": "ed47f4c2351059c2e2d1c434cebcbb47a7e51196cb0f2889f3142eb02198505e"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/diagnostics.json",
+      "bytes": 2544,
+      "sha256": "b0e98480280211156eb98847c81f943e14acb3fab75341f56c0e7cf06d0da052"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/mechanism.json",
+      "bytes": 477580,
+      "sha256": "512679c59070be0cec297b22514918dab67c5b749b7b3a5860f488e6e1c604fc"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/search.json",
+      "bytes": 2269306,
+      "sha256": "2536e3b982a13bff8cadc55ba6bf8eae14f52475f1ed7397878b17f2b8ccdb63"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "7d0297891ffda3799ae2604e67e16abb8bfe689a190573fc0872cdeacf209dac"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 466742,
+      "sha256": "6306f70a834ec7aef247c4df1af9ea7f7d1715f09e44778943425596fefa61a0"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 461812,
+      "sha256": "645bed6134137d3ba71d26c97bab851e505c6ad9600034f45ed25efcfbfdc207"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 458954,
+      "sha256": "9460573ddd5eeb2e486e83ecf4edb4aa8381b54b462d33870f082c08a0f9b090"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 461557,
+      "sha256": "b138e89cea949982e2cd5c524931e48c4b7ddaa8fe0e0079b1d76054e02456bf"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 472801,
+      "sha256": "f5da0bf26ce9f1cedc48ecbc87e7bbe791128c0dc2f62e5f9c975519d505bfcc"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/diagnostics.json",
+      "bytes": 2544,
+      "sha256": "1909926879aae66b379cf960cbaa7c9c4d7e980eed114d6640cf88da6d00c258"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/mechanism.json",
+      "bytes": 526720,
+      "sha256": "9e42d359f8ac78831eb6c96995fbdd5469f75dcfecd2633a342b9339aceaf407"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/search.json",
+      "bytes": 2326835,
+      "sha256": "46720b4eb1897a1856ca44352835138b7ef2b21ea81ad109459313abc7ba81dd"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "b0c19af1c5407bfca18107c7921aa247b369a61083e74ee9e920960bae34c68d"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 782383,
+      "sha256": "53bc28ba0f4e68edfc7cb4777b3070acc16bb3208bc1bb39664ef5800f814aeb"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 785202,
+      "sha256": "8d0700962335c6f8e715bf92aa278a96b70530c3e536dc1258d5c02b38155567"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 790326,
+      "sha256": "4ad279989d357f064ea3beb45a424564ba4e3d2441524d713a1f44615d832e77"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 803256,
+      "sha256": "1b5c1abee1e45deab768140afbfea0734af404531f44d539d424f388e9c2073c"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 803692,
+      "sha256": "1443b7573a2a382f24eef4e156c30aabfea5b5470985408fe6f64fc6e320e55c"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/diagnostics.json",
+      "bytes": 7170,
+      "sha256": "554f9034bab5a6d652a76c64e1abbcddc71be0aedcdf5c7a4127460640d6ee94"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/mechanism.json",
+      "bytes": 1475588,
+      "sha256": "6211798fac15587fc477bed72f2dc0d196713900584ab11fac216effc17a303b"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/search.json",
+      "bytes": 3969911,
+      "sha256": "1ecc87e437d2124cd4b64540aea68559144fc2bb1b722023eb691b75b81181c9"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/complete.json",
+      "bytes": 1362,
+      "sha256": "82d7dceba57dc52f4455dbfd5486ce99c6d7c0800296e8b41cc178b1af5da494"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_1_trace.json",
+      "bytes": 452245,
+      "sha256": "09feb47fcf320c0ac37b9bf3824524a0c1fd79aa19fa294adf8b097f29c25177"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_2_trace.json",
+      "bytes": 442778,
+      "sha256": "3781de16dc08f38968ab3271fed8e53c3bea82c244d7dbcd4b8acd6ed68025bd"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_3_trace.json",
+      "bytes": 449629,
+      "sha256": "4f4005fbab2bbeb455f803595c6363b791fa4c3b67cedee8f695334e348db92f"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_4_trace.json",
+      "bytes": 448972,
+      "sha256": "d09e4e9612462ffe78d6029e5de1f8a80df03b8ca8f322bd54868c1abadcfa8c"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_5_trace.json",
+      "bytes": 440239,
+      "sha256": "46b1ccac496fbcb73a4df3f72ec90c7d0c38dd445af11b8cb474b163d2a9873f"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/diagnostics.json",
+      "bytes": 2493,
+      "sha256": "4fef48d6b6e103e9305b6dc02138d12ec24fa0f63fcd7e82ec5babed9af22c01"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/mechanism.json",
+      "bytes": 436963,
+      "sha256": "57eb40afb9d70e1c2f84905661ba63395b03ae3ab2745b69994095331347c345"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/search.json",
+      "bytes": 2238640,
+      "sha256": "74157bf53199b58bacdc17cc7d78818a82853ce265b44b81b3822decacbd038b"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/complete.json",
+      "bytes": 1362,
+      "sha256": "6e53bee615fd68774c8fba71b83f4e80722c7703a3d7870839da760d525b56fb"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_1_trace.json",
+      "bytes": 449208,
+      "sha256": "72612addefc08462fad415319ee9c08f8efe09541d5f3ea956bead13f78e33a2"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_2_trace.json",
+      "bytes": 454704,
+      "sha256": "e487f80aa399dcd261263dfc0016c80e5a15f81a2a554fc9b84b0e981018e23d"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_3_trace.json",
+      "bytes": 445131,
+      "sha256": "992ba00bca6096e1fa6978befd433d306116bd27ae1e33196803f0da8e497568"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_4_trace.json",
+      "bytes": 455509,
+      "sha256": "623b29c7c278ac09034c126bd9e4aef063319cbab90bbf90e1d351e1ea0c7e83"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_5_trace.json",
+      "bytes": 464117,
+      "sha256": "d1383eb26e6b841e76877cf0ec6b8a4fef6f29a8ecd2b33c4d3f2c79a1d331ec"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/diagnostics.json",
+      "bytes": 2496,
+      "sha256": "5f8a724ffd0e49796fc084b3019f2d862cefe9a47521800cecdd4d6e4989b084"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/mechanism.json",
+      "bytes": 491480,
+      "sha256": "35b74abe74dd5222d824d26124388d9ba637b754502790d1e6e63a0d58a650b7"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/search.json",
+      "bytes": 2273406,
+      "sha256": "f6d4ef7d34a8f39f4c4ddd1bc277dedc0c6694911b839e8feb67ad48281cc349"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/complete.json",
+      "bytes": 1362,
+      "sha256": "08e51f161f1a48ac23f2144dfc4813e3a1932e4a10649c0a4cb6ef401f32360b"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_1_trace.json",
+      "bytes": 466732,
+      "sha256": "a2794a3ed6a041010d22bd577abc8385658079ca9ac63f04bb1eeb7f08913b62"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_2_trace.json",
+      "bytes": 460196,
+      "sha256": "6e5c15d9067d21cff5fe05551a29aa366965722233a6133d321ded06991b09c1"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_3_trace.json",
+      "bytes": 462250,
+      "sha256": "d149a73cef03a4ff9f8594e33878e17b686c377f31c1f4a2cd63dae31da211c0"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_4_trace.json",
+      "bytes": 464892,
+      "sha256": "8e4c47b3264d5d6ce98d407b7db8d3e2ca1438096a913b716c0b85f5ed8801c8"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_5_trace.json",
+      "bytes": 473902,
+      "sha256": "0e3f0223891993f610102b3061442fdd351ad935aff84462f1c3a866596fa096"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/diagnostics.json",
+      "bytes": 6964,
+      "sha256": "4c51ce64d57bde0f488f209218f96946711aff1fa7d3a9ebf7f2c29949fdfcca"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/mechanism.json",
+      "bytes": 534594,
+      "sha256": "f15193dddd003a839d1cc345b1991aa7ae19bf56d079feb4c0ab7bdd3a30082f"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/search.json",
+      "bytes": 2332786,
+      "sha256": "82c6f1516f414498fd05f5ede7182bfe675ad011f159c9032a99bcfd6c1586ea"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/complete.json",
+      "bytes": 1362,
+      "sha256": "4aa408f0e51709b38ec38b0c20a7d0b8216a4af4a5c5f767b2a9c0662b16d8d4"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_1_trace.json",
+      "bytes": 785903,
+      "sha256": "92180856ec12759c2f2a07b46e1fc55250f1d17891043606cdf7c33378a23b80"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_2_trace.json",
+      "bytes": 790215,
+      "sha256": "0aff78711b3e5fd51c069e551bac4fadb636609f2168022cd1e8f042acfe0f08"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_3_trace.json",
+      "bytes": 809341,
+      "sha256": "95537467372b536b99622f629099e2e5349ebe84fc760a97546c58fc1ee772e8"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_4_trace.json",
+      "bytes": 797391,
+      "sha256": "10b5505b89c7799dacc13ef5324dc28df7e3698d728853ee48ff0f8d16a30a32"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_5_trace.json",
+      "bytes": 769857,
+      "sha256": "1a489ec23d93137121d23e020ea0194d8e98f1e307bee95d177715974296f9b2"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/diagnostics.json",
+      "bytes": 4678,
+      "sha256": "7ab46b9d43847168f049b7a2c1a54b7ba8ab69bd3d1e17063b727fa767b86e0f"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/mechanism.json",
+      "bytes": 1483387,
+      "sha256": "e350c021d51ae7334655fbdb67da6ff94ddfc452784dc68092ced33d031ba561"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/search.json",
+      "bytes": 3957660,
+      "sha256": "a58fd2f44f7b3ee677fcf290844e3648288d14a8060631a007102b549dcb9335"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/ast_bpe_280/training.json",
+      "bytes": 10754,
+      "sha256": "1dd286431b95f3c75fe44bef63b2002f069219e8bc8857ca6746013e339feedf"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/ast_bpe_315/training.json",
+      "bytes": 10751,
+      "sha256": "9506b1ea18bc946c2c33755418c2cc7dd470dbac283929dc9c4815c89e8c4bff"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/ast_bpe_350/training.json",
+      "bytes": 10736,
+      "sha256": "0d83f55598517607763a2f6ffb495df82353cfc4677fe5d8557c85ec1b3042e2"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/eqgpt_reference/training.json",
+      "bytes": 10749,
+      "sha256": "e2b8917cac274dcc6f9ef666342d2c7be27bec2261bc2d34183c0ffe5a45e61d"
+    },
+    {
+      "path": "reports/full212_run/exit.json",
+      "bytes": 241,
+      "sha256": "dc960a97016ccb553b08d06d35d8e7e691127c4a4fe15497081901ae468bf78c"
+    },
+    {
+      "path": "reports/full212_run/launch.json",
+      "bytes": 622,
+      "sha256": "a1fff729d0ce029560a819b2c5c4be88f60ae87a55918732c9b382f5f6670148"
+    },
+    {
+      "path": "reports/full212_run/launch.py",
+      "bytes": 2498,
+      "sha256": "f0d87decac3be009b8f372f6c3e6cef892744bee3f560419851187ea60c11860"
+    },
+    {
+      "path": "reports/full212_run/run.log",
+      "bytes": 1491827,
+      "sha256": "bcab4239cc55e06b15a8c561e009799a96d794dd68d61ee58eae73ba2199c508"
+    },
+    {
+      "path": "reports/full212_run/summary.json",
+      "bytes": 4627,
+      "sha256": "3cc68251f4071fd0e8ce08a745d04d1a7eb73ddbeba68a50f4998bd6cf343ad4"
+    }
+  ]
+}

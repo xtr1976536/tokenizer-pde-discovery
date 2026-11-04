@@ -1,0 +1,21 @@
+{
+  "pid": 20005,
+  "caffeinate_pid": 20006,
+  "started_at": "2026-11-03T17:06:18.930038+00:00",
+  "commit": "815cc37adcdd714c9e9bd547a0561bb75f82901c",
+  "scale": 212,
+  "device": "mps",
+  "layers": 6,
+  "epochs": 100,
+  "models": 4,
+  "cases": 8,
+  "cycles": 5,
+  "attempts_per_cycle": 400,
+  "continuation_epochs": 5,
+  "positions": 50,
+  "max_new_tokens": 48,
+  "total_candidates": 64000,
+  "scoring_version": "shared_scoring_fixes_v1",
+  "large_enabled": false,
+  "log": "/Users/xiao/Documents/ChatGPT/\u79d1\u7814\u5de5\u4f5c\uff08\u6e2f\u57ce\uff09/\u5206\u8bcd\u5668-pde\u53d1\u73b0/reports/full212_run/run.log"
+}

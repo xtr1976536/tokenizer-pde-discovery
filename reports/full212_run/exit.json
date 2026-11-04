@@ -1,0 +1,10 @@
+{
+  "returncode": 0,
+  "started_at": "2026-11-03T17:06:18.947728+00:00",
+  "finished_at": "2026-11-03T19:41:12.786540+00:00",
+  "scale": 212,
+  "large_started": false,
+  "status": "COMPLETE_VERIFIED",
+  "groups": 32,
+  "candidates": 64000
+}

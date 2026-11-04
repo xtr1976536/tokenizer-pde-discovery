@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "ast_bpe_350",
+      "top1": "redundant",
+      "top10_correct": false
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "ast_bpe_315",
+      "top1": "redundant",
+      "top10_correct": false
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "eqgpt_reference",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "Convection_diffusion_equation",
+      "arm": "ast_bpe_280",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "KG_equation",
+      "arm": "ast_bpe_350",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "KG_equation",
+      "arm": "ast_bpe_315",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "KG_equation",
+      "arm": "eqgpt_reference",
+      "top1": "incorrect",
+      "top10_correct": true
+    },
+    {
+      "case": "KG_equation",
+      "arm": "ast_bpe_280",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "ast_bpe_350",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "ast_bpe_315",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "eqgpt_reference",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "KdV_equation",
+      "arm": "ast_bpe_280",
+      "top1": "redundant",
+      "top10_correct": false
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "ast_bpe_350",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "ast_bpe_315",
+      "top1": "redundant",
+      "top10_correct": false
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "eqgpt_reference",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "Wave_equation",
+      "arm": "ast_bpe_280",
+      "top1": "redundant",
+      "top10_correct": false
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "ast_bpe_350",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "ast_bpe_315",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "eqgpt_reference",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "PDE_divide",
+      "arm": "ast_bpe_280",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "ast_bpe_350",
+      "top1": "incorrect",
+      "top10_correct": true
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "ast_bpe_315",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "eqgpt_reference",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Chaffee_Infante_equation",
+      "arm": "ast_bpe_280",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "ast_bpe_350",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "ast_bpe_315",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "eqgpt_reference",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Eq_6_2_12",
+      "arm": "ast_bpe_280",
+      "top1": "incorrect",
+      "top10_correct": false
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "ast_bpe_350",
+      "top1": "correct",
+      "top10_correct": true
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "ast_bpe_315",
+      "top1": "redundant",
+      "top10_correct": false
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "eqgpt_reference",
+      "top1": "incorrect",
+      "top10_correct": true
+    },
+    {
+      "case": "Burgers_equation",
+      "arm": "ast_bpe_280",
+      "top1": "redundant",
+      "top10_correct": false
+    }
+  ],
+  "aggregate": {
+    "eqgpt_reference": {
+      "cases": 8,
+      "top1_hits": 4,
+      "top10_hits": 6
+    },
+    "ast_bpe_280": {
+      "cases": 8,
+      "top1_hits": 1,
+      "top10_hits": 1
+    },
+    "ast_bpe_315": {
+      "cases": 8,
+      "top1_hits": 1,
+      "top10_hits": 1
+    },
+    "ast_bpe_350": {
+      "cases": 8,
+      "top1_hits": 4,
+      "top10_hits": 5
+    }
+  },
+  "candidates": 64000,
+  "mlp_unchanged": true
+}

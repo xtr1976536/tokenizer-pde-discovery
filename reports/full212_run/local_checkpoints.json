@@ -1,0 +1,1145 @@
+{
+  "note": "Weights excluded from Git. Logical sizes include hard links. Case checkpoint hashes are in complete.json and were verified by the supervisor at completion.",
+  "files": [
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Burgers_equation/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Chaffee_Infante_equation/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Convection_diffusion_equation/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Eq_6_2_12/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KG_equation/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/KdV_equation/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/PDE_divide/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_0.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_1.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_2.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_3.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_4.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/cycle_5.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_280/searched.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_0.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_1.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_2.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_3.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_4.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/cycle_5.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_315/searched.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_0.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_1.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_2.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_3.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_4.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/cycle_5.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/ast_bpe_350/searched.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_0.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_1.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_2.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_3.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_4.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/cycle_5.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/cases/Wave_equation/eqgpt_reference/searched.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/ast_bpe_280/pretrained.pt",
+      "bytes": 153018807,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/ast_bpe_315/pretrained.pt",
+      "bytes": 153233975,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/ast_bpe_350/pretrained.pt",
+      "bytes": 153449143,
+      "availability": "local_only"
+    },
+    {
+      "path": "experiments/full/212/shared_pretrain/eqgpt_reference/pretrained.pt",
+      "bytes": 151647799,
+      "availability": "local_only"
+    }
+  ]
+}
