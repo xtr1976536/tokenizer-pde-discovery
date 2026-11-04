@@ -127,6 +127,8 @@ def main():
    summaries.append(dict(file=str(path.relative_to(OUT)),initial_vocab_tokens=d['initial_vocab_tokens'],final_vocab_tokens=d['final_vocab_tokens'],compression=d['tokenizer compression'],operation=d['operation'],numbers=d['numbers'],formulas=d['covered_formulas']))
  with (OUT/'three_metrics.csv').open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(summaries[0]),lineterminator='\n');w.writeheader();w.writerows(sorted(summaries,key=lambda r:r['file']))
+ from scripts.analyze_current_upstream_usage import main as analyze_usage
+ analyze_usage()
  dump(OUT/'COMPLETE.json',dict(status='PASS',scales=[636],experiments=['811_main_and_alphabet_capacity_matrix','simple_to_complex','predeclared_capacity_sweep','vocabulary_usage'],three_fold=False,split_counts={k:len(v) for k,v in plans.items()},matrix_rows=len(results),selected_hard_test_arms=len(selected),numerical_metric_note='All rendered numeric lexemes are single-digit; numbers is degenerate at 100%',transformer_or_search_started=False))
  print('COMPLETE',flush=True)
 if __name__=='__main__':main()

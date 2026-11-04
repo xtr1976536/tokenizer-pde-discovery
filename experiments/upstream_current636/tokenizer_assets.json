@@ -1,0 +1,26 @@
+[
+  {
+    "path": "data/tokenizers/Meta-Llama-3-8B/LICENSE",
+    "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
+  },
+  {
+    "path": "data/tokenizers/Meta-Llama-3-8B/NousResearch--Meta-Llama-3-8B.json",
+    "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+  },
+  {
+    "path": "data/tokenizers/Meta-Llama-3-8B/tokenizer.model",
+    "sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55"
+  },
+  {
+    "path": "data/tokenizers/Meta-Llama-3-8B/tokenizer.py",
+    "sha256": "e29045cbbae33e07bb1ad92bd8249032c4a802f7d9676f115c19aeebd114f9cd"
+  },
+  {
+    "path": "data/tokenizers/Qwen2.5-0.5B/qwen-tokenizer.json",
+    "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  {
+    "path": "data/tokenizers/llama3_provenance.json",
+    "sha256": "aa14312b00d34ac2f25d7059178070fb500d0c4c3c57ab0ac1348aadd3689140"
+  }
+]

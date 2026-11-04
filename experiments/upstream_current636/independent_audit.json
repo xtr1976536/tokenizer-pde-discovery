@@ -9,5 +9,13 @@
   ],
   "legacy_evaluation_and_loader_byte_identical": true,
   "initial_encoder": "Hard no-merge singleton declared alphabet; fixed baseline singleton byte vocabulary verified",
-  "no_downstream_training": true
+  "no_downstream_training": true,
+  "identical_main_test_ids_and_denominators": true,
+  "official_initial_and_final_roundtrip_tested": true,
+  "tokenizer_assets_byte_identical_to_legacy": true,
+  "packages": {
+    "tokenizers": "0.23.3",
+    "tiktoken": "0.14.0",
+    "numpy": "2.4.6"
+  }
 }

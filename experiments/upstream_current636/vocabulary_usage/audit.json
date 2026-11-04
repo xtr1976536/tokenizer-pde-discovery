@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "protocols": 2,
+  "vocabulary_settings": 24,
+  "token_rows": 7332,
+  "flagged_rows": 4001,
+  "definitions": "same legacy frequency/rarity/length/source-count diagnostics, one frozen split instead of three folds"
+}

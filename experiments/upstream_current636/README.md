@@ -18,7 +18,7 @@ operation沿用旧命令完整性，numbers沿用旧数字串完整性。无控�
 
 ## 实验与结果
 
-主矩阵沿用旧6基础表×22总容量132组合。验证集选择全覆盖Pareto配置，并保留预声明ascii98/256，测试只跑冻结选择与3个通用分词器。
+主矩阵沿用旧6基础表×22总容量132组合：100个完成评估、22个训练字符覆盖不足、10个容量不足。验证集选择全覆盖Pareto配置，并保留预声明ascii98/256，测试只跑冻结选择与3个通用分词器。
 
 | 方法 | 基础表 | 总ID | tokenizer compression | operation % | numbers % |
 |---|---|---:|---:|---:|---:|
@@ -38,6 +38,7 @@ operation沿用旧命令完整性，numbers沿用旧数字串完整性。无控�
 - input_records.json：636条实际文本、复杂度及来源/结构键。
 - matrix/、validation_results.json、selection.json、test_results.json：验证矩阵、冻结选择和主测试。
 - capacity/、simple_to_complex/：12容量结果、保存词表、逐公式计数及tokens.csv和usage.json。
-- run.log、COMPLETE.json、independent_audit.json：运行与完成记录。
+- vocabulary_usage/：24套容量/协议组合、7332条token使用记录，含训练/验证/测试频率、低频/长token、来源计数与4001条供查看的合并token记录。
+- run.log、COMPLETE.json、independent_audit.json、tokenizer_assets.json：运行、完成、独立复核与旧词表资产哈希记录。
 
 独立重算全部286份逐公式保存结果的3指标；确认所有划分键不相交。运行命令：`PYTHONPATH=.:src python scripts/run_current_upstream.py`。重复运行会校验协议并复用保存词表，再重算评估结果，不启动下游。
