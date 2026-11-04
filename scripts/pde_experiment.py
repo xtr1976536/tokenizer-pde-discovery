@@ -8,6 +8,13 @@ from math_tokenizer.eqgpt.expanded_corpus import sha
 SETTINGS=dict(seed=525,layers=6,epochs=100,batch_size=128,positions=50,search_limit=48,
  learning_rate=1e-4,cycles=5,attempts=400,continuation_epochs=5,continuation_lr=1e-5,epi=.2)
 
+def effective_settings(epochs=None,smoke=False):
+ if epochs is not None and epochs<=0:raise ValueError('epochs must be positive')
+ cfg=dict(SETTINGS)
+ if epochs is not None:cfg['epochs']=epochs
+ if smoke:cfg.update(epochs=1,cycles=2,attempts=4,continuation_epochs=1)
+ return cfg
+
 def dump(p,x):
  p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
 
@@ -38,7 +45,7 @@ def verify(scale):
   if sha(f/name)!=h:raise ValueError('Data asset changed:'+name)
  return f,m
 
-def run(scale,device,smoke):
+def run(scale,device,smoke,output=None,epochs=None):
  import torch
  from math_tokenizer.eqgpt.models import build_models
  from math_tokenizer.eqgpt.compact_alphabet import CompactAlphabet
@@ -50,10 +57,9 @@ def run(scale,device,smoke):
  from math_tokenizer.eqgpt.shared8_config import SHARED8_CASES
  from math_tokenizer.eqgpt.author import tensor_hash
  folder,meta=verify(scale);torch.set_num_threads(8)
- cfg=dict(SETTINGS)
- if smoke:cfg.update(epochs=1,cycles=2,attempts=4,continuation_epochs=1)
- dest=ROOT/'experiments'/('smoke' if smoke else 'full')/str(scale)
- identity=dict(settings=cfg,formal_settings=SETTINGS,smoke=smoke,device=device,source_sha256=sha(folder/'manifest.json'),code=fingerprint(),runner=sha(Path(__file__)))
+ cfg=effective_settings(epochs,smoke)
+ dest=(Path(output) if output else ROOT/'experiments'/('smoke' if smoke else 'full')/str(scale))
+ identity=dict(settings=cfg,formal_settings=effective_settings(epochs),baseline_settings=SETTINGS,smoke=smoke,device=device,source_sha256=sha(folder/'manifest.json'),code=fingerprint(),runner=sha(Path(__file__)))
  if (dest/'RUN.json').exists() and json.loads((dest/'RUN.json').read_text())!=identity:raise ValueError('Run identity changed')
  dump(dest/'RUN.json',identity)
  aa={'eqgpt_reference':Adapter('eqgpt'),**{f'ast_bpe_{n}':LatexAdapter('ast_bpe',CompactAlphabet.load(folder/'tokenizers'/f'ast_bpe_{n}.model.json')) for n in SIZES}}
@@ -86,8 +92,10 @@ def run(scale,device,smoke):
  dump(dest/'COMPLETE.json',dict(status='PASS',scale=scale,smoke=smoke,results=results,selected_source_ids=[r['source_id'] for r in chosen] if smoke else None))
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['plan','prepare','smoke','run']);ap.add_argument('--scale',type=int,choices=[212,636]);ap.add_argument('--device',choices=['cpu','mps','cuda'],default='mps');a=ap.parse_args()
- if a.phase=='plan':print(json.dumps(dict(scales=[212,636],settings=SETTINGS,pipeline=POLICY),indent=2));return
+ ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['plan','prepare','smoke','run']);ap.add_argument('--scale',type=int,choices=[212,636]);ap.add_argument('--device',choices=['cpu','mps','cuda'],default='mps');ap.add_argument('--output');ap.add_argument('--epochs',type=int);a=ap.parse_args()
+ if a.epochs is not None and a.epochs<=0:ap.error('--epochs must be positive')
+ if a.output and a.scale is None:ap.error('--output requires --scale to prevent mixing experiments')
+ if a.phase=='plan':print(json.dumps(dict(scales=[a.scale] if a.scale else [212,636],settings=effective_settings(a.epochs),pipeline=POLICY),indent=2));return
  if a.phase=='prepare':prepare();return
- for scale in [a.scale] if a.scale else [212,636]:run(scale,a.device,a.phase=='smoke')
+ for scale in [a.scale] if a.scale else [212,636]:run(scale,a.device,a.phase=='smoke',a.output,a.epochs)
 if __name__=='__main__':main()
