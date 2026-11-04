@@ -1,0 +1,19 @@
+{
+  "round": 2,
+  "status": "PASS",
+  "pytest": "............................................                             [100%]\n44 passed in 3.02s",
+  "upstream_metric_outputs": 289,
+  "downstream": {
+    "groups": 32,
+    "candidates": 64000,
+    "raw_artifact_hashes": 299
+  },
+  "legacy_shared_function_hashes": "PASS",
+  "full212_runtime_fingerprint_preserved": true,
+  "split": {
+    "train": 509,
+    "validation": 64,
+    "test": 63
+  },
+  "baseline_roundtrip": "PASS"
+}

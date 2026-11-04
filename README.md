@@ -1,54 +1,116 @@
 # Tokenizer PDE Discovery
 
-比较EqGPT GRE和Hard AST-BPE280/315/350在PDE结构发现上的表现。当前仅212条和636条两个嵌套语料规模；636采用最新23条多样性替换版，原212逐条保留。
+数学分词器的上游评估与PDE结构发现实验。仓库包含源公式、分词器、训练与搜索代码、逐候选结果、运行日志和检查记录。
 
-## 实验设置
+## 实验状态
 
-六层Transformer，d_model768，FFN2048，8头，d_k=d_v64；100epoch、batch128、Adam1e-4、clip1。位置容量50，沿用官方停止边界，最多48次新预测（BOS不计，实际EOS计入）。搜索5轮×400候选，每轮Top10继续训练5epoch、Adam1e-5。共同80/20抽样、串行生成后立即评分、相同清理/失败过滤/Top10/SFT，仅EqGPT使用SAT。原官方代码的明显运行/优化器绑定错误采用项目已检查的修正流程，因此不是原脚本逐行复现。
+| 实验 | 数据 | 状态 | 报告 |
+|---|---|---|---|
+| 上游分词评估 | 636条，训练/验证/测试509/64/63 | 四项实验完成 | [上游报告](experiments/upstream_current636/README.md) |
+| 下游PDE发现 | 212条，增强后6784条 | 4模型×8案例完成，64,000次候选尝试 | [下游报告](reports/full212_run/README.md) |
+| 大语料下游 | 636条，增强后20352条 | 数据与词表就绪，正式训练未启动 | [数据](data/formulas/636) |
 
-数据增强沿用第三套：每源32条加法项与标量乘法因子排列，分子分母不交换，EOS固定句尾，不截断。212与636分别学习Hard词表，故规模比较是词表学习和Transformer训练的整体流程效应。等epoch不等更新步数或算力。
+## 上游：四个分词器
 
-## 安装和运行
+主实验固定Hard AST-BPE 256、Qwen2.5、Llama 3、o200k_base。AST-BPE仅使用509条训练公式学习词表；其余三种使用旧实验相同的官方固定词表。输入为未增强的统一GRE渲染LaTeX。
 
-Python3.11，建议独立虚拟环境。CPU/MPS/CUDA取决于Torch构建。
+| 分词器 | tokenizer compression | operation (%) | numbers (%) |
+|---|---:|---:|---:|
+| Hard AST-BPE 256 | 5.5353 | 100 | 100 |
+| Qwen2.5 | 1.7958 | 0 | 100 |
+| Llama 3 | 1.7958 | 0 | 100 |
+| o200k_base | 1.7250 | 0 | 100 |
+
+- **tokenizer compression**：初始词表实际编码token总数 / 最终词表实际编码token总数。
+- **operation**：内部未被token边界切开的完整LaTeX命令比例，如`\partial`、`\sin`。
+- **numbers**：完整数字串比例。当前文本中的数字串均为单个数字，因此为100%。
+
+同一8:1:1划分还用于简单→复杂、词表容量、词表使用诊断。其他容量与基础表的结果集中在容量实验中；主实验只有上述四种分词器。完整定义、词表训练记录与逐公式计数见[上游报告](experiments/upstream_current636/README.md)。
+
+## 下游：PDE结构发现
+
+比较EqGPT GRE与Hard AST-BPE 280/315/350，使用相同Transformer主干、数值缓存和评分流程，EqGPT保留SAT。
+
+| 参数 | 设置 |
+|---|---|
+| Transformer | 6层，d_model768，FFN2048，8头，d_k=d_v64 |
+| 预训练 | 100 epoch，batch128，Adam 1e-4，梯度裁剪1 |
+| 序列容量 | 50位置，最多48次新预测 |
+| 搜索 | 每案例5轮×400候选 |
+| 每轮继续训练 | Top10，5 epoch，Adam 1e-5 |
+| 数据增强 | 每源32条，交换加法项和标量乘法因子，EOS位于句尾 |
+
+212条完整实验结果：
+
+| 模型 | Top-1正确 | Top-10包含正确方程 |
+|---|---:|---:|
+| EqGPT | 4/8 | 6/8 |
+| Hard 280 | 1/8 | 1/8 |
+| Hard 315 | 1/8 | 1/8 |
+| Hard 350 | 4/8 | 5/8 |
+
+表中为自动结构分类。八案例共享已拟合MLP，当前流程不执行最终PINN系数优化。公共评分修正及回归验证见[评分记录](reports/scoring_fixes_validation/README.md)。
+
+## 安装与运行
+
+Python 3.11，需C编译器构建Hard后端；设备支持CPU、Apple MPS或CUDA。
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements-runtime.lock.txt
 python -m pip install -e .
+
+# 运行上游四项评估
+python -m scripts.run_current_upstream
+
+# 查看下游协议
 python -m scripts.pde_experiment plan
-python -m scripts.pde_experiment prepare
-python -m scripts.pde_experiment smoke --scale 212 --device mps
-python -m scripts.pde_experiment smoke --scale 636 --device mps
-python -m scripts.check_release --round 1
-python -m scripts.check_release --round 2
-python -m scripts.check_release --round 3
 ```
 
-正式训练需显式执行：
+仓库已附数据和词表，无需重新执行prepare。下游从头训练前，将已有`experiments/full/212`另存，再执行：
 
 ```bash
 python -m scripts.pde_experiment run --scale 212 --device mps
-python -m scripts.pde_experiment run --scale 636 --device mps
 ```
 
-现已完成212条小语料的100epoch正式实验，4个模型×8个案例共32组、64,000次候选尝试全部完成；636条未运行正式实验。完整日志、配置、轨迹和结果见 [正式实验报告](reports/full212_run/README.md)。以下为此前小试设置：小试保持六层架构，每份语料从完整源范围确定性选8条（636包含新增公式），预训练1epoch、batch2、Wave案例、2轮×4候选、微调1epoch。两规模四模型共8次训练、64次候选。无有效候选时跳过SFT，不额外补采样。三轮检查中的第一轮独立检查两个完整语料的全部增强，不能把小试误称全语料训练。
+小试入口为`python -m scripts.pde_experiment smoke --scale 212 --device mps`；从头运行同样需先另存历史`experiments/smoke/212`。已完成模型按下节恢复权重。
 
-## 数据与文件
+## 权重
 
-`data/formulas/212`：212源记录、6784增强及独立词表；`636`：636源记录、20352增强及独立词表。manifest绑定每个资产哈希。源码记录中的来源路径已随仓库复制，链接与SHA-256可核查；仅附本次所用来源快照，不包含大规模历史检索库。原始文献快照权利归原作者，保留其原始许可标识，本项目代码许可不覆盖文献。
+212条完整实验的164个唯一检查点约25.1 GB，对应228个路径，通过[GitHub Release](https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full212-815cc37)交付。进度与SHA-256验证见[权重说明](reports/full212_run/WEIGHTS.md)。
 
-`data/cases`与`data/mlp_cache`包含八案例数值输入和已拟合共享MLP。两模型/两语料复用同一数值环境，不自动重新拟合。固定缓存是条件比较，不声称重新采样所有随机因素。正式轮次不含最终PINN系数优化，不从结构命中推断系数精度。
+```bash
+# 查看全量下载计划
+python scripts/download_full212_weights.py
+# 只恢复指定模型和案例；需要GitHub CLI
+python scripts/download_full212_weights.py --arm ast_bpe_350 --case Wave_equation --download
+```
 
-`eqgpt_original`为官方固定代码及来源哈希；`src`包含当前共同实现；`native`包含Hard后端C源码。`reports/corpus_revision`保留23条替换及语料审查记录；`reports/checks`为新仓库当前三轮检查。历史报告提及的旧项目路径/编号仅作来源上下文，当前运行入口以本README为准。
+## 文件导航
 
-`experiments/smoke`保留可复核日志与JSON轨迹，较大`.pt`检查点不入Git。重新运行小试会重建；不完整搜索不会被静默覆盖。依赖/协议改变时使用新输出目录并保留旧记录。第三轮清单不等于未来任意代码修改仍已审核。
+| 路径 | 内容 |
+|---|---|
+| [data/formulas](data/formulas) | 212/636源记录、32倍增强、下游词表、来源快照 |
+| [data/tokenizers](data/tokenizers) | 上游官方基线词表及来源 |
+| [data/cases](data/cases) | 八案例观测数据入口，链接到作者原始数据 |
+| [data/mlp_cache](data/mlp_cache) | 八案例固定数值缓存 |
+| [experiments/upstream_current636](experiments/upstream_current636) | 上游协议、词表、逐公式计数与诊断 |
+| [experiments/full/212](experiments/full/212) | 下游训练历史、64,000候选、逐轮轨迹、完成哈希 |
+| [experiments/smoke](experiments/smoke) | 两档历史小试记录 |
+| [reports](reports/README.md) | 语料、评分、运行和三轮仓库检查索引 |
+| [src](src) / [native](native) | 共享Python实现与C后端 |
+| [eqgpt_original](eqgpt_original) | 固定版本作者源码、数据和来源哈希 |
 
-## 已知限制
+636条保留原212条，新增424条互异结构；按空间坐标置换后的展开支撑统计，共608种结构。文献来源与23条替换记录见[语料审查](reports/corpus_revision/README.md)。
 
-636记录对应608种当前展开支撑，原212的28条重复富余按要求保留；新增424全部互异且不与基底重合。原212条及其token ID保持不变。公共评分层`shared_scoring_fixes_v1`已修正`sint`、`uyyt`、复合导数和三维双拉普拉斯的求值，去重保留分子/分母角色，并移除按token组合置零的表示偏差；作者原始文件未改，历史错误与修正验证分别保留在`reports/scorer_audit`和`reports/scoring_fixes_validation`。人工审阅状态不伪造为通过。
+## 检查
 
-GitHub repository: https://github.com/xtr1976536/tokenizer-pde-discovery (public).
+```bash
+python -m pytest -q
+python -m scripts.audit_repository --round 1
+python -m scripts.audit_repository --round 2
+python -m scripts.audit_repository --round 3
+```
 
-上游分词器三指标迁移方案及当前212/636 benchmark的限制审查见 [reports/upstream_plan/README.md](reports/upstream_plan/README.md)。212完整实验权重将通过独立GitHub Release归档，避免将模型二进制写入Git历史。
-
-当前636 benchmark的四项8:1:1上游实验已完成，采用用户指定的初始词表token数/最终词表token数指标；完整配置、结果和限制见 [上游实验报告](experiments/upstream_current636/README.md)。
+三轮检查分别核对资产/链接与数据、代码/词表/结果、独立检出与GitHub权重交付。记录见[仓库检查](reports/repository_audit)。第三方源码、词表和文献的许可见[NOTICE.md](NOTICE.md)。

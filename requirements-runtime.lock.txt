@@ -1,7 +1,5 @@
 # Observed Python 3.11.15 / macOS arm64 runtime, recorded 2026-10-29.
-# Direct dependencies for both studies and source-benchmark reconstruction.
-# These are not an assertion about every historical run's environment.
-# Transitive/platform dependencies are resolved by pip/uv; see ENVIRONMENT.md.
+# Direct dependency versions; setup: ENVIRONMENT.md.
 numpy==2.4.6
 scipy==1.17.1
 sympy==1.14.0

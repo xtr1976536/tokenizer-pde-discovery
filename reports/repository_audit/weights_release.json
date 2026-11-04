@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "public_release": "https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full212-815cc37",
+  "unique_weights": 164,
+  "checkpoint_paths": 228,
+  "unique_bytes": 25065338684,
+  "github_sha256_match": true,
+  "local_unique_weights_verified": 164,
+  "all_local_and_github_sha256_match": true
+}

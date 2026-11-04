@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "assets": 164,
+  "checkpoint_paths": 228,
+  "total_bytes": 25065338684,
+  "verification": "GitHub server-reported SHA-256 digest and size match each local checkpoint",
+  "release": "https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full212-815cc37"
+}

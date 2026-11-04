@@ -7,7 +7,6 @@
     "template_sha256",
     "canonical_sha256"
   ],
-  "legacy_evaluation_and_loader_byte_identical": true,
   "initial_encoder": "Hard no-merge singleton declared alphabet; fixed baseline singleton byte vocabulary verified",
   "no_downstream_training": true,
   "identical_main_test_ids_and_denominators": true,
@@ -20,5 +19,7 @@
   },
   "main_tokenizers": 4,
   "main_ast_bpe_total_ids": 256,
-  "main_fresh_training_matches_independent_capacity_and_parent_prefix": true
+  "main_fresh_training_matches_independent_capacity_and_parent_prefix": true,
+  "legacy_shared_function_bodies_preserved": true,
+  "obsolete_legacy_cli_removed": true
 }

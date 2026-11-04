@@ -1,48 +1,55 @@
-# 当前636 benchmark：8:1:1上游实验
+# 636条上游分词评估
 
-已完成四项：8:1:1四分词器主评估、简单→复杂、预声明容量扫描（含基础表×容量矩阵）、词表使用诊断。未做三折，未训练Transformer或运行PDE搜索。
+四项实验：四分词器主比较、简单→复杂、词表容量、词表使用诊断。输入为636条未增强的统一GRE渲染LaTeX。
 
-只替换旧实验的数据为当前完整636条未增强统一GRE渲染LaTeX。分词器沿用Hard AST-BPE、Qwen2.5-0.5B、Llama 3、o200k_base，基线加载器和旧词法完整性评估代码逐字节复制自旧仓库abff7a3。Hard保持旧基础表、容量和合并算法，不改成下游280/315/350配置。
+## 数据与指标
 
-## 指标修订
+沿用旧实验seed20261028和来源/模板/规范化哈希连接分组，按8:1:1分配为509训练、64验证、63测试。共167组，最大237条；原212条在同一训练组内。精确ID与分组键见[protocol.json](protocol.json)、[input_records.json](input_records.json)。
 
-按用户要求，tokenizer compression = 初始词表实际编码token总数 / 最终词表实际编码token总数。Hard构造无合并规则、仅含声明基础字节的初始模型；三个固定基线验证完整单字节初始词表后，使用其未合并字节表示作为初始编码。保存每条公式initial_vocab_tokens和final_tokens；不把完整官方词表同时作为分子、分母。旧代码中的字节压缩主字段被替换，源字节比值仅以source_bytes_per_final_token保留作诊断。对当前四种字节初始体系，数值与字节数作分子的历史结果相同，这是初始粒度带来的结果，不代表计算协议未改。
+| 指标 | 计算 |
+|---|---|
+| tokenizer compression | 初始词表实际编码token总数 / 最终词表实际编码token总数 |
+| operation | 内部无token边界的完整LaTeX命令比例 |
+| numbers | 内部无token边界的数字串比例 |
 
-operation沿用旧命令完整性，numbers沿用旧数字串完整性。无控制token计入序列长度。当前全部数字串为单个数字，因此numbers全部100%，不具有区分能力。
+初始词表仅包含未合并的基础字节；编码不加BOS/EOS/PAD。每条公式保存initial_vocab_tokens与final_tokens。当前数字串全为单个数字，numbers恒为100%。
 
-## 划分
+## 主实验
 
-沿用旧seed20261028、来源/模板/规范化哈希连接组和最大缺额分配：509训练、64验证、63测试。167连接组，最大237条；原212来源组整体留在训练侧。来源、模板、规范化哈希、ID均不跨集合。比例为8:1:1按公式数取整的目标，不将大连接组强行拆开。
+AST-BPE固定ascii98、总ID256，仅用509条训练公式重新学习。Qwen2.5、Llama 3、o200k_base保持旧实验官方词表。
 
-简单→复杂继承这一个8:1:1划分，再取训练侧simple、验证与测试侧complex：173 / 27 / 21。复杂度沿用旧complexity-v2分数和30/40/30相对分位构造，不重新做三折；中等复杂度不进入此补充实验。此处是限定复杂度子集评估，子集本身不再声称8:1:1。
+| 方法 | 总ID | tokenizer compression | operation % | numbers % |
+|---|---:|---:|---:|---:|
+| Hard AST-BPE | 256 | 5.53529 | 100 | 100 |
+| Qwen2.5 | 151665 | 1.79580 | 0 | 100 |
+| Llama 3 | 128256 | 1.79580 | 0 | 100 |
+| o200k_base | 200019 | 1.72502 | 0 | 100 |
 
-## 实验与结果
+主实验为固定四方法比较。operation为0表示命令内部存在切分边界。数据为统一渲染文本，官方基线保留各自词表容量。
 
-主实验固定四个分词器：Hard AST-BPE（ascii98、总ID256）、Qwen2.5、Llama 3、o200k_base。不再从容量矩阵选择主实验配置。AST-BPE256已仅用本次509条训练公式单独重新训练，并核对与容量实验独立256训练、512父词表截取的256前缀完全一致。训练与验证/测试严格分离。
+## 其他三项实验
 
-| 方法 | 基础表 | 总ID | tokenizer compression | operation % | numbers % |
-|---|---|---:|---:|---:|---:|
-| Hard AST-BPE | ascii98 | 256 | 5.53529 | 100 | 100 |
-| Qwen2.5 | 官方固定 | 151665 | 1.79580 | 0 | 100 |
-| Llama 3 | 官方固定 | 128256 | 1.79580 | 0 | 100 |
-| o200k_base | 官方固定 | 200019 | 1.72502 | 0 | 100 |
+- **简单→复杂**：继承同一8:1:1划分，使用简单训练173条、复杂验证27条、复杂测试21条。复杂度沿用旧complexity-v2评分及30/40/30分位分层。
+- **词表容量**：200/224/240/256/272/288/300/320/352/384/416/450共12档，保存训练、验证和测试结果；另有旧6基础表×22容量矩阵，132组合中100可运行、22训练覆盖不足、10容量不足。
+- **词表使用**：24套容量/协议配置、7332条token记录，统计训练/验证/测试频率、未使用ID、低频与长token、来源数。
 
-总容量包括三个控制ID，编码时不加入控制token。固定基线保留官方词表容量，不能将表中结果解释为相同词表预算比较。operation为0表示完整反斜杠命令存在内部边界，不表示无法理解数学运算。输入是统一GRE渲染的受限语法文本，不能将较高压缩比推广为任意文献原始LaTeX的性能。
+主实验和简单→复杂分别用各自训练子集学习词表；12档容量逐档独立训练。基础表矩阵使用各表512父词表的有序合并前缀。256档已核对与独立训练的词表及合并内容一致。同一冻结配置重复执行时复用保存的模型。
 
-基础表×容量132组合统一归入词表容量实验：100个完成评估、22个训练字符覆盖不足、10个容量不足。矩阵中的训练内/验证结果及此前保存的两个容量测试结果均保留在capacity/目录，供容量分析，不进入四分词器主结果表。
+## 文件与复现
 
-容量扫描沿用200/224/240/256/272/288/300/320/352/384/416/450，在相同固定8:1:1划分上报告训练、验证、测试。12个配置预先声明，报告全部测试结果但不从测试集中选择配置。简单→复杂也报告同一12容量和3个固定基线。两个协议均保留每token使用表与低频/未使用词表诊断。
+| 路径 | 内容 |
+|---|---|
+| [main](main)、[test_results.json](test_results.json) | 四方法主结果、AST-BPE256词表与训练来源 |
+| [capacity](capacity) | 12档容量和alphabet_matrix基础表矩阵 |
+| [simple_to_complex](simple_to_complex) | 复杂度迁移结果 |
+| [vocabulary_usage](vocabulary_usage) | token频率、汇总与合并词项查看表 |
+| [three_metrics.csv](three_metrics.csv) | 逐设置指标汇总 |
+| [run.log](run.log)、[COMPLETE.json](COMPLETE.json) | 运行与完成记录 |
+| [independent_audit.json](independent_audit.json) | 289份逐公式结果的独立重算 |
+| [legacy_sources.json](legacy_sources.json)、[tokenizer_assets.json](tokenizer_assets.json) | 旧代码来源、共享函数与基线资产哈希 |
 
-## 文件与复核
+```bash
+python -m scripts.run_current_upstream
+```
 
-- protocol.json：完整协议、输入哈希、连接分组和精确划分ID。
-- input_records.json：636条实际文本、复杂度及来源/结构键。
-- main/、selection.json、test_results.json：固定四分词器主实验，AST-BPE256独立重训词表、训练来源记录及逐公式指标。
-- capacity/alphabet_matrix/、capacity/alphabet_validation_results.json：基础表×容量实验和历史选择记录。
-- capacity/、simple_to_complex/：12容量结果、保存词表、逐公式计数及tokens.csv和usage.json。
-- vocabulary_usage/：24套容量/协议组合、7332条token使用记录，含训练/验证/测试频率、低频/长token、来源计数与4001条供查看的合并token记录。
-- run.log、COMPLETE.json、independent_audit.json、tokenizer_assets.json：运行、完成、独立复核与旧词表资产哈希记录。
-
-独立重算全部289份逐公式保存结果的3指标；确认所有划分键不相交。运行命令：`PYTHONPATH=.:src python scripts/run_current_upstream.py`。重复运行会校验协议并复用保存词表，再重算评估结果，不启动下游。
-
-训练与复用：本benchmark的AST-BPE词表均从当前训练子集学习，未载入旧1500条benchmark或下游训练词表。容量实验的12档在各自训练集上分别直接训练；额外基础表矩阵为了复用同一有序合并链，用各基础表512父词表截取容量前缀，不能把这些前缀文件说成每档都独立训练。重复执行相同冻结协议会复用本实验已保存词表，不会无条件重复训练；改变语料或划分时协议校验拒绝直接复用。
+共享词法计数位于scripts/upstream_metrics.py，基础表定义位于scripts/upstream_config.py，官方加载器位于scripts/upstream_tokenizers.py。完整仓库复现检查见[repository_audit](../../reports/repository_audit)。

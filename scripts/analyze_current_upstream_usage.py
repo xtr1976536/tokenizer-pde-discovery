@@ -3,7 +3,7 @@ import csv,json
 from pathlib import Path
 from math_tokenizer.corpus import ROOT
 from math_tokenizer.eqgpt.compact_alphabet import CompactAlphabet
-from scripts.evaluate_screened_pde import token_coverage
+from scripts.upstream_metrics import token_coverage
 BASE=ROOT/'experiments/upstream_current636'
 def write(path,rows):
  with path.open('w',newline='') as f:

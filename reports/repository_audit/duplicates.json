@@ -1,0 +1,493 @@
+[
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "data/formulas/212/tokenizers/ast_bpe_280.model.json",
+      "data/formulas/636/tokenizers/ast_bpe_280.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "data/formulas/212/tokenizers/ast_bpe_315.model.json",
+      "data/formulas/636/tokenizers/ast_bpe_315.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "data/formulas/212/tokenizers/ast_bpe_350.model.json",
+      "data/formulas/636/tokenizers/ast_bpe_350.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/ascii95/448.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii95/450.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "d702b9ee85948f7d50872244dd5521871e44ad33690bb181b27e24045c726f5d"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_200.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/200.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "143b88cf4f45fe50d335d47e7d5c64b6963e8393229d6e89eb9bbee75ecc0fdd"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_200.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/200.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "4e184bbcf91a99569258159f9d71fd0664f03200fbd28bcb73cdab9d50b36664"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_224.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/224.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "d59c92d0f29378867cdefee533770bcea4f8b16d74fcf5637b5e067bf7f0eace"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_224.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/224.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "88a4f16aade14b6d45b92cd4194b56e92a2507b546287eb084f529993b2cd846"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_240.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/240.train.json"
+    ],
+    "bytes": 908,
+    "sha256": "b3f3d440c058210bfd0867613ca55cb3dd8e8d5b433199ed8ff8dae283a52d6b"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_240.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/240.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "45d1c483fc46c03b029fc8900aee0a5a7e1478e355a6025e95319d34d1320a00"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.model.backend.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/train_observed/200.model.backend.json"
+    ],
+    "bytes": 13244,
+    "sha256": "95cb56d63ff2d501d00c45f02f2b1aaa1040a5e22c071ff5e0a84f0c9a49c97f"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/main/ast_bpe_256.test.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.test.json",
+      "experiments/upstream_current636/capacity/ast_bpe_256.test.json"
+    ],
+    "bytes": 877,
+    "sha256": "6995e6014c62d417fdfbdd09124fc8d58290f8b1c33608ccd477e339abbab974"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/main/ast_bpe_256.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.train.json",
+      "experiments/upstream_current636/capacity/ast_bpe_256.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "d13b8405c680820e1270fcbd88157836de43ed68ee3ad89baba5e76bc5014117"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/main/ast_bpe_256.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.validation.json",
+      "experiments/upstream_current636/capacity/ast_bpe_256.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "3ebe4dd8d96dd88e4627717a81d0d3faab8c52236e4b70cc3c55920e67fb3ae6"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_272.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/272.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "34d3fc724902a52d39fa3b1588ba814076bffea462fd96503ff5899578f6746d"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_272.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/272.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "cfc9eac44bacf49e4db962d770bcb4ea16ec4424663e137bffbd95e195e05ada"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_288.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/288.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "3e43d6ceb7f8007ceb67882a9970c1dca66e064acfb20ef761f113ef2a0b6fcc"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_288.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/288.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "34f75931bee3c890d6a08a82edb69f7159a7146f7152fa1763f930b78ec91224"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_300.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/300.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "b3eba24bb368fb67e8896b312ab891d8148ad9ca6f843b8e3ba6196c20222d72"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_300.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/300.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "4c33044131a7bf40d0fbb0ab6456c78b99f9fb05a618b0e936ce75c974f6c148"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_320.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/320.train.json"
+    ],
+    "bytes": 908,
+    "sha256": "ad8bb4e9c723052ec321b14ab8d43311a47e43f9bc3156fc27a1651d826bbefa"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_320.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/320.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "5c8c7ffccdf538245abf9ecae1b78bb7722fbf2060c887bbfb4bfdb24bfe49d9"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_352.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/352.train.json"
+    ],
+    "bytes": 908,
+    "sha256": "d26dca1fa425b4065f3154a9957b0b794326e2aaae3f4b6b9d97c3581e111d2f"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_352.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/352.validation.json"
+    ],
+    "bytes": 879,
+    "sha256": "9c1f173ffe99ec396d8f620f3d603986c805640674aa05813ef55a2cb3c1b637"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_384.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/384.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "934cc408d9943f768d637d6201906f8d07c5e6246afd2ed05ff8a9a5038e7e09"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_384.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/384.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "bd955e2b3891e0e285b9a1f0fa5294bb1156d7b6b2344b03e9dba312672968ca"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_416.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/416.train.json"
+    ],
+    "bytes": 908,
+    "sha256": "db4404911667a58ce89e9e6f9940e95c42a62eb948c9fb27e878689bc5828d74"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_416.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/416.validation.json"
+    ],
+    "bytes": 875,
+    "sha256": "0b1c85bfac0900e030973503b44ba19473458bd1f4456a9c9867fa40e0e1340e"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_450.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/448.validation.json",
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/450.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "f90dce90f48bed2bbeef537e4a860bdf4cf639af0a1a400519b14cd01d0187af"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/ast_bpe_450.train.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/450.train.json"
+    ],
+    "bytes": 910,
+    "sha256": "42f2f6ffdfd76589e3b7d697b741444d44cf153aa3d286f1a539bf28cf348fbb"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/letters/384.validation.per_formula.jsonl.gz",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/384.validation.per_formula.jsonl.gz"
+    ],
+    "bytes": 2406,
+    "sha256": "0b3df3eecd6d1c1153e3121faeff7b557dbe6d7e63b2c4920a45c88dfb765606"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/448.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/450.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "c9fad02f3f28adf1135beb62e79520cfd82b83e7c05e5e3e725f3b573e2d3192"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/letters/448.validation.per_formula.jsonl.gz",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/448.validation.per_formula.jsonl.gz"
+    ],
+    "bytes": 2410,
+    "sha256": "a015196c5609d9afba5f0341f0bc15940b45f127cdf9fdba3c926f742be3b302"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/letters/448.model.backend.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/450.model.backend.json"
+    ],
+    "bytes": 29751,
+    "sha256": "38277d530cd3aa90bdf51caf1c3df9504956ccebe4e6300b00610e5b6c56177e"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/letters/512.validation.per_formula.jsonl.gz",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/512.validation.per_formula.jsonl.gz"
+    ],
+    "bytes": 2413,
+    "sha256": "a6a0091332a8005b560ddf4422feca38dc7bdc5ae53d16ffea426b43957eacd2"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/capacity/alphabet_matrix/train_observed/448.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/capacity/alphabet_matrix/train_observed/450.validation.json"
+    ],
+    "bytes": 877,
+    "sha256": "e26cf01475e6f3c080386175fdc319d8659e2dba21be9c44ebe5c20b07ec1949"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_200.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_200.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_224.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_224.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_240.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_240.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_256.model.json",
+      "experiments/upstream_current636/main/ast_bpe_256.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_256.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_272.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_272.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_288.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_288.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_300.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_300.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_320.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_320.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_352.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_352.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_384.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_384.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_416.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_416.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "contextual_descriptors",
+    "bytes": 1049,
+    "paths": [
+      "experiments/upstream_current636/capacity/ast_bpe_450.model.json",
+      "experiments/upstream_current636/simple_to_complex/ast_bpe_450.model.json"
+    ],
+    "reason": "Identical local-backend descriptors identify different directory-local trained models; preserve each context"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/main/llama3.test.json",
+    "aliases": [
+      "experiments/upstream_current636/main/qwen2.5.test.json"
+    ],
+    "bytes": 876,
+    "sha256": "1a2e24103f6bbcabb34a9bfa38f590003f6e0fff95d1cef4895de55118ecb190"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/main/llama3.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/main/qwen2.5.validation.json"
+    ],
+    "bytes": 876,
+    "sha256": "0ac3c48a9e93ed0150fa97b8b7c5a66f2a158af610575bf4b7a6d9ab2c1e919b"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/simple_to_complex/llama3.test.json",
+    "aliases": [
+      "experiments/upstream_current636/simple_to_complex/qwen2.5.test.json"
+    ],
+    "bytes": 871,
+    "sha256": "c213a4bf825932b1c10e204dc44ff62f6ee719fa15d51fa23b2c81b19e513ddb"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "experiments/upstream_current636/simple_to_complex/llama3.validation.json",
+    "aliases": [
+      "experiments/upstream_current636/simple_to_complex/qwen2.5.validation.json"
+    ],
+    "bytes": 871,
+    "sha256": "435cd1be5247722ae0070ff438eee71d4af2c38549bd021e31cf616150f714a1"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "reports/scorer_audit/real_targets.json",
+    "aliases": [
+      "reports/scoring_fixes_validation/real_targets.json"
+    ],
+    "bytes": 1407,
+    "sha256": "43ca1c5e0f9728b69af5a04b7415d7b08cf0a519feed9464b4bb4740c7117c40"
+  },
+  {
+    "status": "shared_by_relative_links",
+    "canonical": "reports/scorer_audit/reward_oracle.json",
+    "aliases": [
+      "reports/scoring_fixes_validation/reward_oracle.json"
+    ],
+    "bytes": 1163,
+    "sha256": "b983091bf9456576051201d35488c1923d36a82cb0fa2f604009fa224e12bfe4"
+  }
+]

@@ -1,0 +1,531 @@
+[
+  {
+    "action": "remove",
+    "path": "scripts/evaluate_screened_pde.py",
+    "reason": "Extracted shared metrics; removed obsolete three-fold/1500-corpus CLI",
+    "sha256": "24dec0540d0aa74064d6ffe8d5c36ff2968b1cbc9488c463c3ac80c2e47176cf"
+  },
+  {
+    "action": "remove",
+    "path": "scripts/run_upstream_811_legacy.py",
+    "reason": "Extracted alphabets/capacities; removed obsolete 1500-corpus CLI",
+    "sha256": "1e48171d53c61f9d2e886640353a66b198870ba3e8ce81927edfa162a6032e6c"
+  },
+  {
+    "action": "remove",
+    "path": "scripts/prepare_downstream_corpus.py",
+    "reason": "Retained current support invariant; removed obsolete 1500-corpus preparation CLI",
+    "sha256": "f681e3ecaa27806a54a1c46449bbef6cf3e991edbfdb0f4de1b95b6b800030a7"
+  },
+  {
+    "action": "remove",
+    "path": "scripts/当前四分词器.py",
+    "reason": "Retained official baseline loader; removed stale old-fold Hard paths",
+    "sha256": "61bf0dacce91ed110554e15aad61295e63f8227e4df1d57bb5ae19c3a1bb4f07"
+  },
+  {
+    "action": "remove",
+    "path": "scripts/finalize_full212_upload.py",
+    "reason": "One-time background documentation finalizer replaced by current repository maintenance",
+    "sha256": "8e98484ac8dc858d36dc1d1d63de808092e28cc7683fdc87f41fd5447c0e1105"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Convection_diffusion_equation/data.mat",
+    "target": "eqgpt_original/data/Convection_diffusion_equation/data.mat",
+    "sha256": "d9f2c7e01fa33e63e4c4168ee28c10084f17a0e2a2bd69626555b38ebfe6908c",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Convection_diffusion_equation/dataset_description",
+    "target": "eqgpt_original/data/Convection_diffusion_equation/dataset_description",
+    "sha256": "162f64778be89ad9e91a97dc1be9bb465af0a054963f407e5065f9cd7db986a4",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/KG_equation/KG_Exp.mat",
+    "target": "eqgpt_original/data/KG_equation/KG_Exp.mat",
+    "sha256": "6dd6fd9a1e887dba4c612ff7b05de05e2e8ea61393c77be5971e7b043570a1ea",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/KG_equation/dataset_description",
+    "target": "eqgpt_original/data/KG_equation/dataset_description",
+    "sha256": "8f209632372d6d54dbddfbefd62a0e631f014e2b3e54f0bf6aa81e77553453ec",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/KdV_equation/dataset_description.txt",
+    "target": "eqgpt_original/data/KdV_equation/dataset_description.txt",
+    "sha256": "3aff1f07444b46a7d4a6dbd461f93c18b7b216f0774b671878ac31dc63f5d157",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/KdV_equation/KdV-PINN.mat",
+    "target": "eqgpt_original/data/KdV_equation/KdV-PINN.mat",
+    "sha256": "7c04e89a0c65692105dbe7fc8ba52cb90ce01a64e47e995a5736fbf1c06be220",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Wave_equation/dataset_description",
+    "target": "eqgpt_original/data/Wave_equation/dataset_description",
+    "sha256": "a3d49d818a99c8e192092d32309ef0ef69f5131ca1a4adcc29a1e392875c97fa",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Wave_equation/wave.mat",
+    "target": "eqgpt_original/data/Wave_equation/wave.mat",
+    "sha256": "239f106b040421419e72575589e421cec6c527484659a953b19e8472b048ec38",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/PDE_divide/PDE_divide.npy",
+    "target": "eqgpt_original/data/PDE_divide/PDE_divide.npy",
+    "sha256": "2749dc1b882fa5d0e257e0bc379d1aef956efda65cef59178c90f16332dfc348",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/PDE_divide/dataset_description",
+    "target": "eqgpt_original/data/PDE_divide/dataset_description",
+    "sha256": "eb025b0b393e3522f8d7f5c59f142c52516efa50f3186773f7f9c37eb0465c75",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Chaffee_Infante_equation/t.npy",
+    "target": "eqgpt_original/data/Chaffee_Infante_equation/t.npy",
+    "sha256": "10b0e2b5a647ce58128be9182e5d8943bda5e45ff7e8fd6bb33cd77eefb42f7a",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Chaffee_Infante_equation/CI.npy",
+    "target": "eqgpt_original/data/Chaffee_Infante_equation/CI.npy",
+    "sha256": "9ab264bf39895a73f581813c3687619f61ee01fe5e514627bde885445b6640a0",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Chaffee_Infante_equation/x.npy",
+    "target": "eqgpt_original/data/Chaffee_Infante_equation/x.npy",
+    "sha256": "91b28bb9edbecd86abedff439f9e9f0cd4d2d2e239ef68722aa78abcdb9b538a",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Chaffee_Infante_equation/dataset_description",
+    "target": "eqgpt_original/data/Chaffee_Infante_equation/dataset_description",
+    "sha256": "5d65436abed8ac4aa43d85d3738d314e46f7450953455832039d6a57668247ce",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Eq_6_2_12/data_Eq_6_2_12.csv",
+    "target": "eqgpt_original/data/Eq_6_2_12/data_Eq_6_2_12.csv",
+    "sha256": "174477275070804a5f74ce4f3ab32a3cea8e236674cdd28e9de80feafecc4daf",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Eq_6_2_12/dataset_description",
+    "target": "eqgpt_original/data/Eq_6_2_12/dataset_description",
+    "sha256": "9abfe54ee43b74b9cd1e8ecea1fd1cd3a440ca3ae874a2f026df5078dfcd12bb",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Burgers_equation/dataset_description",
+    "target": "eqgpt_original/data/Burgers_equation/dataset_description",
+    "sha256": "2531ac6933c3f3854adf77431b9db0841d799fd1316d8aa47d58c744bce6e70e",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "symlink",
+    "path": "data/cases/Burgers_equation/burgers_sine.mat",
+    "target": "eqgpt_original/data/Burgers_equation/burgers_sine.mat",
+    "sha256": "8813fcd8af70f4e4c2c5ee228a06c3ca7e37be1189accaa2681a2d3a29190d64",
+    "reason": "One copy of identical author/runtime case data"
+  },
+  {
+    "action": "remove",
+    "path": "reports/upstream_plan/benchmark_readiness.json",
+    "reason": "Superseded planning proposal; final protocol and results retained in upstream experiment",
+    "sha256": "6d136a4881d88d36880737b2112c8e16a9bf9c529056068ddcaeedd5168840ec"
+  },
+  {
+    "action": "remove",
+    "path": "reports/upstream_plan/README.md",
+    "reason": "Superseded planning proposal; final protocol and results retained in upstream experiment",
+    "sha256": "56ed87b9a1eb9654c9026d95ec2deae4996f9f3ebdbc7642dc2a4d27c415aad2"
+  },
+  {
+    "action": "remove",
+    "path": "reports/plan.json",
+    "reason": "Superseded pre-run plan or old private repository clone status",
+    "sha256": "53cced99da0302662cb3d7b38a28792d9be620c0283a8c164086e2425363e567"
+  },
+  {
+    "action": "remove",
+    "path": "reports/remote_clone_verification.json",
+    "reason": "Superseded pre-run plan or old private repository clone status",
+    "sha256": "bc9c5d13edf95f0e684f1af3fc43da50ba41867d8124592f749443c7fd1928f4"
+  },
+  {
+    "action": "remove",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/previous_selected_test_results.json",
+    "reason": "Superseded main selection/aggregate; all per-configuration raw metrics and final fixed-main protocol retained",
+    "sha256": "ecb827a98f06932ed5aabdd7ed1f6ae95e026691406aeefb0118b6dbea9d3762"
+  },
+  {
+    "action": "remove",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/previous_validation_selection.json",
+    "reason": "Superseded main selection/aggregate; all per-configuration raw metrics and final fixed-main protocol retained",
+    "sha256": "66ad0b94b9053b3da22c8926d6b956628b4a24c8fab522efa54db462c0c31300"
+  },
+  {
+    "action": "remove",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/previous_protocol.json",
+    "reason": "Superseded main selection/aggregate; all per-configuration raw metrics and final fixed-main protocol retained",
+    "sha256": "63e34f269e467067ff01053f131c8da8efe400b81a812ad7f7a6d06728bfdc60"
+  },
+  {
+    "action": "remove",
+    "path": "reports/prepare.log",
+    "reason": "Redundant summary: detailed structured check records or complete weights manifest retained",
+    "sha256": "0bd1fa14adf35f5a7ba0d48d9076e2ed82259b27e4cd450ffcc8c4ea0e6a1fe7"
+  },
+  {
+    "action": "remove",
+    "path": "reports/check_round1.log",
+    "reason": "Redundant summary: detailed structured check records or complete weights manifest retained",
+    "sha256": "cd64d1c9da7399590f67bf9051f2d229dab34651f3c925542b1c396140232916"
+  },
+  {
+    "action": "remove",
+    "path": "reports/check_round2.log",
+    "reason": "Redundant summary: detailed structured check records or complete weights manifest retained",
+    "sha256": "7a84b954cc7b043d9416abd17b3a9da58dfa4b41f10c3bad8955d7a209e424e3"
+  },
+  {
+    "action": "remove",
+    "path": "reports/check_round3.log",
+    "reason": "Redundant summary: detailed structured check records or complete weights manifest retained",
+    "sha256": "32b94b68b9861c9cd343662fa2b6e7d5e945665720ed73b6a83c3d158c9fbd3d"
+  },
+  {
+    "action": "remove",
+    "path": "reports/full212_run/local_checkpoints.json",
+    "reason": "Redundant summary: detailed structured check records or complete weights manifest retained",
+    "sha256": "b9df3d23b9d77de3c64d5575c12008cb0026b4fe39652dd8ad1b462f87042a5e"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii95/450.validation.json",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/ascii95/448.validation.json",
+    "sha256": "d702b9ee85948f7d50872244dd5521871e44ad33690bb181b27e24045c726f5d",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/200.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_200.train.json",
+    "sha256": "143b88cf4f45fe50d335d47e7d5c64b6963e8393229d6e89eb9bbee75ecc0fdd",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/200.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_200.validation.json",
+    "sha256": "4e184bbcf91a99569258159f9d71fd0664f03200fbd28bcb73cdab9d50b36664",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/224.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_224.train.json",
+    "sha256": "d59c92d0f29378867cdefee533770bcea4f8b16d74fcf5637b5e067bf7f0eace",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/224.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_224.validation.json",
+    "sha256": "88a4f16aade14b6d45b92cd4194b56e92a2507b546287eb084f529993b2cd846",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/240.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_240.train.json",
+    "sha256": "b3f3d440c058210bfd0867613ca55cb3dd8e8d5b433199ed8ff8dae283a52d6b",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/240.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_240.validation.json",
+    "sha256": "45d1c483fc46c03b029fc8900aee0a5a7e1478e355a6025e95319d34d1320a00",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/train_observed/200.model.backend.json",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.model.backend.json",
+    "sha256": "95cb56d63ff2d501d00c45f02f2b1aaa1040a5e22c071ff5e0a84f0c9a49c97f",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.test.json",
+    "target": "experiments/upstream_current636/main/ast_bpe_256.test.json",
+    "sha256": "6995e6014c62d417fdfbdd09124fc8d58290f8b1c33608ccd477e339abbab974",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/ast_bpe_256.test.json",
+    "target": "experiments/upstream_current636/main/ast_bpe_256.test.json",
+    "sha256": "6995e6014c62d417fdfbdd09124fc8d58290f8b1c33608ccd477e339abbab974",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.train.json",
+    "target": "experiments/upstream_current636/main/ast_bpe_256.train.json",
+    "sha256": "d13b8405c680820e1270fcbd88157836de43ed68ee3ad89baba5e76bc5014117",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/ast_bpe_256.train.json",
+    "target": "experiments/upstream_current636/main/ast_bpe_256.train.json",
+    "sha256": "d13b8405c680820e1270fcbd88157836de43ed68ee3ad89baba5e76bc5014117",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/256.validation.json",
+    "target": "experiments/upstream_current636/main/ast_bpe_256.validation.json",
+    "sha256": "3ebe4dd8d96dd88e4627717a81d0d3faab8c52236e4b70cc3c55920e67fb3ae6",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/ast_bpe_256.validation.json",
+    "target": "experiments/upstream_current636/main/ast_bpe_256.validation.json",
+    "sha256": "3ebe4dd8d96dd88e4627717a81d0d3faab8c52236e4b70cc3c55920e67fb3ae6",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/272.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_272.train.json",
+    "sha256": "34d3fc724902a52d39fa3b1588ba814076bffea462fd96503ff5899578f6746d",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/272.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_272.validation.json",
+    "sha256": "cfc9eac44bacf49e4db962d770bcb4ea16ec4424663e137bffbd95e195e05ada",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/288.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_288.train.json",
+    "sha256": "3e43d6ceb7f8007ceb67882a9970c1dca66e064acfb20ef761f113ef2a0b6fcc",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/288.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_288.validation.json",
+    "sha256": "34f75931bee3c890d6a08a82edb69f7159a7146f7152fa1763f930b78ec91224",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/300.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_300.train.json",
+    "sha256": "b3eba24bb368fb67e8896b312ab891d8148ad9ca6f843b8e3ba6196c20222d72",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/300.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_300.validation.json",
+    "sha256": "4c33044131a7bf40d0fbb0ab6456c78b99f9fb05a618b0e936ce75c974f6c148",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/320.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_320.train.json",
+    "sha256": "ad8bb4e9c723052ec321b14ab8d43311a47e43f9bc3156fc27a1651d826bbefa",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/320.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_320.validation.json",
+    "sha256": "5c8c7ffccdf538245abf9ecae1b78bb7722fbf2060c887bbfb4bfdb24bfe49d9",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/352.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_352.train.json",
+    "sha256": "d26dca1fa425b4065f3154a9957b0b794326e2aaae3f4b6b9d97c3581e111d2f",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/352.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_352.validation.json",
+    "sha256": "9c1f173ffe99ec396d8f620f3d603986c805640674aa05813ef55a2cb3c1b637",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/384.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_384.train.json",
+    "sha256": "934cc408d9943f768d637d6201906f8d07c5e6246afd2ed05ff8a9a5038e7e09",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/384.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_384.validation.json",
+    "sha256": "bd955e2b3891e0e285b9a1f0fa5294bb1156d7b6b2344b03e9dba312672968ca",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/416.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_416.train.json",
+    "sha256": "db4404911667a58ce89e9e6f9940e95c42a62eb948c9fb27e878689bc5828d74",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/416.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_416.validation.json",
+    "sha256": "0b1c85bfac0900e030973503b44ba19473458bd1f4456a9c9867fa40e0e1340e",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/448.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_450.validation.json",
+    "sha256": "f90dce90f48bed2bbeef537e4a860bdf4cf639af0a1a400519b14cd01d0187af",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/450.validation.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_450.validation.json",
+    "sha256": "f90dce90f48bed2bbeef537e4a860bdf4cf639af0a1a400519b14cd01d0187af",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/ascii98/450.train.json",
+    "target": "experiments/upstream_current636/capacity/ast_bpe_450.train.json",
+    "sha256": "42f2f6ffdfd76589e3b7d697b741444d44cf153aa3d286f1a539bf28cf348fbb",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/384.validation.per_formula.jsonl.gz",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/letters/384.validation.per_formula.jsonl.gz",
+    "sha256": "0b3df3eecd6d1c1153e3121faeff7b557dbe6d7e63b2c4920a45c88dfb765606",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/450.validation.json",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/448.validation.json",
+    "sha256": "c9fad02f3f28adf1135beb62e79520cfd82b83e7c05e5e3e725f3b573e2d3192",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/448.validation.per_formula.jsonl.gz",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/letters/448.validation.per_formula.jsonl.gz",
+    "sha256": "a015196c5609d9afba5f0341f0bc15940b45f127cdf9fdba3c926f742be3b302",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/450.model.backend.json",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/letters/448.model.backend.json",
+    "sha256": "38277d530cd3aa90bdf51caf1c3df9504956ccebe4e6300b00610e5b6c56177e",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/latex_ascii/512.validation.per_formula.jsonl.gz",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/letters/512.validation.per_formula.jsonl.gz",
+    "sha256": "a6a0091332a8005b560ddf4422feca38dc7bdc5ae53d16ffea426b43957eacd2",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/capacity/alphabet_matrix/train_observed/450.validation.json",
+    "target": "experiments/upstream_current636/capacity/alphabet_matrix/train_observed/448.validation.json",
+    "sha256": "e26cf01475e6f3c080386175fdc319d8659e2dba21be9c44ebe5c20b07ec1949",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/main/qwen2.5.test.json",
+    "target": "experiments/upstream_current636/main/llama3.test.json",
+    "sha256": "1a2e24103f6bbcabb34a9bfa38f590003f6e0fff95d1cef4895de55118ecb190",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/main/qwen2.5.validation.json",
+    "target": "experiments/upstream_current636/main/llama3.validation.json",
+    "sha256": "0ac3c48a9e93ed0150fa97b8b7c5a66f2a158af610575bf4b7a6d9ab2c1e919b",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/simple_to_complex/qwen2.5.test.json",
+    "target": "experiments/upstream_current636/simple_to_complex/llama3.test.json",
+    "sha256": "c213a4bf825932b1c10e204dc44ff62f6ee719fa15d51fa23b2c81b19e513ddb",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "experiments/upstream_current636/simple_to_complex/qwen2.5.validation.json",
+    "target": "experiments/upstream_current636/simple_to_complex/llama3.validation.json",
+    "sha256": "435cd1be5247722ae0070ff438eee71d4af2c38549bd021e31cf616150f714a1",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "reports/scoring_fixes_validation/real_targets.json",
+    "target": "reports/scorer_audit/real_targets.json",
+    "sha256": "43ca1c5e0f9728b69af5a04b7415d7b08cf0a519feed9464b4bb4740c7117c40",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  },
+  {
+    "action": "symlink",
+    "path": "reports/scoring_fixes_validation/reward_oracle.json",
+    "target": "reports/scorer_audit/reward_oracle.json",
+    "sha256": "b983091bf9456576051201d35488c1923d36a82cb0fa2f604009fa224e12bfe4",
+    "reason": "Byte-identical immutable result/oracle/backend artifact"
+  }
+]

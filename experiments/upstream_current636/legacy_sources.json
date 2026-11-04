@@ -52,5 +52,11 @@
       "sha256": "21f2f449438b72e1e28106108366b9dda0eaebdcfab310ddaabe08e189935b41",
       "matches_local_release": true
     }
-  ]
+  ],
+  "retained_functions_ast_sha256": {
+    "scripts/upstream_metrics.py:sha": "5caa8a018e09d1e22ae78211741a1306c72d5d6d3e2e0df6896087afe597ed65",
+    "scripts/upstream_metrics.py:measure": "6191d63ad25006f786ac428c903f04cfe8c51cb18a2f3c13196bdd318202c1a7",
+    "scripts/upstream_metrics.py:token_coverage": "edd6cfe2431afdbceb2c81d7a6de9678f33c726dfa7a7542313ddd01b2f31af1",
+    "scripts/upstream_config.py:alphabet_protocols": "3cf41887a96a09cbb1360e3984845e7538d3cbd97a8486031b3ef021501c60ba"
+  }
 }

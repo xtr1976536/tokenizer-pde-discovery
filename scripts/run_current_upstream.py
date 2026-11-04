@@ -10,9 +10,9 @@ from math_tokenizer.eqgpt.compact_alphabet import CompactAlphabet,train_compact
 from math_tokenizer.eqgpt.latex_tokenizers import prefix_model
 from math_tokenizer.hard_ast_2026 import HardASTBPE
 from math_tokenizer.baselines import ByteTokenizer
-from scripts.evaluate_screened_pde import measure,token_coverage
-from scripts.run_upstream_811_legacy import alphabet_protocols,SIZES
-from scripts.当前四分词器 import load
+from scripts.upstream_metrics import measure,token_coverage
+from scripts.upstream_config import alphabet_protocols,SIZES
+from scripts.upstream_tokenizers import load
 OUT=ROOT/'experiments/upstream_current636'
 SWEEP=[200,224,240,256,272,288,300,320,352,384,416,450]
 ALPHABET=list(range(32,127))+[9,10,13]

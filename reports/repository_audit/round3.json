@@ -1,0 +1,28 @@
+{
+  "round": 3,
+  "status": "PASS",
+  "fresh_export_tests": "............................................                             [100%]\n44 passed in 2.60s",
+  "export_tree": "bb7d9351f02919641527bc105ef05f92ad388fe9",
+  "plan": [
+    212,
+    636
+  ],
+  "fresh_export_upstream": "PASS",
+  "fresh_full_upstream_rerun": "PASS: all four experiments, newly trained vocabularies, identical main metrics",
+  "fresh_export_without_local_weights": "PASS: GitHub digest verification",
+  "weights": {
+    "status": "PASS",
+    "public_release": "https://github.com/xtr1976536/tokenizer-pde-discovery/releases/tag/full212-815cc37",
+    "unique_weights": 164,
+    "checkpoint_paths": 228,
+    "unique_bytes": 25065338684,
+    "github_sha256_match": true,
+    "local_unique_weights_verified": 164,
+    "all_local_and_github_sha256_match": true
+  },
+  "remote": {
+    "default_branch": "main",
+    "full_name": "xtr1976536/tokenizer-pde-discovery",
+    "private": false
+  }
+}
